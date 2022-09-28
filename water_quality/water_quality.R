@@ -24,8 +24,10 @@ river_nitrogen <- read_csv("new_river_nitrogen.csv")
 # write_csv(new_rivernitrogen, "new_river_nitrogen.csv")
 
 groundwater_mod <- groundwater %>% 
-  select(region, measure, median, units, lower_confidence_level, upper_confidence_level) %>% 
+  select(region, measure, median, units, lower_confidence_level, upper_confidence_level, direction_confidence_lawa) %>% 
   filter(measure %in% c("Nitrate nitrogen", "E.coli")) %>% 
   group_by(region, measure) %>% 
-  summarise(Median = sum(median), Units = units, Lower_CI = lower_confidence_level, Upper_CI = upper_confidence_level)
+  #summarise(Median = sum(median), Units = units, Lower_CI = lower_confidence_level, Upper_CI = upper_confidence_level, Direction_confidence = direction_confidence_lawa)
+  summarise(Median = sum(median), Units = units)
 groundwater_mod
+
