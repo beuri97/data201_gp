@@ -1,3 +1,4 @@
+# install.packages("tidygeocoder")
 library(tidygeocoder)
 library(tidyverse)
 
@@ -28,6 +29,11 @@ groundwater_mod <- groundwater %>%
   filter(measure %in% c("Nitrate nitrogen", "E.coli")) %>% 
   group_by(region, measure) %>% 
   #summarise(Median = sum(median), Units = units, Lower_CI = lower_confidence_level, Upper_CI = upper_confidence_level, Direction_confidence = direction_confidence_lawa)
-  summarise(Median = sum(median), Units = units)
+  summarise(Median = sum(median), Units = units) %>% 
+  unique()
 groundwater_mod
 
+groundwater_mod_1 <- groundwater_mod %>% 
+  spread(key = region,
+         value = Median)
+groundwater_mod_1
