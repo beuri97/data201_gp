@@ -48,11 +48,13 @@ new_groundwq <- groundwq %>%
   select(Region, Indicator, Units, Year, CensoredValue) %>% 
   filter(Indicator %in% c("E.coli", "Nitrate nitrogen")) %>% 
   group_by(Region, Indicator, Year) %>% 
-  summarise(Value = sum(CensoredValue))
+  summarise(Value = sum(round(CensoredValue,2)))
 
 groundwq_wide <- ground_df %>% 
   spread(key = Indicator,
          value = Value)
+groundwq_wide
+
 
 river_ecoli <- read_csv("new_river_ecoli.csv")
 river_nitrogen <- read_csv("new_river_nitrogen.csv")
