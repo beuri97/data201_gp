@@ -1,6 +1,13 @@
-# install.packages("tidygeocoder")
-library(tidygeocoder)
+# Load packages such as ggplot2, dplyr, tidyr, and readr to be able to use specialised functions for creating
+# visualisations, reading, writing, and manipulating data.
 library(tidyverse)
+
+# Load the tidygeocoder package to be able to use a function to convert the given latitude and longitude
+# to address.
+library(tidygeocoder)
+
+# Load the readxl package to be able to use a function to read Excel files.
+library(readxl)
 
 # read the three datasets for use
 groundwater <- read_csv("groundwater_quality.csv")
