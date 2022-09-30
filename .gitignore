@@ -1,5 +1,5 @@
 *.DS_Store
 */.DS_Store
-*/.csv:Zone.Identifier
-*/.RData
-*/.Rhistory
+water_quality/*.csv:Zone.Identifier
+water_quality/.RData
+water_quality/.Rhistory
