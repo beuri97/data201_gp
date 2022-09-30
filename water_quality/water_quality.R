@@ -42,11 +42,17 @@ groundwq %>%
 groundwq %>% 
   vis_miss(warn_large_data = FALSE)
 
-groundwq %>% 
+ground_df <- groundwq %>% 
   mutate(CensoredValue = ifelse(is.na(CensoredValue), NA_integer_, CensoredValue),
-         Date = year(Date)) %>% 
-  select(Region, Indicator, Units, Date, CensoredValue) %>% 
-  filter(Indicator %in% c("E.coli", "Nitrate nitrogen"))
+         Year = year(Date)) %>% 
+  select(Region, Indicator, Units, Year, CensoredValue) %>% 
+  filter(Indicator %in% c("E.coli", "Nitrate nitrogen")) %>% 
+  group_by(Region, Indicator, Year) %>% 
+  summarise(Value = sum(CensoredValue))
+
+ground_df %>% 
+  spread(key = Indicator,
+         value = Value)
 
 river_ecoli <- read_csv("new_river_ecoli.csv")
 river_nitrogen <- read_csv("new_river_nitrogen.csv")
@@ -67,17 +73,3 @@ river_nitrogen <- read_csv("new_river_nitrogen.csv")
 # # write the new dataset as CSVs for use
 # write_csv(new_riverecoli, "new_river_ecoli.csv")
 # write_csv(new_rivernitrogen, "new_river_nitrogen.csv")
-
-groundwater_mod <- groundwater %>% 
-  select(region, measure, median, units, lower_confidence_level, upper_confidence_level, direction_confidence_lawa) %>% 
-  filter(measure %in% c("Nitrate nitrogen", "E.coli")) %>% 
-  group_by(region, measure) %>% 
-  #summarise(Median = sum(median), Units = units, Lower_CI = lower_confidence_level, Upper_CI = upper_confidence_level, Direction_confidence = direction_confidence_lawa)
-  summarise(Median = sum(median), Units = units) %>% 
-  unique()
-groundwater_mod
-
-groundwater_mod_1 <- groundwater_mod %>% 
-  spread(key = region,
-         value = Median)
-groundwater_mod_1
