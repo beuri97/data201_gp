@@ -15,6 +15,8 @@ library(knitr)
 
 library(visdat)
 
+library(lubridate)
+
 # read the three datasets for use
 groundwq <- "groundwq_2004-2020.xlsx" %>% 
   read_excel()
@@ -41,8 +43,10 @@ groundwq %>%
   vis_miss(warn_large_data = FALSE)
 
 groundwq %>% 
-  filter(Indicator) %>% 
-  distinct()
+  mutate(CensoredValue = ifelse(is.na(CensoredValue), NA_integer_, CensoredValue),
+         Date = year(Date)) %>% 
+  select(Region, Indicator, Units, Date, CensoredValue) %>% 
+  filter(Indicator %in% c("E.coli", "Nitrate nitrogen"))
 
 river_ecoli <- read_csv("new_river_ecoli.csv")
 river_nitrogen <- read_csv("new_river_nitrogen.csv")
