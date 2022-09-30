@@ -42,7 +42,7 @@ groundwq %>%
 groundwq %>% 
   vis_miss(warn_large_data = FALSE)
 
-ground_df <- groundwq %>% 
+new_groundwq <- groundwq %>% 
   mutate(CensoredValue = ifelse(is.na(CensoredValue), NA_integer_, CensoredValue),
          Year = year(Date)) %>% 
   select(Region, Indicator, Units, Year, CensoredValue) %>% 
@@ -50,7 +50,7 @@ ground_df <- groundwq %>%
   group_by(Region, Indicator, Year) %>% 
   summarise(Value = sum(CensoredValue))
 
-ground_df %>% 
+groundwq_wide <- ground_df %>% 
   spread(key = Indicator,
          value = Value)
 
