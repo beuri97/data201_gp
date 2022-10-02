@@ -28,7 +28,7 @@ groundwq %>%
 # The following lines of code show the entirety of the summary statistics of the whole groundwq.
 # The skim() provides a detailed overview of the dataframe.
 # The select() choose the columns specified.
-# the kable() creates and presents the overview of the dataframe in a table format.
+# The kable() creates and presents the overview of the dataframe in a table format.
 groundwq %>% 
   skim() %>% 
   select(1:7) %>% 
@@ -55,9 +55,9 @@ new_groundwq <- groundwq %>%
   mutate(CensoredValue = ifelse(is.na(CensoredValue), NA_integer_, CensoredValue),
          Year = year(Date)) %>% 
   select(Region, Indicator, Units, Year, CensoredValue) %>% 
-  filter(Indicator %in% c("E.coli", "Nitrate nitrogen")) %>% 
+  filter(Indicator %in% c("E.coli", "Nitrate nitrogen"), Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Indicator, Year) %>% 
-  summarise(Value = sum(round(CensoredValue,2)))
+  summarise(Value = round(sum(CensoredValue), 2))
 
 # Takes the new_groundwq then convert it to wide format.
 groundwq_wide <- new_groundwq %>% 
@@ -72,12 +72,19 @@ river_ecoli <- read_csv("new_river_ecoli.csv")
 river_nitrogen <- "new_river_nitrogen.csv" %>% 
   read_csv()
 
+# Gives an overview of river_nitrogen such as columns, data types, the possible values, number of rows and columns.
+# This allow us to select which relevant columns to select.
 river_nitrogen %>% 
   glimpse()
 
+# Select the relevant columns for analysis.
 river_nitrogen <- river_nitrogen %>% 
-  select(field_1:trend_confidence, state)
+  select(measure, units, median, trend_confidence, end_year, state)
 
+# The following lines of code show the entirety of the summary statistics of the whole river_nitrogen.
+# The skim() provides a detailed overview of the dataframe.
+# The select() choose the columns specified.
+# The kable() creates and presents the overview of the dataframe in a table format.
 river_nitrogen %>% 
   skim() %>% 
   select(1:7) %>% 
@@ -88,29 +95,51 @@ river_nitrogen %>%
   select(8:14) %>% 
   kable()
 
-river_nitrogen %>% 
-  skim() %>% 
-  select(15:19) %>% 
-  kable()
-
+# Reads the entirety of river_nitrogen and creates a plot to check if it contains missing data (NA). 
 river_nitrogen %>% 
   vis_miss()
 
-df<-river_nitrogen %>% 
-  filter(measure == "Ammoniacal nitrogen", end_year >= 2002, end_year <= 2019, state == "Auckland")
+# Takes the river_nitrogen data frame then rename the columns, select the necessary rows, group them
+# by Region, Indicator, and Year. Lastly, summarise them by getting the sum of the median values rounded
+# off by 2 s.f.
+new_rivernitrogen <- river_nitrogen %>% 
+  rename(Region = state, Indicator = measure, Units = units, Med_Value = median,
+         Year = end_year, Trend_Conf = trend_confidence) %>% 
+  filter(Indicator %in% c("Ammoniacal nitrogen", "Nitrate-nitrite nitrogen"),
+         Year >= 2002, Year <= 2019) %>% 
+  group_by(Region, Indicator, Year) %>% 
+  summarise(Total_MedVal = round(sum(Med_Value), 2))
 
-# # takes the river_ecoli dataset then take the lat and long variables 
+# Takes the new_rivernitrogen then convert it to wide format.
+rivernitrogen_wide <- new_rivernitrogen %>% 
+  spread(key = Indicator,
+         value = Total_MedVal)
+rivernitrogen_wide
+
+df <- river_nitrogen %>%
+  rename(Region = state, Indicator = measure, Units = units, Med_Value = median,
+         Year = end_year, Trend_Conf = trend_confidence) %>% 
+  filter(Indicator == "Total nitrogen", Year >= 2002, Year <= 2019)%>% 
+  group_by(Region, Indicator, Year) %>% 
+  summarise(Total_MedVal = round(sum(Med_Value), 2))
+
+df1 <- df %>% 
+  spread(key = Indicator,
+         value = Total_MedVal)
+df1
+
+# # Takes the river_ecoli dataset then take the lat and long variables 
 # # to get the full address. Then save it as new_riverecoli.
 # new_riverecoli <- river_ecoli %>% 
 #   reverse_geocode(lat = lat, long = long,
 #                   method = "osm", full_results = TRUE)
 # 
-# # takes the river_ecoli dataset then take the lat and long variables 
+# # Takes the river_ecoli dataset then take the lat and long variables 
 # # to get the full address. Then save it as new_rivernitrogen.
 # new_rivernitrogen <- river_nitrogen %>% 
 #   reverse_geocode(lat = lat, long = long,
 #                   method = "osm", full_results = TRUE)
 # 
-# # write the new dataset as CSVs for use
+# # Write the new dataset as CSVs for use.
 # write_csv(new_riverecoli, "new_river_ecoli.csv")
 # write_csv(new_rivernitrogen, "new_river_nitrogen.csv")
