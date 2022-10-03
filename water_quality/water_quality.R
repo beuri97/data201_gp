@@ -9,10 +9,13 @@ library(tidygeocoder)
 # Load the readxl package to be able to use a function to read Excel files.
 library(readxl)
 
+# Load skimr package to be able to use a function to understand the structure of the dataframe we will analyse
 library(skimr)
 
+# Load the knitr package to be able to use a function for presenting information in a tidy format.
 library(knitr)
 
+# Load the visdat  
 library(visdat)
 
 library(lubridate)
@@ -53,18 +56,19 @@ groundwq %>%
 # the CensoredValue rounded off to 2.
 new_groundwq <- groundwq %>% 
   mutate(CensoredValue = ifelse(is.na(CensoredValue), NA_integer_, CensoredValue),
-         Year = year(Date)) %>% 
+         Year = year(Date),
+         Units = case_when(Indicator == "E.coli" ~ "cfu/100ml", TRUE ~ "g/m3")) %>% 
   select(Region, Indicator, Units, Year, CensoredValue) %>% 
   filter(Indicator %in% c("E.coli", "Nitrate nitrogen"), Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Indicator, Year) %>% 
-  summarise(Value = round(sum(CensoredValue), 2))
+  summarise(Value = round(sum(CensoredValue), 2), Units) %>% 
+  distinct()
 
 # Takes the new_groundwq then convert it to wide format.
 groundwq_wide <- new_groundwq %>% 
-  spread(key = Indicator,
+  spread(key = Region,
          value = Value)
 groundwq_wide
-
 
 river_ecoli <- read_csv("new_river_ecoli.csv")
 
@@ -79,7 +83,7 @@ river_nitrogen %>%
 
 # Select the relevant columns for analysis.
 river_nitrogen <- river_nitrogen %>% 
-  select(measure, units, median, trend_confidence, end_year, state)
+  select(measure, units, median, end_year, state)
 
 # The following lines of code show the entirety of the summary statistics of the whole river_nitrogen.
 # The skim() provides a detailed overview of the dataframe.
@@ -104,29 +108,18 @@ river_nitrogen %>%
 # off by 2 s.f.
 new_rivernitrogen <- river_nitrogen %>% 
   rename(Region = state, Indicator = measure, Units = units, Med_Value = median,
-         Year = end_year, Trend_Conf = trend_confidence) %>% 
+         Year = end_year) %>% 
   filter(Indicator %in% c("Ammoniacal nitrogen", "Nitrate-nitrite nitrogen"),
          Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Indicator, Year) %>% 
-  summarise(Total_MedVal = round(sum(Med_Value), 2))
+  summarise(Total_MedVal = round(sum(Med_Value), 2), Units) %>% 
+  distinct()
 
 # Takes the new_rivernitrogen then convert it to wide format.
 rivernitrogen_wide <- new_rivernitrogen %>% 
   spread(key = Indicator,
          value = Total_MedVal)
 rivernitrogen_wide
-
-df <- river_nitrogen %>%
-  rename(Region = state, Indicator = measure, Units = units, Med_Value = median,
-         Year = end_year, Trend_Conf = trend_confidence) %>% 
-  filter(Indicator == "Total nitrogen", Year >= 2002, Year <= 2019)%>% 
-  group_by(Region, Indicator, Year) %>% 
-  summarise(Total_MedVal = round(sum(Med_Value), 2))
-
-df1 <- df %>% 
-  spread(key = Indicator,
-         value = Total_MedVal)
-df1
 
 # # Takes the river_ecoli dataset then take the lat and long variables 
 # # to get the full address. Then save it as new_riverecoli.
