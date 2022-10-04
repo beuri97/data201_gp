@@ -1,0 +1,63 @@
+---
+title: "Untitled"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(leaflet)
+
+water_quality <- read_csv("water_quality.csv")
+
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+water_quality %>% 
+  filter(Indicator == "E.coli", Water_Categ == "Groundwater Quality") %>%
+  ggplot(aes(x = Year, y = Total_MedVal, fill = Region)) +
+  geom_bar(stat = "identity") +
+  xlim(2002, 2019) +
+  theme_bw()
+```
+
+### Chart C
+
+```{r}
+water_quality %>% 
+  filter(Indicator != "E.coli", Water_Categ == "Groundwater Quality") %>%
+  ggplot(aes(x = Year, y = Total_MedVal, fill = Region)) +
+  geom_bar(stat = "identity") +
+  xlim(2002, 2019) +
+  theme_bw()
+```
+
+### Chart D
+
+```{r}
+water_quality %>% 
+  filter(Water_Categ == "Groundwater Quality") %>%
+  ggplot(aes(x = Year, y = Total_MedVal, fill = Region)) +
+  geom_bar(stat = "identity") +
+  xlim(2002, 2019) +
+  theme_bw()
+```
+ 
+ 

@@ -2,10 +2,6 @@
 # visualisations, reading, writing, and manipulating data.
 library(tidyverse)
 
-# Load the tidygeocoder package to be able to use a function to convert the given latitude and longitude
-# to address.
-library(tidygeocoder)
-
 # Load the readxl package to be able to use a function to read Excel files.
 library(readxl)
 
@@ -15,9 +11,10 @@ library(skimr)
 # Load the knitr package to be able to use a function for presenting information in a tidy format.
 library(knitr)
 
-# Load the visdat  
+# Load the visdat package to be able to use a function for visualisation of the data. 
 library(visdat)
 
+# Load the lubridate package to be able to use function(s) for manipulating datetime data type.
 library(lubridate)
 
 # Read the groundwq_2004-2020.xlsx and store it as groundwq for analysis.
@@ -28,33 +25,13 @@ groundwq <- "groundwq_2004-2020.xlsx" %>%
 groundwq %>% 
   glimpse()
 
-# The following lines of code show the entirety of the summary statistics of the whole groundwq.
-# The skim() provides a detailed overview of the dataframe.
-# The select() choose the columns specified.
-# The kable() creates and presents the overview of the dataframe in a table format.
-groundwq %>% 
-  skim() %>% 
-  select(1:7) %>% 
-  kable()
-
-groundwq %>% 
-  skim() %>% 
-  select(8:14) %>% 
-  kable()
-
-groundwq %>% 
-  skim() %>% 
-  select(15:21) %>% 
-  kable()
-
 # Reads the entirety of groundwq and creates a plot to check if it contains missing data (NA).
 groundwq %>% 
   vis_miss(warn_large_data = FALSE)
 
-# Takes the groundwq modify CensoredValue and create a new variable called Year, select the relevant columns 
+# Takes the groundwq modify and rename CensoredValue, Date, and Units, select the relevant columns 
 # and rows, group the rows by Region, Indicator, and Year then create an new data frame containing the sum of
 # the CensoredValue rounded off to 2.
-
 new_groundwq <- groundwq %>% 
   mutate(CensoredValue = ifelse(is.na(CensoredValue), NA_integer_, CensoredValue),
          Year = year(Date),
@@ -76,38 +53,35 @@ groundwq_wide
 river_ecoli <- "new_river_ecoli.csv" %>% 
   read_csv()
 
+# Gives an overview of river_ecoli such as columns, data types, the possible values, number of rows and columns.
+river_ecoli %>% 
+  glimpse()
+
 # Reads the entirety of river_ecoli and creates a plot to check if it contains missing data (NA).
 river_ecoli %>% 
   vis_miss()
 
-# Select columns we need and discard rest of them.
-new_river_ecoli <- river_ecoli %>% 
-  select(Region = state, Year = end_year, Measure = measure, Median = median, 
-         Units = units)
+# Select and rename the columns we need.
+river_ecoli <- river_ecoli %>% 
+  rename(Region = state, Year = end_year, Indicator = measure, Median = median, 
+         Units = units) %>% 
+  select(Region, Year, Indicator, Median, Units)
 
-# Check any NAs present in this data set.
-new_river_ecoli %>% 
+# Check for missing data again (NA)
+river_ecoli %>% 
   vis_miss()
 
-# Wide format data set spread by Region as key
-new_riverecoli <- new_river_ecoli %>% 
-  group_by(Region, Year) %>% 
-  summarise(Indicator = Measure, Total_MedVal = sum(round(Median,2)), Units) %>% 
+# Takes the river_ecoli group the rows by Region, Indicator, and Year then create an new data frame containing the 
+# sum of the Median rounded off to 2.
+new_riverecoli <- river_ecoli %>% 
+  group_by(Region, Year, Indicator) %>% 
+  summarise(Total_MedVal = round(sum(Median), 2), Units) %>% 
   unique()
 
+# Wide format data set spread by Region as key
 new_riverecoli %>% 
   spread(key = Region,
          value = Total_MedVal)
-
-# Wide format data set spread by Indicator as key
-new2 <- new_river_ecoli %>% 
-  group_by(Region, Year) %>% 
-  summarise(Indicator = Measure, Value = sum(round(Median,2))) %>% 
-  unique() %>% 
-  filter(Year >= 2002, Year <= 2019) %>% 
-  spread(key = Indicator,
-         value = Value)
-
 
 # Read the new_river_nitrogen.csv and store it as river_nitrogen for analysis.
 river_nitrogen <- "new_river_nitrogen.csv" %>% 
@@ -121,20 +95,6 @@ river_nitrogen %>%
 # Select the relevant columns for analysis.
 river_nitrogen <- river_nitrogen %>% 
   select(measure, units, median, end_year, state)
-
-# The following lines of code show the entirety of the summary statistics of the whole river_nitrogen.
-# The skim() provides a detailed overview of the dataframe.
-# The select() choose the columns specified.
-# The kable() creates and presents the overview of the dataframe in a table format.
-river_nitrogen %>% 
-  skim() %>% 
-  select(1:7) %>% 
-  kable()
-
-river_nitrogen %>% 
-  skim() %>% 
-  select(8:14) %>% 
-  kable()
 
 # Reads the entirety of river_nitrogen and creates a plot to check if it contains missing data (NA). 
 river_nitrogen %>% 
@@ -158,57 +118,26 @@ rivernitrogen_wide <- new_rivernitrogen %>%
          value = Total_MedVal)
 rivernitrogen_wide
 
-add_col <- function(base_data, new_data) {
-  new_df <- cbind(base_data, new_data)
-  return(new_df)
-}
-
+# Join new_rivernitrogen and new_riverecoli to create river_quality dataframe.
 river_quality <- new_rivernitrogen %>% 
   full_join(new_riverecoli)
 
+# Merge the tibble of categories with the existing groundwq and river_quality dataframes.
 groundwq_categ <- tibble(Water_Categ = rep(c("Groundwater Quality"), each = nrow(new_groundwq)))
 river_categ <- tibble(Water_Categ = rep(c("River Quality"), each = nrow(river_quality)))
 
-groundwq_with_categ <- add_col(new_groundwq, groundwq_categ)
-riverq_with_categ <- add_col(river_quality, river_categ)
+final_groundwq <- cbind(new_groundwq, groundwq_categ)
+final_riverq <- cbind(river_quality, river_categ)
 
-water_quality <- groundwq_with_categ %>% 
-  full_join(riverq_with_categ) %>% 
-  mutate(Indicator = case_when(Indicator == "E. coli" ~ "E.coli", TRUE ~ Indicator))
-
-# # Takes the river_ecoli dataset then take the lat and long variables 
-# # to get the full address. Then save it as new_riverecoli.
-# new_riverecoli <- river_ecoli %>% 
-#   reverse_geocode(lat = lat, long = long,
-#                   method = "osm", full_results = TRUE)
-# 
-# # Takes the river_ecoli dataset then take the lat and long variables 
-# # to get the full address. Then save it as new_rivernitrogen.
-# new_rivernitrogen <- river_nitrogen %>% 
-#   reverse_geocode(lat = lat, long = long,
-#                   method = "osm", full_results = TRUE)
-# 
-# # Write the new dataset as CSVs for use.
-# write_csv(new_riverecoli, "new_river_ecoli.csv")
-# write_csv(new_rivernitrogen, "new_river_nitrogen.csv")
+# Join the groundwq and river_quality to create water quality dataframe.
+# Normalise the indicator for all E.coli observation.
+water_quality <- final_groundwq %>% 
+  full_join(final_riverq) %>% 
+  mutate(Indicator = case_when(Indicator == "E. coli" ~ "E.coli", 
+                               Indicator == "Nitrate nitrogen" ~ "Nitrate-nitrite nitrogen",
+                               TRUE ~ Indicator))
 
 water_quality %>% 
-  filter(Indicator != "E.coli", Water_Categ == "Groundwater Quality", Region == "Auckland") %>% 
-  ggplot(aes(x = Year, y = Total_MedVal)) +
-  geom_line() +
-  xlim(2007, 2019) +
-  theme_bw()
+  vis_miss()
 
-
-water_quality %>% 
-  filter(Indicator %in% c("Nitrate nitrogen")) %>% 
-  ggplot(mapping=aes(x = Region, y = Total_MedVal)) + 
-  geom_boxplot()
-
-df <- groundwq %>% 
-  filter(Indicator == "E.coli", Region == "Bay of Plenty")
-
-df1 <- water_quality %>% 
-  filter(Indicator == "E.coli", Water_Categ == "Groundwater Quality")
-  
-
+write_csv(water_quality, "water_quality.csv")
