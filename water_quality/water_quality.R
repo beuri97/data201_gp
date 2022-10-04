@@ -61,7 +61,7 @@ new_groundwq <- groundwq %>%
   select(Region, Indicator, Units, Year, CensoredValue) %>% 
   filter(Indicator %in% c("E.coli", "Nitrate nitrogen"), Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Indicator, Year) %>% 
-  summarise(Value = round(sum(CensoredValue), 2), Units) %>% 
+  summarise(Total_MedVal = round(sum(CensoredValue), 2), Units) %>% 
   distinct()
 
 # Takes the new_groundwq then convert it to wide format.
@@ -90,7 +90,7 @@ new_river_ecoli %>%
 # Wide format data set spread by Region as key
 new <- new_river_ecoli %>% 
   group_by(Region, Year) %>% 
-  summarise(Indicator = Measure, Value = sum(round(Median,2))) %>% 
+  summarise(Indicator = Measure, Total_MedVal = sum(round(Median,2))) %>% 
   unique() %>% 
   filter(Year >= 2002, Year <= 2019) %>% 
   spread(key = Region,
@@ -154,6 +154,19 @@ rivernitrogen_wide <- new_rivernitrogen %>%
   spread(key = Indicator,
          value = Total_MedVal)
 rivernitrogen_wide
+
+add_col <- function(base_data, new_data) {
+  new_df <- cbind(base_data, new_data)
+  return(new_df)
+}
+
+groundwq_categ <- rep(c("Groundwater Quality"), each = nrow(new_groundwq))
+river_categ <- rep(c("River"))
+
+add_col(new_groundwq, groundwq_categ)
+
+river_quality <- new_rivernitrogen %>% 
+  full_join(new_river_ecoli, by="Region")
 
 # # Takes the river_ecoli dataset then take the lat and long variables 
 # # to get the full address. Then save it as new_riverecoli.
