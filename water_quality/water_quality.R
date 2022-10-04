@@ -189,7 +189,8 @@ water_quality <- groundwq_with_categ %>%
 # write_csv(new_riverecoli, "new_river_ecoli.csv")
 # write_csv(new_rivernitrogen, "new_river_nitrogen.csv")
 
-
+water_quality %>% 
+  ggplot()
 
 
 
