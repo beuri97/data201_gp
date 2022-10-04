@@ -171,7 +171,8 @@ groundwq_with_categ <- add_col(new_groundwq, groundwq_categ)
 riverq_with_categ <- add_col(river_quality, river_categ)
 
 water_quality <- groundwq_with_categ %>% 
-  full_join(riverq_with_categ)
+  full_join(riverq_with_categ) %>% 
+  mutate(Indicator = case_when(Indicator == "E. coli" ~ "E.coli", TRUE ~ Indicator))
 
 # # Takes the river_ecoli dataset then take the lat and long variables 
 # # to get the full address. Then save it as new_riverecoli.
@@ -190,7 +191,11 @@ water_quality <- groundwq_with_categ %>%
 # write_csv(new_rivernitrogen, "new_river_nitrogen.csv")
 
 water_quality %>% 
-  ggplot()
+  filter(Indicator != "E.coli", Water_Categ == "Groundwater Quality", Region == "Auckland") %>% 
+  ggplot(aes(x = Year, y = Total_MedVal)) +
+  geom_line() +
+  xlim(2007, 2019) +
+  theme_bw()
 
 
 
