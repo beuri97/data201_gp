@@ -136,3 +136,40 @@ rivernitrogen_wide
 # # Write the new dataset as CSVs for use.
 # write_csv(new_riverecoli, "new_river_ecoli.csv")
 # write_csv(new_rivernitrogen, "new_river_nitrogen.csv")
+
+
+
+
+
+# Load 'new_river_ecoli.csv' data
+river_ecoli <- read_csv("new_river_ecoli.csv")
+
+river_ecoli %>% 
+  vis_miss()
+
+# Select columns we need and discard rest of them.
+new_river_ecoli <- river_ecoli %>% 
+  select(Region = state, Year = end_year, Measure = measure, Median = median, 
+         Units = units)
+
+# Check any NAs present in this data set.
+new_river_ecoli %>% 
+  vis_miss()
+
+# Wide format data set spread by Region as key
+new <- new_river_ecoli %>% 
+  group_by(Region, Year) %>% 
+  summarise(Indicator = Measure, Value = sum(round(Median,2))) %>% 
+  unique() %>% 
+  filter(Year >= 2002, Year <= 2019) %>% 
+  spread(key = Region,
+         value = Value)
+
+# Wide format data set spread by Indicator as key
+new2 <- new_river_ecoli %>% 
+  group_by(Region, Year) %>% 
+  summarise(Indicator = Measure, Value = sum(round(Median,2))) %>% 
+  unique() %>% 
+  filter(Year >= 2002, Year <= 2019) %>% 
+  spread(key = Indicator,
+         value = Value)
