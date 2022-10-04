@@ -72,6 +72,33 @@ river_ecoli <- read_csv("new_river_ecoli.csv")
 river_nitrogen <- "new_river_nitrogen.csv" %>% 
   read_csv()
 
+river_nitrogen %>% 
+  glimpse()
+
+river_nitrogen <- river_nitrogen %>% 
+  select(field_1:trend_confidence, state)
+
+river_nitrogen %>% 
+  skim() %>% 
+  select(1:7) %>% 
+  kable()
+
+river_nitrogen %>% 
+  skim() %>% 
+  select(8:14) %>% 
+  kable()
+
+river_nitrogen %>% 
+  skim() %>% 
+  select(15:19) %>% 
+  kable()
+
+river_nitrogen %>% 
+  vis_miss()
+
+df<-river_nitrogen %>% 
+  filter(measure == "Ammoniacal nitrogen", end_year >= 2002, end_year <= 2019, state == "Auckland")
+
 # # takes the river_ecoli dataset then take the lat and long variables 
 # # to get the full address. Then save it as new_riverecoli.
 # new_riverecoli <- river_ecoli %>% 
