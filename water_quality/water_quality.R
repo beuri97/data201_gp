@@ -67,7 +67,7 @@ new_groundwq <- groundwq %>%
 # Takes the new_groundwq then convert it to wide format.
 groundwq_wide <- new_groundwq %>% 
   spread(key = Region,
-         value = Value)
+         value = Total_MedVal)
 groundwq_wide
 
 # Load 'new_river_ecoli.csv' data
@@ -88,13 +88,14 @@ new_river_ecoli %>%
   vis_miss()
 
 # Wide format data set spread by Region as key
-new <- new_river_ecoli %>% 
+new_riverecoli <- new_river_ecoli %>% 
   group_by(Region, Year) %>% 
-  summarise(Indicator = Measure, Total_MedVal = sum(round(Median,2))) %>% 
-  unique() %>% 
-  filter(Year >= 2002, Year <= 2019) %>% 
+  summarise(Indicator = Measure, Total_MedVal = sum(round(Median,2)), Units) %>% 
+  unique()
+
+new_riverecoli %>% 
   spread(key = Region,
-         value = Value)
+         value = Total_MedVal)
 
 # Wide format data set spread by Indicator as key
 new2 <- new_river_ecoli %>% 
@@ -160,13 +161,17 @@ add_col <- function(base_data, new_data) {
   return(new_df)
 }
 
-groundwq_categ <- rep(c("Groundwater Quality"), each = nrow(new_groundwq))
-river_categ <- rep(c("River"))
-
-add_col(new_groundwq, groundwq_categ)
-
 river_quality <- new_rivernitrogen %>% 
-  full_join(new_river_ecoli, by="Region")
+  full_join(new_riverecoli)
+
+groundwq_categ <- tibble(Water_Categ = rep(c("Groundwater Quality"), each = nrow(new_groundwq)))
+river_categ <- tibble(Water_Categ = rep(c("River Quality"), each = nrow(river_quality)))
+
+groundwq_with_categ <- add_col(new_groundwq, groundwq_categ)
+riverq_with_categ <- add_col(river_quality, river_categ)
+
+water_quality <- groundwq_with_categ %>% 
+  full_join(riverq_with_categ)
 
 # # Takes the river_ecoli dataset then take the lat and long variables 
 # # to get the full address. Then save it as new_riverecoli.
