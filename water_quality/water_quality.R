@@ -70,7 +70,41 @@ groundwq_wide <- new_groundwq %>%
          value = Value)
 groundwq_wide
 
-river_ecoli <- read_csv("new_river_ecoli.csv")
+# Load 'new_river_ecoli.csv' data
+river_ecoli <- "new_river_ecoli.csv" %>% 
+  read_csv()
+
+# Reads the entirety of river_ecoli and creates a plot to check if it contains missing data (NA).
+river_ecoli %>% 
+  vis_miss()
+
+# Select columns we need and discard rest of them.
+new_river_ecoli <- river_ecoli %>% 
+  select(Region = state, Year = end_year, Measure = measure, Median = median, 
+         Units = units)
+
+# Check any NAs present in this data set.
+new_river_ecoli %>% 
+  vis_miss()
+
+# Wide format data set spread by Region as key
+new <- new_river_ecoli %>% 
+  group_by(Region, Year) %>% 
+  summarise(Indicator = Measure, Value = sum(round(Median,2))) %>% 
+  unique() %>% 
+  filter(Year >= 2002, Year <= 2019) %>% 
+  spread(key = Region,
+         value = Value)
+
+# Wide format data set spread by Indicator as key
+new2 <- new_river_ecoli %>% 
+  group_by(Region, Year) %>% 
+  summarise(Indicator = Measure, Value = sum(round(Median,2))) %>% 
+  unique() %>% 
+  filter(Year >= 2002, Year <= 2019) %>% 
+  spread(key = Indicator,
+         value = Value)
+
 
 # Read the new_river_nitrogen.csv and store it as river_nitrogen for analysis.
 river_nitrogen <- "new_river_nitrogen.csv" %>% 
@@ -141,35 +175,3 @@ rivernitrogen_wide
 
 
 
-# Load 'new_river_ecoli.csv' data
-river_ecoli <- read_csv("new_river_ecoli.csv")
-
-river_ecoli %>% 
-  vis_miss()
-
-# Select columns we need and discard rest of them.
-new_river_ecoli <- river_ecoli %>% 
-  select(Region = state, Year = end_year, Measure = measure, Median = median, 
-         Units = units)
-
-# Check any NAs present in this data set.
-new_river_ecoli %>% 
-  vis_miss()
-
-# Wide format data set spread by Region as key
-new <- new_river_ecoli %>% 
-  group_by(Region, Year) %>% 
-  summarise(Indicator = Measure, Value = sum(round(Median,2))) %>% 
-  unique() %>% 
-  filter(Year >= 2002, Year <= 2019) %>% 
-  spread(key = Region,
-         value = Value)
-
-# Wide format data set spread by Indicator as key
-new2 <- new_river_ecoli %>% 
-  group_by(Region, Year) %>% 
-  summarise(Indicator = Measure, Value = sum(round(Median,2))) %>% 
-  unique() %>% 
-  filter(Year >= 2002, Year <= 2019) %>% 
-  spread(key = Indicator,
-         value = Value)
