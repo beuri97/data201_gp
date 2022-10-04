@@ -54,6 +54,7 @@ groundwq %>%
 # Takes the groundwq modify CensoredValue and create a new variable called Year, select the relevant columns 
 # and rows, group the rows by Region, Indicator, and Year then create an new data frame containing the sum of
 # the CensoredValue rounded off to 2.
+
 new_groundwq <- groundwq %>% 
   mutate(CensoredValue = ifelse(is.na(CensoredValue), NA_integer_, CensoredValue),
          Year = year(Date),
@@ -61,6 +62,7 @@ new_groundwq <- groundwq %>%
   select(Region, Indicator, Units, Year, CensoredValue) %>% 
   filter(Indicator %in% c("E.coli", "Nitrate nitrogen"), Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Indicator, Year) %>% 
+  na.omit() %>% 
   summarise(Total_MedVal = round(sum(CensoredValue), 2), Units) %>% 
   distinct()
 
@@ -198,4 +200,15 @@ water_quality %>%
   theme_bw()
 
 
+water_quality %>% 
+  filter(Indicator %in% c("Nitrate nitrogen")) %>% 
+  ggplot(mapping=aes(x = Region, y = Total_MedVal)) + 
+  geom_boxplot()
+
+df <- groundwq %>% 
+  filter(Indicator == "E.coli", Region == "Bay of Plenty")
+
+df1 <- water_quality %>% 
+  filter(Indicator == "E.coli", Water_Categ == "Groundwater Quality")
+  
 
