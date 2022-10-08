@@ -1,0 +1,75 @@
+---
+title: "Water Quality"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(shiny)
+
+water_quality <- read_csv("water_quality.csv")
+
+```
+
+Column {.sidebar}
+-----------------------------------------------------------------------
+```{r}
+selectInput("region", label = "Region", choices = c("All", sort(water_quality$Region)), selected = "All")
+
+radioButtons("category", label = "Category", choices = c(water_quality$Water_Categ %>% unique()))
+
+radioButtons("indicator", label = "Indicator", choices = c(water_quality$Indicator %>% unique()))
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Plot 1
+
+```{r}
+renderPlotly(ggplotly(water_quality %>%
+  filter(str_detect(Region, if_else(input$region == "All", "", input$region)),
+         Indicator == input$indicator, Water_Categ == input$category) %>% 
+  ggplot(aes(x = Year, y = Total_MedVal, fill = Region), text = paste("Region:", Region)) +
+  geom_bar(stat = "identity")))
+```
+
+Row {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+water_quality %>% 
+  filter(Indicator != "E.coli", Water_Categ == "Groundwater Quality") %>%
+  ggplot(aes(x = Year, y = Total_MedVal, fill = Region)) +
+  geom_bar(stat = "identity") +
+  xlim(2002, 2019) +
+  theme_bw()
+```
+
+### Chart D
+
+```{r}
+water_quality %>% 
+  filter(Water_Categ == "Groundwater Quality") %>%
+  ggplot(aes(x = Year, y = Total_MedVal, fill = Region)) +
+  geom_bar(stat = "identity") +
+  xlim(2002, 2019) +
+  theme_bw()
+```
+ 
+ 
