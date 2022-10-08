@@ -146,37 +146,8 @@ activity_long %>% ggplot(aes(x = Year, y = Value)) + geom_line(lwd = 1) +
     rows = vars(Area))
 
 
-
-
-activity_wide2 %>% ggplot(aes(x = Year, y = `Beef Cattle`, colour = Area)) + geom_point()  # Total beef cattle
-
-activity_wide %>% ggplot(aes(x = Year, y = `Total dairy cattle`, colour = Area)) + geom_point() # Total dairy cattle
-
-activity_wide %>% ggplot(aes(x = Year, y = `Total deer`, colour = Area)) + geom_point() # Total deer
-
-activity_wide %>% ggplot(aes(x = Year, y = `Total sheep`, colour = Area)) + geom_point() # Total sheep
-
-activity_wide %>% ggplot(aes(x = Year, y = `Total apples (hectares)`, colour = Area)) + geom_point() # Total apple (hectares)
-
-activity_wide %>% ggplot(aes(x = Year, y = `Total avocados (hectares)`, colour = Area)) + geom_point() # Total avocados (hectares)
-
-activity_wide %>% ggplot(aes(x = Year, y = `Total kiwifruit (hectares)`, colour = Area)) + geom_point() # Total kiwifruit (hectares)
-
-activity_wide %>% ggplot(aes(x = Year, y = `Total olives (hectares)`, colour = Area)) + geom_point() # Total olives (hectares)
-
-activity_wide %>% ggplot(aes(x = Year, y = `Total onions (hectares)`, colour = Area)) + geom_point() # Total onions (hectares)
-
-activity_wide %>% ggplot(aes(x = Year, y = `Total potatoes (hectares)`, colour = Area)) + geom_point() # Total potatoes (hectares)
-
-activity_wide %>% ggplot(aes(x = Year, y = `Total squash (hectares)`, colour = Area)) + geom_point() # Total squash (hectares)
-
-activity_wide %>% ggplot(aes(x = Year, y = `Total wine grapes (hectares)`, colour = Area)) + geom_point() # Total wine grapes (hectares)
-
-
-
-
 #----------------------------------- Farm Area Dataset
-
+# reading the dataset 
 data <- read_csv("https://raw.githubusercontent.com/beuri97/data201_gp/agri-activity/data/data.csv")
 
 # creating farm area table
@@ -191,7 +162,7 @@ farm_area$region <- gsub(" Region", "", as.character(farm_area$region))  # remov
 
 farm_area %>% arrange(desc(year)) # Arranging form highest to lowest order
 
-farm_area <- farm_area %>% filter(!Area == "New Zealand")   # Removing all rows that is New Zealand
+farm_area <- farm_area %>% filter(!region == "New Zealand")   # Removing all rows that is New Zealand
 
 #------------ Joining Farm Area Dataset and Farm Activity (Wide) Dataset
 farm_area <- farm_area %>%  # renaming
