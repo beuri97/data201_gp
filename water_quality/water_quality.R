@@ -35,7 +35,10 @@ groundwq %>%
 new_groundwq <- groundwq %>% 
   mutate(CensoredValue = ifelse(is.na(CensoredValue), NA_integer_, CensoredValue),
          Year = year(Date),
-         Units = case_when(Indicator == "E.coli" ~ "cfu/100ml", TRUE ~ "g/m3")) %>% 
+         Units = case_when(Indicator == "E.coli" ~ "cfu/100ml", TRUE ~ "g/m3"),
+         Region = case_when(Region == "Hawkes Bay" ~ "Hawke's Bay",
+                            Region == "Manawatu-Whanganui" ~ "Manawatū-Whanganui",
+                            TRUE ~ Region)) %>% 
   select(Region, Indicator, Units, Year, CensoredValue) %>% 
   filter(Indicator %in% c("E.coli", "Nitrate nitrogen"), Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Indicator, Year) %>% 
@@ -73,7 +76,8 @@ river_ecoli %>%
 
 # Takes the river_ecoli group the rows by Region, Indicator, and Year then create an new data frame containing the 
 # sum of the Median rounded off to 2.
-new_riverecoli <- river_ecoli %>% 
+new_riverecoli <- river_ecoli %>%
+  filter(Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Year, Indicator) %>% 
   summarise(Total_MedVal = round(sum(Median), 2), Units) %>% 
   unique()
