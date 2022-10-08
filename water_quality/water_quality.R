@@ -36,20 +36,20 @@ new_groundwq <- groundwq %>%
   mutate(CensoredValue = ifelse(is.na(CensoredValue), NA_integer_, CensoredValue),
          Year = year(Date),
          Units = case_when(Indicator == "E.coli" ~ "cfu/100ml", TRUE ~ "g/m3"),
-         Region = case_when(Region == "Hawkes Bay" ~ "Hawke's Bay",
-                            Region == "Manawatu-Whanganui" ~ "Manawatū-Whanganui",
-                            TRUE ~ Region)) %>% 
+         Region = case_when(Region == "Hawkes Bay" ~ "Hawke's Bay", TRUE ~ Region)) %>% 
   select(Region, Indicator, Units, Year, CensoredValue) %>% 
   filter(Indicator %in% c("E.coli", "Nitrate nitrogen"), Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Indicator, Year) %>% 
   na.omit() %>% 
-  summarise(Total_MedVal = round(sum(CensoredValue), 2), Units) %>% 
+  summarise(Total_MedVal = round(sum(CensoredValue), 2)) %>% 
   distinct()
 
 # Takes the new_groundwq then convert it to wide format.
 groundwq_wide <- new_groundwq %>% 
-  spread(key = Region,
-         value = Total_MedVal)
+  spread(key = Indicator,
+         value = Total_MedVal) %>% 
+  mutate(`E.coli (cfu/100ml)` = E.coli, `Nitrate nitrogen (g/m3)` = `Nitrate nitrogen`) %>% 
+  select(-c("E.coli", "Nitrate nitrogen"))
 groundwq_wide
 
 # Load 'new_river_ecoli.csv' data
@@ -79,13 +79,15 @@ river_ecoli %>%
 new_riverecoli <- river_ecoli %>%
   filter(Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Year, Indicator) %>% 
-  summarise(Total_MedVal = round(sum(Median), 2), Units) %>% 
+  summarise(Total_MedVal = round(sum(Median), 2)) %>% 
   unique()
 
 # Wide format data set spread by Region as key
-new_riverecoli %>% 
-  spread(key = Region,
-         value = Total_MedVal)
+riverecoli_wide <- new_riverecoli %>% 
+  spread(key = Indicator,
+         value = Total_MedVal) %>% 
+  mutate(`E.coli (cfu/100ml)` = `E. coli`) %>% 
+  select(-"E. coli")
 
 # Read the new_river_nitrogen.csv and store it as river_nitrogen for analysis.
 river_nitrogen <- "new_river_nitrogen.csv" %>% 
@@ -113,35 +115,28 @@ new_rivernitrogen <- river_nitrogen %>%
   filter(Indicator %in% c("Ammoniacal nitrogen", "Nitrate-nitrite nitrogen"),
          Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Indicator, Year) %>% 
-  summarise(Total_MedVal = round(sum(Med_Value), 2), Units) %>% 
+  summarise(Total_MedVal = round(sum(Med_Value), 2)) %>% 
   distinct()
 
 # Takes the new_rivernitrogen then convert it to wide format.
 rivernitrogen_wide <- new_rivernitrogen %>% 
   spread(key = Indicator,
-         value = Total_MedVal)
+         value = Total_MedVal) %>% 
+  mutate(`Ammoniacal nitrogen (g/m3)` = `Ammoniacal nitrogen`,
+         `Nitrate-nitrite nitrogen (g/m3)` = `Nitrate-nitrite nitrogen`) %>% 
+  select(-c(`Ammoniacal nitrogen`, `Nitrate-nitrite nitrogen`))
 rivernitrogen_wide
 
 # Join new_rivernitrogen and new_riverecoli to create river_quality dataframe.
-river_quality <- new_rivernitrogen %>% 
-  full_join(new_riverecoli)
+river_quality <- rivernitrogen_wide %>% 
+  full_join(riverecoli_wide)
 
 # Merge the tibble of categories with the existing groundwq and river_quality dataframes.
-groundwq_categ <- tibble(Water_Categ = rep(c("Groundwater Quality"), each = nrow(new_groundwq)))
-river_categ <- tibble(Water_Categ = rep(c("River Quality"), each = nrow(river_quality)))
 
-final_groundwq <- cbind(new_groundwq, groundwq_categ)
-final_riverq <- cbind(river_quality, river_categ)
 
 # Join the groundwq and river_quality to create water quality dataframe.
 # Normalise the indicator for all E.coli observation.
-water_quality <- final_groundwq %>% 
-  full_join(final_riverq) %>% 
-  mutate(Indicator = case_when(Indicator == "E. coli" ~ "E.coli", 
-                               Indicator == "Nitrate nitrogen" ~ "Nitrate-nitrite nitrogen",
-                               TRUE ~ Indicator))
 
-water_quality %>% 
-  vis_miss()
 
+# Generate csv file
 write_csv(water_quality, "water_quality.csv")

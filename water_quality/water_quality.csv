@@ -1,1137 +1,876 @@
-Region,Indicator,Year,Total_MedVal,Units,Water_Categ
-Auckland,E.coli,2005,42,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2006,891,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2007,7550,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2008,408,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2009,230,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2010,116,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2011,172,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2012,49.6,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2013,150.9,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2014,582.4,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2015,232.7,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2016,665.1,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2017,320,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2018,761,cfu/100ml,Groundwater Quality
-Auckland,E.coli,2019,1626,cfu/100ml,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2004,57.56,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2005,58.64,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2006,58.85,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2007,66.76,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2008,246.34,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2009,272.06,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2010,129.15,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2011,166.54,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2012,320.24,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2013,188.91,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2014,293.75,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2015,406.54,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2016,360.16,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2017,397.65,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2018,389.64,g/m3,Groundwater Quality
-Auckland,Nitrate-nitrite nitrogen,2019,365.54,g/m3,Groundwater Quality
-Bay of Plenty,E.coli,2015,1,cfu/100ml,Groundwater Quality
-Bay of Plenty,E.coli,2016,24.7,cfu/100ml,Groundwater Quality
-Bay of Plenty,E.coli,2017,38.8,cfu/100ml,Groundwater Quality
-Bay of Plenty,E.coli,2018,16.1,cfu/100ml,Groundwater Quality
-Bay of Plenty,E.coli,2019,55.6,cfu/100ml,Groundwater Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2009,3,g/m3,Groundwater Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2010,3.62,g/m3,Groundwater Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2011,3.62,g/m3,Groundwater Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2012,3.16,g/m3,Groundwater Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2013,3.71,g/m3,Groundwater Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2014,2.63,g/m3,Groundwater Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2015,33.22,g/m3,Groundwater Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2016,52.45,g/m3,Groundwater Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2017,60.28,g/m3,Groundwater Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2018,61.36,g/m3,Groundwater Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2019,55.34,g/m3,Groundwater Quality
-Canterbury,E.coli,2004,1055,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2005,6409,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2006,5816,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2007,3131,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2008,7234,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2009,5315,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2010,1738,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2011,6368,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2012,1452,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2013,4692,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2014,2710,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2015,3910,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2016,3066,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2017,9568,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2018,3610,cfu/100ml,Groundwater Quality
-Canterbury,E.coli,2019,9845,cfu/100ml,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2004,2265.2,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2005,2175.5,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2006,3127.77,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2007,2712.28,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2008,3017.75,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2009,3196.61,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2010,3443.3,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2011,3130.48,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2012,3552.89,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2013,3614.54,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2014,3791.86,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2015,3245.4,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2016,3396.48,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2017,3765.01,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2018,3749.8,g/m3,Groundwater Quality
-Canterbury,Nitrate-nitrite nitrogen,2019,4159.47,g/m3,Groundwater Quality
-Gisborne,E.coli,2004,1092,cfu/100ml,Groundwater Quality
-Gisborne,E.coli,2005,1,cfu/100ml,Groundwater Quality
-Gisborne,E.coli,2011,228,cfu/100ml,Groundwater Quality
-Gisborne,E.coli,2012,2833,cfu/100ml,Groundwater Quality
-Gisborne,E.coli,2013,1097,cfu/100ml,Groundwater Quality
-Gisborne,E.coli,2014,388,cfu/100ml,Groundwater Quality
-Gisborne,E.coli,2015,425.1,cfu/100ml,Groundwater Quality
-Gisborne,E.coli,2016,264.6,cfu/100ml,Groundwater Quality
-Gisborne,E.coli,2017,3340.3,cfu/100ml,Groundwater Quality
-Gisborne,E.coli,2018,216.6,cfu/100ml,Groundwater Quality
-Gisborne,E.coli,2019,1268.9,cfu/100ml,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2004,7.92,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2005,10.94,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2006,6.88,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2007,11.92,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2008,10.05,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2009,15.48,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2010,27.06,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2011,20.78,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2012,12.89,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2013,19.32,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2014,32.42,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2015,5.72,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2016,34.21,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2017,59.53,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2018,25.74,g/m3,Groundwater Quality
-Gisborne,Nitrate-nitrite nitrogen,2019,34.61,g/m3,Groundwater Quality
-Hawke's Bay,E.coli,2005,168,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2006,126,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2007,86,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2008,105,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2009,80,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2010,97,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2011,92,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2012,96,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2013,51,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2014,159,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2015,395,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2016,1980,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2017,320,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2018,301,cfu/100ml,Groundwater Quality
-Hawke's Bay,E.coli,2019,256,cfu/100ml,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2004,0.05,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2005,64.15,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2006,92.75,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2007,80,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2008,60.51,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2009,81.83,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2010,116.32,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2011,103.57,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2012,109.61,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2013,132.82,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2014,379.86,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2015,424.92,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2016,395.16,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2017,720.28,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2018,772.84,g/m3,Groundwater Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2019,723.13,g/m3,Groundwater Quality
-Manawatū-Whanganui,E.coli,2005,170,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2007,9,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2008,72,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2009,12,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2010,28,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2011,21.1,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2012,27,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2013,96,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2014,148.4,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2015,148,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2016,646,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2017,149,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2018,176,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,E.coli,2019,291,cfu/100ml,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2005,195.35,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2006,188.08,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2007,314.49,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2008,244.62,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2009,306.34,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2010,250.59,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2011,215.79,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2012,288.76,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2013,285.25,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2014,297.59,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2015,507.44,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2016,479.69,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2017,492.68,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2018,519,g/m3,Groundwater Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2019,585.72,g/m3,Groundwater Quality
-Marlborough,E.coli,2005,37,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2006,7,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2008,27,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2009,9,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2010,9,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2011,9,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2012,48,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2013,14,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2014,9,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2015,12,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2016,9,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2017,9,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2018,11,cfu/100ml,Groundwater Quality
-Marlborough,E.coli,2019,2,cfu/100ml,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2004,23.26,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2005,82.25,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2006,92.49,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2007,94.65,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2008,111.94,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2009,96.81,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2010,86.58,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2011,60.07,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2012,60.89,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2013,62.21,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2014,65.58,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2015,71.49,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2016,75.79,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2017,79.72,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2018,77.5,g/m3,Groundwater Quality
-Marlborough,Nitrate-nitrite nitrogen,2019,63.16,g/m3,Groundwater Quality
-Northland,E.coli,2004,428,cfu/100ml,Groundwater Quality
-Northland,E.coli,2005,1538,cfu/100ml,Groundwater Quality
-Northland,E.coli,2006,1483,cfu/100ml,Groundwater Quality
-Northland,E.coli,2007,6091,cfu/100ml,Groundwater Quality
-Northland,E.coli,2008,3360,cfu/100ml,Groundwater Quality
-Northland,E.coli,2009,1013,cfu/100ml,Groundwater Quality
-Northland,E.coli,2010,626,cfu/100ml,Groundwater Quality
-Northland,E.coli,2011,7068,cfu/100ml,Groundwater Quality
-Northland,E.coli,2012,3223,cfu/100ml,Groundwater Quality
-Northland,E.coli,2013,2772,cfu/100ml,Groundwater Quality
-Northland,E.coli,2014,3156,cfu/100ml,Groundwater Quality
-Northland,E.coli,2015,3190,cfu/100ml,Groundwater Quality
-Northland,E.coli,2016,3821,cfu/100ml,Groundwater Quality
-Northland,E.coli,2017,1347,cfu/100ml,Groundwater Quality
-Northland,E.coli,2018,20456.4,cfu/100ml,Groundwater Quality
-Northland,E.coli,2019,25353,cfu/100ml,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2004,183.81,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2005,218.85,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2006,239.77,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2007,253.04,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2008,277.56,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2009,300.65,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2010,309.56,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2011,311.64,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2012,312.27,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2013,301.99,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2014,289.55,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2015,277.48,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2016,298.31,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2017,277.73,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2018,270.59,g/m3,Groundwater Quality
-Northland,Nitrate-nitrite nitrogen,2019,265.77,g/m3,Groundwater Quality
-Otago,E.coli,2010,5,cfu/100ml,Groundwater Quality
-Otago,E.coli,2011,6488,cfu/100ml,Groundwater Quality
-Otago,E.coli,2012,111,cfu/100ml,Groundwater Quality
-Otago,E.coli,2013,1190,cfu/100ml,Groundwater Quality
-Otago,E.coli,2014,104.1,cfu/100ml,Groundwater Quality
-Otago,E.coli,2015,198.1,cfu/100ml,Groundwater Quality
-Otago,E.coli,2016,359.5,cfu/100ml,Groundwater Quality
-Otago,E.coli,2017,375.7,cfu/100ml,Groundwater Quality
-Otago,E.coli,2018,816,cfu/100ml,Groundwater Quality
-Otago,E.coli,2019,294,cfu/100ml,Groundwater Quality
-Otago,Nitrate-nitrite nitrogen,2004,20.3,g/m3,Groundwater Quality
-Otago,Nitrate-nitrite nitrogen,2005,13.92,g/m3,Groundwater Quality
-Otago,Nitrate-nitrite nitrogen,2006,16.9,g/m3,Groundwater Quality
-Otago,Nitrate-nitrite nitrogen,2007,10.77,g/m3,Groundwater Quality
-Otago,Nitrate-nitrite nitrogen,2008,0.46,g/m3,Groundwater Quality
-Otago,Nitrate-nitrite nitrogen,2010,0.12,g/m3,Groundwater Quality
-Otago,Nitrate-nitrite nitrogen,2014,299.83,g/m3,Groundwater Quality
-Otago,Nitrate-nitrite nitrogen,2015,311.21,g/m3,Groundwater Quality
-Otago,Nitrate-nitrite nitrogen,2016,270.55,g/m3,Groundwater Quality
-Otago,Nitrate-nitrite nitrogen,2017,340.12,g/m3,Groundwater Quality
-Otago,Nitrate-nitrite nitrogen,2018,605.68,g/m3,Groundwater Quality
-Otago,Nitrate-nitrite nitrogen,2019,573.29,g/m3,Groundwater Quality
-Southland,E.coli,2004,159,cfu/100ml,Groundwater Quality
-Southland,E.coli,2005,2517,cfu/100ml,Groundwater Quality
-Southland,E.coli,2006,178,cfu/100ml,Groundwater Quality
-Southland,E.coli,2007,164,cfu/100ml,Groundwater Quality
-Southland,E.coli,2008,1008,cfu/100ml,Groundwater Quality
-Southland,E.coli,2009,142,cfu/100ml,Groundwater Quality
-Southland,E.coli,2010,2134,cfu/100ml,Groundwater Quality
-Southland,E.coli,2011,2648,cfu/100ml,Groundwater Quality
-Southland,E.coli,2012,1163,cfu/100ml,Groundwater Quality
-Southland,E.coli,2013,1333,cfu/100ml,Groundwater Quality
-Southland,E.coli,2014,3701,cfu/100ml,Groundwater Quality
-Southland,E.coli,2015,742,cfu/100ml,Groundwater Quality
-Southland,E.coli,2016,2649,cfu/100ml,Groundwater Quality
-Southland,E.coli,2017,187,cfu/100ml,Groundwater Quality
-Southland,E.coli,2018,401,cfu/100ml,Groundwater Quality
-Southland,E.coli,2019,432,cfu/100ml,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2004,392.21,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2005,451.75,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2006,405.19,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2007,494.55,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2008,618.61,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2009,710.4,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2010,773.74,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2011,701.18,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2012,611.93,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2013,590.09,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2014,557.79,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2015,509.75,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2016,520.26,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2017,569.38,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2018,644.58,g/m3,Groundwater Quality
-Southland,Nitrate-nitrite nitrogen,2019,841.92,g/m3,Groundwater Quality
-Taranaki,E.coli,2004,12,cfu/100ml,Groundwater Quality
-Taranaki,E.coli,2006,200,cfu/100ml,Groundwater Quality
-Taranaki,E.coli,2007,1083,cfu/100ml,Groundwater Quality
-Taranaki,E.coli,2011,27,cfu/100ml,Groundwater Quality
-Taranaki,E.coli,2012,245,cfu/100ml,Groundwater Quality
-Taranaki,E.coli,2013,53,cfu/100ml,Groundwater Quality
-Taranaki,E.coli,2014,350,cfu/100ml,Groundwater Quality
-Taranaki,E.coli,2015,735,cfu/100ml,Groundwater Quality
-Taranaki,E.coli,2016,714,cfu/100ml,Groundwater Quality
-Taranaki,E.coli,2017,9188.6,cfu/100ml,Groundwater Quality
-Taranaki,E.coli,2018,320,cfu/100ml,Groundwater Quality
-Taranaki,E.coli,2019,4319,cfu/100ml,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2004,79.85,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2005,40.43,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2006,150.92,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2007,165.55,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2008,16.05,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2009,55.75,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2010,13.11,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2011,68.63,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2012,206.1,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2013,103.04,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2014,335.95,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2015,467.1,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2016,347.55,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2017,398.56,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2018,428.69,g/m3,Groundwater Quality
-Taranaki,Nitrate-nitrite nitrogen,2019,456.13,g/m3,Groundwater Quality
-Tasman,E.coli,2016,5,cfu/100ml,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2004,223.59,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2005,178.96,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2006,213.08,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2007,203.53,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2008,198.95,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2009,206.37,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2010,212.77,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2011,221.04,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2012,193.88,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2013,172.53,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2014,171.57,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2015,182.6,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2016,244.1,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2017,211.1,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2018,267.48,g/m3,Groundwater Quality
-Tasman,Nitrate-nitrite nitrogen,2019,271.2,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2004,1166.89,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2005,1039.07,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2006,1054.58,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2007,1084.12,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2008,1241.7,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2009,1253.69,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2010,1175.49,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2011,1131.95,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2012,1136.22,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2013,1147.63,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2014,1175.34,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2015,1190.47,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2016,1202.75,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2017,1195.85,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2018,1327.66,g/m3,Groundwater Quality
-Waikato,Nitrate-nitrite nitrogen,2019,638.75,g/m3,Groundwater Quality
-Wellington,E.coli,2004,236,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2005,721,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2006,327,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2007,1914,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2008,256,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2009,275,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2010,261,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2011,564,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2012,311,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2013,265,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2014,274,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2015,351,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2016,216,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2017,449,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2018,859,cfu/100ml,Groundwater Quality
-Wellington,E.coli,2019,302,cfu/100ml,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2004,498.82,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2005,563.01,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2006,606.92,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2007,504.56,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2008,547.37,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2009,511.26,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2010,496.91,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2011,498.51,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2012,460.64,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2013,462.85,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2014,464.42,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2015,434.13,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2016,410.08,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2017,391.7,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2018,437.89,g/m3,Groundwater Quality
-Wellington,Nitrate-nitrite nitrogen,2019,492.25,g/m3,Groundwater Quality
-West Coast,E.coli,2004,17,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2005,44,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2006,53,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2007,50,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2008,63,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2009,64,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2010,73,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2011,215,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2012,120,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2013,1098,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2014,553,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2015,237,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2016,1864,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2017,64,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2018,208,cfu/100ml,Groundwater Quality
-West Coast,E.coli,2019,2012,cfu/100ml,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2004,18.87,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2005,30.94,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2006,55.31,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2007,114,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2008,96.71,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2009,84.72,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2010,141.06,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2011,203.12,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2012,182.01,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2013,197.12,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2014,259.31,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2015,242.66,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2016,194.41,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2017,164.65,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2018,204.49,g/m3,Groundwater Quality
-West Coast,Nitrate-nitrite nitrogen,2019,220.25,g/m3,Groundwater Quality
-Auckland,Ammoniacal nitrogen,2002,0.77,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2003,0.88,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2004,0.92,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2005,0.99,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2006,0.97,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2007,0.94,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2008,0.93,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2009,0.86,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2010,0.87,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2011,0.83,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2012,0.87,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2013,0.83,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2014,0.8,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2015,0.79,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2016,0.71,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2017,0.73,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2018,0.82,g/m3,River Quality
-Auckland,Ammoniacal nitrogen,2019,0.83,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2002,8.14,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2003,10.7,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2004,10.7,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2005,10.83,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2006,10.26,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2007,9.85,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2008,9.77,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2009,9.17,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2010,9.07,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2011,8.7,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2012,8.94,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2013,8.82,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2014,8.62,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2015,8.46,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2016,7.21,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2017,7.26,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2018,24.08,g/m3,River Quality
-Auckland,Nitrate-nitrite nitrogen,2019,24,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2002,0.21,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2003,0.12,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2004,0.2,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2005,0.2,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2006,0.2,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2007,0.2,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2008,0.2,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2009,0.2,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2010,0.2,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2011,0.2,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2012,0.38,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2013,0.44,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2014,0.48,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2015,0.53,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2016,0.57,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2017,0.56,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2018,0.46,g/m3,River Quality
-Bay of Plenty,Ammoniacal nitrogen,2019,0.49,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2002,3.67,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2003,3.4,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2004,3.49,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2005,3.52,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2006,3.55,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2007,3.61,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2008,3.68,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2009,3.77,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2010,3.81,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2011,3.89,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2012,6.25,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2013,8.64,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2014,8.89,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2015,10.63,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2016,11.65,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2017,11.83,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2018,9.78,g/m3,River Quality
-Bay of Plenty,Nitrate-nitrite nitrogen,2019,11.59,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2002,0.15,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2003,0.21,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2004,0.24,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2005,0.24,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2006,0.63,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2007,0.66,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2008,0.64,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2009,0.6,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2010,0.58,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2011,0.91,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2012,0.93,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2013,1.29,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2014,1.29,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2015,1.43,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2016,2.67,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2017,3.74,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2018,3.55,g/m3,River Quality
-Canterbury,Ammoniacal nitrogen,2019,3.45,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2002,13.34,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2003,20.53,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2004,20.64,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2005,20.35,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2006,26.36,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2007,26.68,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2008,27.35,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2009,28,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2010,28.1,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2011,69.04,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2012,81.35,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2013,126.56,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2014,138.99,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2015,147.04,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2016,172.12,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2017,199.15,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2018,202.49,g/m3,River Quality
-Canterbury,Nitrate-nitrite nitrogen,2019,205.82,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2004,0.02,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2005,0.02,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2006,0.02,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2007,0.02,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2008,0.02,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2009,0.02,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2010,0.02,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2011,0.02,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2012,0.02,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2013,0.59,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2014,0.59,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2015,0.64,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2016,0.66,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2017,0.67,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2018,0.66,g/m3,River Quality
-Gisborne,Ammoniacal nitrogen,2019,0.64,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2002,0.3,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2003,0.36,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2004,0.38,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2005,0.37,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2006,0.38,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2007,0.38,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2008,0.39,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2009,0.39,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2010,0.4,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2011,0.36,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2012,2.67,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2013,2.52,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2014,2.51,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2015,2.31,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2016,2.17,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2017,2.85,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2018,3.01,g/m3,River Quality
-Gisborne,Nitrate-nitrite nitrogen,2019,2.95,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2002,0.08,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2003,0.14,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2004,0.44,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2005,0.41,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2006,0.3,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2007,0.28,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2008,0.3,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2009,0.3,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2010,0.32,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2011,0.28,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2012,0.25,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2013,0.48,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2014,0.35,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2015,0.36,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2016,0.35,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2017,0.33,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2018,0.34,g/m3,River Quality
-Hawke's Bay,Ammoniacal nitrogen,2019,0.35,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2002,1.55,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2003,1.99,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2004,5.58,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2005,7.64,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2006,7.68,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2007,8.52,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2008,9.45,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2009,9.56,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2010,12.93,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2011,16.32,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2012,16.77,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2013,24.05,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2014,21.65,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2015,21.01,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2016,22.08,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2017,24.25,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2018,19.46,g/m3,River Quality
-Hawke's Bay,Nitrate-nitrite nitrogen,2019,19.54,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2004,0.12,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2005,0.11,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2006,0.11,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2007,0.11,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2008,0.11,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2009,0.3,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2010,0.35,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2011,0.33,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2012,0.36,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2013,0.37,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2014,0.44,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2015,0.75,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2016,2.12,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2017,2.89,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2018,2.9,g/m3,River Quality
-Manawatū-Whanganui,Ammoniacal nitrogen,2019,3.25,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2002,2.06,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2003,2.23,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2004,2.3,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2005,2.19,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2006,2.19,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2007,2.18,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2008,2.17,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2009,5.54,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2010,18.2,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2011,5.5,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2012,5.68,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2013,5.84,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2014,8.28,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2015,12.41,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2016,27.27,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2017,34.51,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2018,37.46,g/m3,River Quality
-Manawatū-Whanganui,Nitrate-nitrite nitrogen,2019,41.16,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2004,0,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2005,0,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2006,0,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2007,0,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2008,0,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2009,0,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2010,0,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2011,0,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2012,0,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2013,0,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2014,0,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2015,0,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2016,0.11,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2017,0.11,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2018,0.09,g/m3,River Quality
-Marlborough,Ammoniacal nitrogen,2019,0.09,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2002,0.06,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2003,0.07,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2004,0.07,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2005,0.06,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2006,0.07,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2007,0.08,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2008,0.08,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2009,0.09,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2010,0.1,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2011,0.11,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2012,0.11,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2013,0.11,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2014,0.11,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2015,0.11,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2016,5.5,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2017,8.31,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2018,11.34,g/m3,River Quality
-Marlborough,Nitrate-nitrite nitrogen,2019,10.98,g/m3,River Quality
-Nelson,Ammoniacal nitrogen,2011,0.16,g/m3,River Quality
-Nelson,Ammoniacal nitrogen,2012,0.15,g/m3,River Quality
-Nelson,Ammoniacal nitrogen,2013,0.14,g/m3,River Quality
-Nelson,Ammoniacal nitrogen,2014,0.11,g/m3,River Quality
-Nelson,Ammoniacal nitrogen,2015,0.11,g/m3,River Quality
-Nelson,Ammoniacal nitrogen,2016,0.1,g/m3,River Quality
-Nelson,Ammoniacal nitrogen,2017,0.12,g/m3,River Quality
-Nelson,Ammoniacal nitrogen,2018,0.11,g/m3,River Quality
-Nelson,Ammoniacal nitrogen,2019,0.11,g/m3,River Quality
-Nelson,Nitrate-nitrite nitrogen,2009,4.29,g/m3,River Quality
-Nelson,Nitrate-nitrite nitrogen,2010,4.45,g/m3,River Quality
-Nelson,Nitrate-nitrite nitrogen,2011,4.79,g/m3,River Quality
-Nelson,Nitrate-nitrite nitrogen,2012,5.03,g/m3,River Quality
-Nelson,Nitrate-nitrite nitrogen,2013,5.29,g/m3,River Quality
-Nelson,Nitrate-nitrite nitrogen,2014,4.26,g/m3,River Quality
-Nelson,Nitrate-nitrite nitrogen,2015,4.47,g/m3,River Quality
-Nelson,Nitrate-nitrite nitrogen,2016,5.03,g/m3,River Quality
-Nelson,Nitrate-nitrite nitrogen,2017,5.48,g/m3,River Quality
-Nelson,Nitrate-nitrite nitrogen,2018,5.31,g/m3,River Quality
-Nelson,Nitrate-nitrite nitrogen,2019,5.48,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2004,0.08,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2005,0.16,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2006,0.27,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2007,0.27,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2008,0.26,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2009,0.26,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2010,0.22,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2011,0.24,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2012,0.22,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2013,0.26,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2014,0.29,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2015,0.35,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2016,0.43,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2017,0.43,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2018,0.41,g/m3,River Quality
-Northland,Ammoniacal nitrogen,2019,0.41,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2002,0.86,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2003,0.9,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2004,0.9,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2005,1.38,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2006,2.48,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2007,2.42,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2008,2.8,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2009,2.97,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2010,3.61,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2011,3.69,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2012,3.58,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2013,3.81,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2014,4.2,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2015,4.63,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2016,8.08,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2017,8.48,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2018,8.36,g/m3,River Quality
-Northland,Nitrate-nitrite nitrogen,2019,7.88,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2002,0.05,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2003,1.03,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2004,0.8,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2005,0.78,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2006,0.8,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2007,0.59,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2008,0.63,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2009,0.57,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2010,0.54,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2011,0.59,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2012,0.47,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2013,0.4,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2014,0.4,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2015,0.47,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2016,0.48,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2017,0.48,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2018,0.5,g/m3,River Quality
-Otago,Ammoniacal nitrogen,2019,0.31,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2002,1.42,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2003,2.03,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2004,1.82,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2005,1.78,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2006,5.28,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2007,3.81,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2008,5,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2009,4.93,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2010,5.01,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2011,5.38,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2012,5.65,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2013,6.32,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2014,6.75,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2015,8.07,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2016,8.76,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2017,9.82,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2018,10.42,g/m3,River Quality
-Otago,Nitrate-nitrite nitrogen,2019,11.96,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2004,0.71,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2005,0.72,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2006,0.7,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2007,0.71,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2008,0.77,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2009,0.84,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2010,1.27,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2011,1.27,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2012,1.3,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2013,1.18,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2014,1.19,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2015,1.05,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2016,0.97,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2017,0.86,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2018,0.75,g/m3,River Quality
-Southland,Ammoniacal nitrogen,2019,0.77,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2002,3.28,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2003,3.42,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2004,20.48,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2005,21.01,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2006,20.71,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2007,21.19,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2008,24.17,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2009,26,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2010,37.63,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2011,39.12,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2012,47.18,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2013,48.34,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2014,55.95,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2015,42.18,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2016,43.27,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2017,41.87,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2018,42.75,g/m3,River Quality
-Southland,Nitrate-nitrite nitrogen,2019,43.34,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2004,0.06,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2005,0.06,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2006,0.06,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2007,0.06,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2008,0.06,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2009,0.21,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2010,0.21,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2011,0.21,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2012,0.22,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2013,0.26,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2014,0.27,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2015,0.28,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2016,0.24,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2017,0.24,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2018,0.23,g/m3,River Quality
-Taranaki,Ammoniacal nitrogen,2019,0.22,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2002,2.27,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2003,2.34,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2004,2.4,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2005,2.36,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2006,2.39,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2007,2.36,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2008,2.39,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2009,2.35,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2010,2.32,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2011,2.28,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2012,2.28,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2013,8.81,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2014,8.58,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2015,8.61,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2016,6.86,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2017,6.95,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2018,6.89,g/m3,River Quality
-Taranaki,Nitrate-nitrite nitrogen,2019,6.94,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2004,0.01,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2005,0.01,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2006,0.01,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2007,0.01,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2008,0.02,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2009,0.1,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2010,0.14,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2011,0.14,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2012,0.12,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2013,0.12,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2014,0.2,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2015,0.26,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2016,0.09,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2017,0.05,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2018,0.06,g/m3,River Quality
-Tasman,Ammoniacal nitrogen,2019,0.06,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2002,0.16,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2003,0.16,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2004,0.17,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2005,0.16,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2006,0.16,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2007,0.17,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2008,0.28,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2009,2.22,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2010,2.29,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2011,2.48,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2012,2.58,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2013,4.32,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2014,6.36,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2015,8.02,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2016,5.48,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2017,3.84,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2018,3.9,g/m3,River Quality
-Tasman,Nitrate-nitrite nitrogen,2019,3.94,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2002,3.44,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2003,6.03,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2004,6.09,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2005,5.89,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2006,5.68,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2007,5.51,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2008,5.38,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2009,5.37,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2010,5.3,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2011,5.23,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2012,5.12,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2013,5.1,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2014,4.98,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2015,4.9,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2016,4.86,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2017,4.92,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2018,5.02,g/m3,River Quality
-Waikato,Ammoniacal nitrogen,2019,5.04,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2002,44.69,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2003,66.88,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2004,68,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2005,68.06,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2006,68.21,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2007,68.36,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2008,69.41,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2009,72.5,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2010,72.99,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2011,74.15,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2012,75.28,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2013,75.9,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2014,74.08,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2015,74.47,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2016,74.81,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2017,78.13,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2018,78.04,g/m3,River Quality
-Waikato,Nitrate-nitrite nitrogen,2019,80.33,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2004,0.03,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2005,0.03,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2006,0.03,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2007,0.03,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2008,0.03,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2009,0.03,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2010,0.03,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2011,0.03,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2012,0.71,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2013,0.72,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2014,0.69,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2015,0.67,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2016,0.59,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2017,0.41,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2018,0.39,g/m3,River Quality
-Wellington,Ammoniacal nitrogen,2019,0.38,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2002,1.21,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2003,1.24,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2004,1.28,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2005,1.25,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2006,1.25,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2007,1.24,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2008,1.25,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2009,1.25,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2010,1.21,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2011,1.19,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2012,27.22,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2013,28.47,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2014,27.18,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2015,27.12,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2016,25.98,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2017,23.99,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2018,23.21,g/m3,River Quality
-Wellington,Nitrate-nitrite nitrogen,2019,23,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2004,0.02,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2005,0.01,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2006,0.01,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2007,0.01,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2008,0.01,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2009,0.01,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2010,0.01,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2011,0.01,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2012,0.01,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2013,0.09,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2014,0.21,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2015,0.62,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2016,0.58,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2017,0.57,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2018,0.62,g/m3,River Quality
-West Coast,Ammoniacal nitrogen,2019,0.47,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2002,0.17,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2003,0.18,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2004,0.19,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2005,0.19,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2006,0.2,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2007,0.2,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2008,0.22,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2009,0.23,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2010,0.24,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2011,0.24,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2012,0.23,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2013,0.3,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2014,0.42,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2015,0.42,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2016,0.43,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2017,0.97,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2018,4.42,g/m3,River Quality
-West Coast,Nitrate-nitrite nitrogen,2019,4.49,g/m3,River Quality
-Auckland,E.coli,2009,6885,cfu/100ml,River Quality
-Auckland,E.coli,2010,6520,cfu/100ml,River Quality
-Auckland,E.coli,2011,6300,cfu/100ml,River Quality
-Auckland,E.coli,2012,5750,cfu/100ml,River Quality
-Auckland,E.coli,2013,6200,cfu/100ml,River Quality
-Auckland,E.coli,2014,6606.9,cfu/100ml,River Quality
-Auckland,E.coli,2015,15869.65,cfu/100ml,River Quality
-Auckland,E.coli,2016,12588.2,cfu/100ml,River Quality
-Auckland,E.coli,2017,11501.3,cfu/100ml,River Quality
-Auckland,E.coli,2018,13498.6,cfu/100ml,River Quality
-Auckland,E.coli,2019,16359.6,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2002,564,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2003,607.5,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2004,626.5,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2005,624,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2006,620,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2007,664,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2008,654,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2009,601,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2010,612,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2011,612.5,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2012,1167,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2013,1560.67,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2014,1410.75,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2015,1914.85,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2016,2244.85,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2017,2231.18,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2018,1797.33,cfu/100ml,River Quality
-Bay of Plenty,E.coli,2019,2314.58,cfu/100ml,River Quality
-Canterbury,E.coli,2009,653,cfu/100ml,River Quality
-Canterbury,E.coli,2010,1386.5,cfu/100ml,River Quality
-Canterbury,E.coli,2011,6088.5,cfu/100ml,River Quality
-Canterbury,E.coli,2012,8349,cfu/100ml,River Quality
-Canterbury,E.coli,2013,15645,cfu/100ml,River Quality
-Canterbury,E.coli,2014,18490.05,cfu/100ml,River Quality
-Canterbury,E.coli,2015,19742.3,cfu/100ml,River Quality
-Canterbury,E.coli,2016,34805.1,cfu/100ml,River Quality
-Canterbury,E.coli,2017,41959.35,cfu/100ml,River Quality
-Canterbury,E.coli,2018,42266.15,cfu/100ml,River Quality
-Canterbury,E.coli,2019,42819.15,cfu/100ml,River Quality
-Gisborne,E.coli,2002,4601,cfu/100ml,River Quality
-Gisborne,E.coli,2003,4739.5,cfu/100ml,River Quality
-Gisborne,E.coli,2004,4947.5,cfu/100ml,River Quality
-Gisborne,E.coli,2005,5072,cfu/100ml,River Quality
-Gisborne,E.coli,2006,5208,cfu/100ml,River Quality
-Gisborne,E.coli,2007,5239.5,cfu/100ml,River Quality
-Gisborne,E.coli,2008,5310.5,cfu/100ml,River Quality
-Gisborne,E.coli,2009,5405,cfu/100ml,River Quality
-Gisborne,E.coli,2010,5319,cfu/100ml,River Quality
-Gisborne,E.coli,2011,5221,cfu/100ml,River Quality
-Gisborne,E.coli,2012,6434.5,cfu/100ml,River Quality
-Gisborne,E.coli,2013,8175.5,cfu/100ml,River Quality
-Gisborne,E.coli,2014,8080.6,cfu/100ml,River Quality
-Gisborne,E.coli,2015,7561.5,cfu/100ml,River Quality
-Gisborne,E.coli,2016,7199.1,cfu/100ml,River Quality
-Gisborne,E.coli,2017,7680.15,cfu/100ml,River Quality
-Gisborne,E.coli,2018,7799.5,cfu/100ml,River Quality
-Gisborne,E.coli,2019,7534.65,cfu/100ml,River Quality
-Hawke's Bay,E.coli,2012,167,cfu/100ml,River Quality
-Hawke's Bay,E.coli,2013,1922.65,cfu/100ml,River Quality
-Hawke's Bay,E.coli,2014,2488.25,cfu/100ml,River Quality
-Hawke's Bay,E.coli,2015,3374.8,cfu/100ml,River Quality
-Hawke's Bay,E.coli,2016,3887.15,cfu/100ml,River Quality
-Hawke's Bay,E.coli,2017,4260.35,cfu/100ml,River Quality
-Hawke's Bay,E.coli,2018,4749.3,cfu/100ml,River Quality
-Hawke's Bay,E.coli,2019,5359.8,cfu/100ml,River Quality
-Manawatū-Whanganui,E.coli,2010,1691,cfu/100ml,River Quality
-Manawatū-Whanganui,E.coli,2011,1683.05,cfu/100ml,River Quality
-Manawatū-Whanganui,E.coli,2012,1537,cfu/100ml,River Quality
-Manawatū-Whanganui,E.coli,2013,2561.9,cfu/100ml,River Quality
-Manawatū-Whanganui,E.coli,2014,5166.9,cfu/100ml,River Quality
-Manawatū-Whanganui,E.coli,2015,6842.45,cfu/100ml,River Quality
-Manawatū-Whanganui,E.coli,2016,14577.95,cfu/100ml,River Quality
-Manawatū-Whanganui,E.coli,2017,22016.65,cfu/100ml,River Quality
-Manawatū-Whanganui,E.coli,2018,24510,cfu/100ml,River Quality
-Manawatū-Whanganui,E.coli,2019,26850.5,cfu/100ml,River Quality
-Marlborough,E.coli,2014,9.9,cfu/100ml,River Quality
-Marlborough,E.coli,2015,10.5,cfu/100ml,River Quality
-Marlborough,E.coli,2016,1357.5,cfu/100ml,River Quality
-Marlborough,E.coli,2017,1724.5,cfu/100ml,River Quality
-Marlborough,E.coli,2018,2563.1,cfu/100ml,River Quality
-Marlborough,E.coli,2019,2736.6,cfu/100ml,River Quality
-Nelson,E.coli,2009,5119.5,cfu/100ml,River Quality
-Nelson,E.coli,2010,5059.5,cfu/100ml,River Quality
-Nelson,E.coli,2011,4870.5,cfu/100ml,River Quality
-Nelson,E.coli,2012,4327,cfu/100ml,River Quality
-Nelson,E.coli,2013,4170.5,cfu/100ml,River Quality
-Nelson,E.coli,2014,2698.5,cfu/100ml,River Quality
-Nelson,E.coli,2015,2533,cfu/100ml,River Quality
-Nelson,E.coli,2016,2717.5,cfu/100ml,River Quality
-Nelson,E.coli,2017,2978,cfu/100ml,River Quality
-Nelson,E.coli,2018,3078.5,cfu/100ml,River Quality
-Nelson,E.coli,2019,3291.5,cfu/100ml,River Quality
-Northland,E.coli,2008,1379.5,cfu/100ml,River Quality
-Northland,E.coli,2009,3096.5,cfu/100ml,River Quality
-Northland,E.coli,2010,3607,cfu/100ml,River Quality
-Northland,E.coli,2011,4066,cfu/100ml,River Quality
-Northland,E.coli,2012,3965.5,cfu/100ml,River Quality
-Northland,E.coli,2013,4207.95,cfu/100ml,River Quality
-Northland,E.coli,2014,5401.05,cfu/100ml,River Quality
-Northland,E.coli,2015,6969.5,cfu/100ml,River Quality
-Northland,E.coli,2016,8774.5,cfu/100ml,River Quality
-Northland,E.coli,2017,8871.4,cfu/100ml,River Quality
-Northland,E.coli,2018,9276.08,cfu/100ml,River Quality
-Northland,E.coli,2019,8897.65,cfu/100ml,River Quality
-Otago,E.coli,2007,2458.5,cfu/100ml,River Quality
-Otago,E.coli,2008,2912.5,cfu/100ml,River Quality
-Otago,E.coli,2009,2483,cfu/100ml,River Quality
-Otago,E.coli,2010,2692.75,cfu/100ml,River Quality
-Otago,E.coli,2011,2910,cfu/100ml,River Quality
-Otago,E.coli,2012,3093.75,cfu/100ml,River Quality
-Otago,E.coli,2013,3424.5,cfu/100ml,River Quality
-Otago,E.coli,2014,4108.3,cfu/100ml,River Quality
-Otago,E.coli,2015,4593.15,cfu/100ml,River Quality
-Otago,E.coli,2016,4803.6,cfu/100ml,River Quality
-Otago,E.coli,2017,5099.55,cfu/100ml,River Quality
-Otago,E.coli,2018,5324.55,cfu/100ml,River Quality
-Otago,E.coli,2019,5442.45,cfu/100ml,River Quality
-Southland,E.coli,2007,1282,cfu/100ml,River Quality
-Southland,E.coli,2008,6927.5,cfu/100ml,River Quality
-Southland,E.coli,2009,11773.98,cfu/100ml,River Quality
-Southland,E.coli,2010,17860.1,cfu/100ml,River Quality
-Southland,E.coli,2011,18567.7,cfu/100ml,River Quality
-Southland,E.coli,2012,19988.4,cfu/100ml,River Quality
-Southland,E.coli,2013,19955.4,cfu/100ml,River Quality
-Southland,E.coli,2014,22974.95,cfu/100ml,River Quality
-Southland,E.coli,2015,20696.25,cfu/100ml,River Quality
-Southland,E.coli,2016,19868.05,cfu/100ml,River Quality
-Southland,E.coli,2017,19943.3,cfu/100ml,River Quality
-Southland,E.coli,2018,18950.1,cfu/100ml,River Quality
-Southland,E.coli,2019,18296.8,cfu/100ml,River Quality
-Taranaki,E.coli,2007,675,cfu/100ml,River Quality
-Taranaki,E.coli,2008,690,cfu/100ml,River Quality
-Taranaki,E.coli,2009,1986,cfu/100ml,River Quality
-Taranaki,E.coli,2010,1973,cfu/100ml,River Quality
-Taranaki,E.coli,2011,1994,cfu/100ml,River Quality
-Taranaki,E.coli,2012,2301,cfu/100ml,River Quality
-Taranaki,E.coli,2013,2776.95,cfu/100ml,River Quality
-Taranaki,E.coli,2014,3382.3,cfu/100ml,River Quality
-Taranaki,E.coli,2015,3367.65,cfu/100ml,River Quality
-Taranaki,E.coli,2016,3179,cfu/100ml,River Quality
-Taranaki,E.coli,2017,3460.85,cfu/100ml,River Quality
-Taranaki,E.coli,2018,3336.45,cfu/100ml,River Quality
-Taranaki,E.coli,2019,3361.15,cfu/100ml,River Quality
-Tasman,E.coli,2008,137.5,cfu/100ml,River Quality
-Tasman,E.coli,2009,1882.5,cfu/100ml,River Quality
-Tasman,E.coli,2010,2002.1,cfu/100ml,River Quality
-Tasman,E.coli,2011,2469,cfu/100ml,River Quality
-Tasman,E.coli,2012,2580.75,cfu/100ml,River Quality
-Tasman,E.coli,2013,2791,cfu/100ml,River Quality
-Tasman,E.coli,2014,4918.1,cfu/100ml,River Quality
-Tasman,E.coli,2015,5454.6,cfu/100ml,River Quality
-Tasman,E.coli,2016,3930.25,cfu/100ml,River Quality
-Tasman,E.coli,2017,2995.55,cfu/100ml,River Quality
-Tasman,E.coli,2018,3640.95,cfu/100ml,River Quality
-Tasman,E.coli,2019,3684.95,cfu/100ml,River Quality
-Waikato,E.coli,2006,170,cfu/100ml,River Quality
-Waikato,E.coli,2007,24861.5,cfu/100ml,River Quality
-Waikato,E.coli,2008,26495,cfu/100ml,River Quality
-Waikato,E.coli,2009,26222.5,cfu/100ml,River Quality
-Waikato,E.coli,2010,25768.5,cfu/100ml,River Quality
-Waikato,E.coli,2011,26854,cfu/100ml,River Quality
-Waikato,E.coli,2012,26010.5,cfu/100ml,River Quality
-Waikato,E.coli,2013,23397.5,cfu/100ml,River Quality
-Waikato,E.coli,2014,22343.05,cfu/100ml,River Quality
-Waikato,E.coli,2015,20039.65,cfu/100ml,River Quality
-Waikato,E.coli,2016,20375.85,cfu/100ml,River Quality
-Waikato,E.coli,2017,19867.85,cfu/100ml,River Quality
-Waikato,E.coli,2018,19957.3,cfu/100ml,River Quality
-Waikato,E.coli,2019,20782.2,cfu/100ml,River Quality
-Wellington,E.coli,2012,8851,cfu/100ml,River Quality
-Wellington,E.coli,2013,9414.3,cfu/100ml,River Quality
-Wellington,E.coli,2014,9400.5,cfu/100ml,River Quality
-Wellington,E.coli,2015,9545.85,cfu/100ml,River Quality
-Wellington,E.coli,2016,9077.8,cfu/100ml,River Quality
-Wellington,E.coli,2017,8445.35,cfu/100ml,River Quality
-Wellington,E.coli,2018,8893.6,cfu/100ml,River Quality
-Wellington,E.coli,2019,9505.25,cfu/100ml,River Quality
-West Coast,E.coli,2011,5,cfu/100ml,River Quality
-West Coast,E.coli,2012,35,cfu/100ml,River Quality
-West Coast,E.coli,2013,3027.5,cfu/100ml,River Quality
-West Coast,E.coli,2014,3600,cfu/100ml,River Quality
-West Coast,E.coli,2015,4143.15,cfu/100ml,River Quality
-West Coast,E.coli,2016,4555.75,cfu/100ml,River Quality
-West Coast,E.coli,2017,4654.65,cfu/100ml,River Quality
-West Coast,E.coli,2018,3957.7,cfu/100ml,River Quality
-West Coast,E.coli,2019,3863.7,cfu/100ml,River Quality
+Region,Year,Units,Water_Categ,Ammoniacal nitrogen,E.coli,Nitrate-nitrite nitrogen
+Auckland,2002,g/m3,River Quality,0.77,NA,8.14
+Auckland,2003,g/m3,River Quality,0.88,NA,10.7
+Auckland,2004,g/m3,Groundwater Quality,NA,NA,57.56
+Auckland,2004,g/m3,River Quality,0.92,NA,10.7
+Auckland,2005,cfu/100ml,Groundwater Quality,NA,42,NA
+Auckland,2005,g/m3,Groundwater Quality,NA,NA,58.64
+Auckland,2005,g/m3,River Quality,0.99,NA,10.83
+Auckland,2006,cfu/100ml,Groundwater Quality,NA,891,NA
+Auckland,2006,g/m3,Groundwater Quality,NA,NA,58.85
+Auckland,2006,g/m3,River Quality,0.97,NA,10.26
+Auckland,2007,cfu/100ml,Groundwater Quality,NA,7550,NA
+Auckland,2007,g/m3,Groundwater Quality,NA,NA,66.76
+Auckland,2007,g/m3,River Quality,0.94,NA,9.85
+Auckland,2008,cfu/100ml,Groundwater Quality,NA,408,NA
+Auckland,2008,g/m3,Groundwater Quality,NA,NA,246.34
+Auckland,2008,g/m3,River Quality,0.93,NA,9.77
+Auckland,2009,cfu/100ml,Groundwater Quality,NA,230,NA
+Auckland,2009,cfu/100ml,River Quality,NA,6885,NA
+Auckland,2009,g/m3,Groundwater Quality,NA,NA,272.06
+Auckland,2009,g/m3,River Quality,0.86,NA,9.17
+Auckland,2010,cfu/100ml,Groundwater Quality,NA,116,NA
+Auckland,2010,cfu/100ml,River Quality,NA,6520,NA
+Auckland,2010,g/m3,Groundwater Quality,NA,NA,129.15
+Auckland,2010,g/m3,River Quality,0.87,NA,9.07
+Auckland,2011,cfu/100ml,Groundwater Quality,NA,172,NA
+Auckland,2011,cfu/100ml,River Quality,NA,6300,NA
+Auckland,2011,g/m3,Groundwater Quality,NA,NA,166.54
+Auckland,2011,g/m3,River Quality,0.83,NA,8.7
+Auckland,2012,cfu/100ml,Groundwater Quality,NA,49.6,NA
+Auckland,2012,cfu/100ml,River Quality,NA,5750,NA
+Auckland,2012,g/m3,Groundwater Quality,NA,NA,320.24
+Auckland,2012,g/m3,River Quality,0.87,NA,8.94
+Auckland,2013,cfu/100ml,Groundwater Quality,NA,150.9,NA
+Auckland,2013,cfu/100ml,River Quality,NA,6200,NA
+Auckland,2013,g/m3,Groundwater Quality,NA,NA,188.91
+Auckland,2013,g/m3,River Quality,0.83,NA,8.82
+Auckland,2014,cfu/100ml,Groundwater Quality,NA,582.4,NA
+Auckland,2014,cfu/100ml,River Quality,NA,6606.9,NA
+Auckland,2014,g/m3,Groundwater Quality,NA,NA,293.75
+Auckland,2014,g/m3,River Quality,0.8,NA,8.62
+Auckland,2015,cfu/100ml,Groundwater Quality,NA,232.7,NA
+Auckland,2015,cfu/100ml,River Quality,NA,15869.65,NA
+Auckland,2015,g/m3,Groundwater Quality,NA,NA,406.54
+Auckland,2015,g/m3,River Quality,0.79,NA,8.46
+Auckland,2016,cfu/100ml,Groundwater Quality,NA,665.1,NA
+Auckland,2016,cfu/100ml,River Quality,NA,12588.2,NA
+Auckland,2016,g/m3,Groundwater Quality,NA,NA,360.16
+Auckland,2016,g/m3,River Quality,0.71,NA,7.21
+Auckland,2017,cfu/100ml,Groundwater Quality,NA,320,NA
+Auckland,2017,cfu/100ml,River Quality,NA,11501.3,NA
+Auckland,2017,g/m3,Groundwater Quality,NA,NA,397.65
+Auckland,2017,g/m3,River Quality,0.73,NA,7.26
+Auckland,2018,cfu/100ml,Groundwater Quality,NA,761,NA
+Auckland,2018,cfu/100ml,River Quality,NA,13498.6,NA
+Auckland,2018,g/m3,Groundwater Quality,NA,NA,389.64
+Auckland,2018,g/m3,River Quality,0.82,NA,24.08
+Auckland,2019,cfu/100ml,Groundwater Quality,NA,1626,NA
+Auckland,2019,cfu/100ml,River Quality,NA,16359.6,NA
+Auckland,2019,g/m3,Groundwater Quality,NA,NA,365.54
+Auckland,2019,g/m3,River Quality,0.83,NA,24
+Bay of Plenty,2002,cfu/100ml,River Quality,NA,564,NA
+Bay of Plenty,2002,g/m3,River Quality,0.21,NA,3.67
+Bay of Plenty,2003,cfu/100ml,River Quality,NA,607.5,NA
+Bay of Plenty,2003,g/m3,River Quality,0.12,NA,3.4
+Bay of Plenty,2004,cfu/100ml,River Quality,NA,626.5,NA
+Bay of Plenty,2004,g/m3,River Quality,0.2,NA,3.49
+Bay of Plenty,2005,cfu/100ml,River Quality,NA,624,NA
+Bay of Plenty,2005,g/m3,River Quality,0.2,NA,3.52
+Bay of Plenty,2006,cfu/100ml,River Quality,NA,620,NA
+Bay of Plenty,2006,g/m3,River Quality,0.2,NA,3.55
+Bay of Plenty,2007,cfu/100ml,River Quality,NA,664,NA
+Bay of Plenty,2007,g/m3,River Quality,0.2,NA,3.61
+Bay of Plenty,2008,cfu/100ml,River Quality,NA,654,NA
+Bay of Plenty,2008,g/m3,River Quality,0.2,NA,3.68
+Bay of Plenty,2009,cfu/100ml,River Quality,NA,601,NA
+Bay of Plenty,2009,g/m3,Groundwater Quality,NA,NA,3
+Bay of Plenty,2009,g/m3,River Quality,0.2,NA,3.77
+Bay of Plenty,2010,cfu/100ml,River Quality,NA,612,NA
+Bay of Plenty,2010,g/m3,Groundwater Quality,NA,NA,3.62
+Bay of Plenty,2010,g/m3,River Quality,0.2,NA,3.81
+Bay of Plenty,2011,cfu/100ml,River Quality,NA,612.5,NA
+Bay of Plenty,2011,g/m3,Groundwater Quality,NA,NA,3.62
+Bay of Plenty,2011,g/m3,River Quality,0.2,NA,3.89
+Bay of Plenty,2012,cfu/100ml,River Quality,NA,1167,NA
+Bay of Plenty,2012,g/m3,Groundwater Quality,NA,NA,3.15
+Bay of Plenty,2012,g/m3,River Quality,0.38,NA,6.25
+Bay of Plenty,2013,cfu/100ml,River Quality,NA,1560.68,NA
+Bay of Plenty,2013,g/m3,Groundwater Quality,NA,NA,3.71
+Bay of Plenty,2013,g/m3,River Quality,0.44,NA,8.64
+Bay of Plenty,2014,cfu/100ml,River Quality,NA,1410.75,NA
+Bay of Plenty,2014,g/m3,Groundwater Quality,NA,NA,2.63
+Bay of Plenty,2014,g/m3,River Quality,0.48,NA,8.89
+Bay of Plenty,2015,cfu/100ml,Groundwater Quality,NA,1,NA
+Bay of Plenty,2015,cfu/100ml,River Quality,NA,1914.85,NA
+Bay of Plenty,2015,g/m3,Groundwater Quality,NA,NA,33.22
+Bay of Plenty,2015,g/m3,River Quality,0.53,NA,10.63
+Bay of Plenty,2016,cfu/100ml,Groundwater Quality,NA,24.7,NA
+Bay of Plenty,2016,cfu/100ml,River Quality,NA,2244.85,NA
+Bay of Plenty,2016,g/m3,Groundwater Quality,NA,NA,52.45
+Bay of Plenty,2016,g/m3,River Quality,0.57,NA,11.65
+Bay of Plenty,2017,cfu/100ml,Groundwater Quality,NA,38.8,NA
+Bay of Plenty,2017,cfu/100ml,River Quality,NA,2231.18,NA
+Bay of Plenty,2017,g/m3,Groundwater Quality,NA,NA,60.28
+Bay of Plenty,2017,g/m3,River Quality,0.56,NA,11.83
+Bay of Plenty,2018,cfu/100ml,Groundwater Quality,NA,16.1,NA
+Bay of Plenty,2018,cfu/100ml,River Quality,NA,1797.33,NA
+Bay of Plenty,2018,g/m3,Groundwater Quality,NA,NA,61.36
+Bay of Plenty,2018,g/m3,River Quality,0.46,NA,9.78
+Bay of Plenty,2019,cfu/100ml,Groundwater Quality,NA,55.6,NA
+Bay of Plenty,2019,cfu/100ml,River Quality,NA,2314.58,NA
+Bay of Plenty,2019,g/m3,Groundwater Quality,NA,NA,55.34
+Bay of Plenty,2019,g/m3,River Quality,0.49,NA,11.59
+Canterbury,2002,g/m3,River Quality,0.15,NA,13.34
+Canterbury,2003,g/m3,River Quality,0.21,NA,20.53
+Canterbury,2004,cfu/100ml,Groundwater Quality,NA,1055,NA
+Canterbury,2004,g/m3,Groundwater Quality,NA,NA,2265.2
+Canterbury,2004,g/m3,River Quality,0.24,NA,20.64
+Canterbury,2005,cfu/100ml,Groundwater Quality,NA,6409,NA
+Canterbury,2005,g/m3,Groundwater Quality,NA,NA,2175.5
+Canterbury,2005,g/m3,River Quality,0.24,NA,20.35
+Canterbury,2006,cfu/100ml,Groundwater Quality,NA,5816,NA
+Canterbury,2006,g/m3,Groundwater Quality,NA,NA,3127.77
+Canterbury,2006,g/m3,River Quality,0.63,NA,26.36
+Canterbury,2007,cfu/100ml,Groundwater Quality,NA,3131,NA
+Canterbury,2007,g/m3,Groundwater Quality,NA,NA,2712.29
+Canterbury,2007,g/m3,River Quality,0.66,NA,26.68
+Canterbury,2008,cfu/100ml,Groundwater Quality,NA,7234,NA
+Canterbury,2008,g/m3,Groundwater Quality,NA,NA,3017.75
+Canterbury,2008,g/m3,River Quality,0.64,NA,27.35
+Canterbury,2009,cfu/100ml,Groundwater Quality,NA,5315,NA
+Canterbury,2009,cfu/100ml,River Quality,NA,653,NA
+Canterbury,2009,g/m3,Groundwater Quality,NA,NA,3196.61
+Canterbury,2009,g/m3,River Quality,0.6,NA,28
+Canterbury,2010,cfu/100ml,Groundwater Quality,NA,1738,NA
+Canterbury,2010,cfu/100ml,River Quality,NA,1386.5,NA
+Canterbury,2010,g/m3,Groundwater Quality,NA,NA,3443.3
+Canterbury,2010,g/m3,River Quality,0.58,NA,28.1
+Canterbury,2011,cfu/100ml,Groundwater Quality,NA,6368,NA
+Canterbury,2011,cfu/100ml,River Quality,NA,6088.5,NA
+Canterbury,2011,g/m3,Groundwater Quality,NA,NA,3130.48
+Canterbury,2011,g/m3,River Quality,0.91,NA,69.04
+Canterbury,2012,cfu/100ml,Groundwater Quality,NA,1452,NA
+Canterbury,2012,cfu/100ml,River Quality,NA,8349,NA
+Canterbury,2012,g/m3,Groundwater Quality,NA,NA,3552.89
+Canterbury,2012,g/m3,River Quality,0.93,NA,81.35
+Canterbury,2013,cfu/100ml,Groundwater Quality,NA,4692,NA
+Canterbury,2013,cfu/100ml,River Quality,NA,15645,NA
+Canterbury,2013,g/m3,Groundwater Quality,NA,NA,3614.54
+Canterbury,2013,g/m3,River Quality,1.29,NA,126.56
+Canterbury,2014,cfu/100ml,Groundwater Quality,NA,2710,NA
+Canterbury,2014,cfu/100ml,River Quality,NA,18490.05,NA
+Canterbury,2014,g/m3,Groundwater Quality,NA,NA,3791.87
+Canterbury,2014,g/m3,River Quality,1.29,NA,138.99
+Canterbury,2015,cfu/100ml,Groundwater Quality,NA,3910,NA
+Canterbury,2015,cfu/100ml,River Quality,NA,19742.3,NA
+Canterbury,2015,g/m3,Groundwater Quality,NA,NA,3245.4
+Canterbury,2015,g/m3,River Quality,1.43,NA,147.04
+Canterbury,2016,cfu/100ml,Groundwater Quality,NA,3066,NA
+Canterbury,2016,cfu/100ml,River Quality,NA,34805.1,NA
+Canterbury,2016,g/m3,Groundwater Quality,NA,NA,3396.48
+Canterbury,2016,g/m3,River Quality,2.67,NA,172.12
+Canterbury,2017,cfu/100ml,Groundwater Quality,NA,9568,NA
+Canterbury,2017,cfu/100ml,River Quality,NA,41959.35,NA
+Canterbury,2017,g/m3,Groundwater Quality,NA,NA,3765.01
+Canterbury,2017,g/m3,River Quality,3.74,NA,199.15
+Canterbury,2018,cfu/100ml,Groundwater Quality,NA,3610,NA
+Canterbury,2018,cfu/100ml,River Quality,NA,42266.15,NA
+Canterbury,2018,g/m3,Groundwater Quality,NA,NA,3749.81
+Canterbury,2018,g/m3,River Quality,3.55,NA,202.49
+Canterbury,2019,cfu/100ml,Groundwater Quality,NA,9845,NA
+Canterbury,2019,cfu/100ml,River Quality,NA,42819.15,NA
+Canterbury,2019,g/m3,Groundwater Quality,NA,NA,4159.47
+Canterbury,2019,g/m3,River Quality,3.45,NA,205.82
+Gisborne,2002,cfu/100ml,River Quality,NA,4601,NA
+Gisborne,2002,g/m3,River Quality,NA,NA,0.3
+Gisborne,2003,cfu/100ml,River Quality,NA,4739.5,NA
+Gisborne,2003,g/m3,River Quality,NA,NA,0.36
+Gisborne,2004,cfu/100ml,Groundwater Quality,NA,1092,NA
+Gisborne,2004,cfu/100ml,River Quality,NA,4947.5,NA
+Gisborne,2004,g/m3,Groundwater Quality,NA,NA,7.92
+Gisborne,2004,g/m3,River Quality,0.02,NA,0.38
+Gisborne,2005,cfu/100ml,Groundwater Quality,NA,1,NA
+Gisborne,2005,cfu/100ml,River Quality,NA,5072,NA
+Gisborne,2005,g/m3,Groundwater Quality,NA,NA,10.94
+Gisborne,2005,g/m3,River Quality,0.02,NA,0.37
+Gisborne,2006,cfu/100ml,River Quality,NA,5208,NA
+Gisborne,2006,g/m3,Groundwater Quality,NA,NA,6.87
+Gisborne,2006,g/m3,River Quality,0.02,NA,0.38
+Gisborne,2007,cfu/100ml,River Quality,NA,5239.5,NA
+Gisborne,2007,g/m3,Groundwater Quality,NA,NA,11.92
+Gisborne,2007,g/m3,River Quality,0.02,NA,0.38
+Gisborne,2008,cfu/100ml,River Quality,NA,5310.5,NA
+Gisborne,2008,g/m3,Groundwater Quality,NA,NA,10.05
+Gisborne,2008,g/m3,River Quality,0.02,NA,0.39
+Gisborne,2009,cfu/100ml,River Quality,NA,5405,NA
+Gisborne,2009,g/m3,Groundwater Quality,NA,NA,15.48
+Gisborne,2009,g/m3,River Quality,0.02,NA,0.39
+Gisborne,2010,cfu/100ml,River Quality,NA,5319,NA
+Gisborne,2010,g/m3,Groundwater Quality,NA,NA,27.06
+Gisborne,2010,g/m3,River Quality,0.02,NA,0.4
+Gisborne,2011,cfu/100ml,Groundwater Quality,NA,228,NA
+Gisborne,2011,cfu/100ml,River Quality,NA,5221,NA
+Gisborne,2011,g/m3,Groundwater Quality,NA,NA,20.78
+Gisborne,2011,g/m3,River Quality,0.02,NA,0.36
+Gisborne,2012,cfu/100ml,Groundwater Quality,NA,2833,NA
+Gisborne,2012,cfu/100ml,River Quality,NA,6434.5,NA
+Gisborne,2012,g/m3,Groundwater Quality,NA,NA,12.89
+Gisborne,2012,g/m3,River Quality,0.02,NA,2.67
+Gisborne,2013,cfu/100ml,Groundwater Quality,NA,1097,NA
+Gisborne,2013,cfu/100ml,River Quality,NA,8175.5,NA
+Gisborne,2013,g/m3,Groundwater Quality,NA,NA,19.32
+Gisborne,2013,g/m3,River Quality,0.59,NA,2.52
+Gisborne,2014,cfu/100ml,Groundwater Quality,NA,388,NA
+Gisborne,2014,cfu/100ml,River Quality,NA,8080.6,NA
+Gisborne,2014,g/m3,Groundwater Quality,NA,NA,32.42
+Gisborne,2014,g/m3,River Quality,0.59,NA,2.51
+Gisborne,2015,cfu/100ml,Groundwater Quality,NA,425.1,NA
+Gisborne,2015,cfu/100ml,River Quality,NA,7561.5,NA
+Gisborne,2015,g/m3,Groundwater Quality,NA,NA,5.72
+Gisborne,2015,g/m3,River Quality,0.64,NA,2.31
+Gisborne,2016,cfu/100ml,Groundwater Quality,NA,264.6,NA
+Gisborne,2016,cfu/100ml,River Quality,NA,7199.1,NA
+Gisborne,2016,g/m3,Groundwater Quality,NA,NA,34.21
+Gisborne,2016,g/m3,River Quality,0.67,NA,2.17
+Gisborne,2017,cfu/100ml,Groundwater Quality,NA,3340.3,NA
+Gisborne,2017,cfu/100ml,River Quality,NA,7680.15,NA
+Gisborne,2017,g/m3,Groundwater Quality,NA,NA,59.53
+Gisborne,2017,g/m3,River Quality,0.67,NA,2.85
+Gisborne,2018,cfu/100ml,Groundwater Quality,NA,216.6,NA
+Gisborne,2018,cfu/100ml,River Quality,NA,7799.5,NA
+Gisborne,2018,g/m3,Groundwater Quality,NA,NA,25.74
+Gisborne,2018,g/m3,River Quality,0.66,NA,3.01
+Gisborne,2019,cfu/100ml,Groundwater Quality,NA,1268.9,NA
+Gisborne,2019,cfu/100ml,River Quality,NA,7534.65,NA
+Gisborne,2019,g/m3,Groundwater Quality,NA,NA,34.61
+Gisborne,2019,g/m3,River Quality,0.64,NA,2.95
+Hawke's Bay,2002,g/m3,River Quality,0.08,NA,1.55
+Hawke's Bay,2003,g/m3,River Quality,0.14,NA,1.99
+Hawke's Bay,2004,g/m3,Groundwater Quality,NA,NA,0.05
+Hawke's Bay,2004,g/m3,River Quality,0.44,NA,5.58
+Hawke's Bay,2005,cfu/100ml,Groundwater Quality,NA,168,NA
+Hawke's Bay,2005,g/m3,Groundwater Quality,NA,NA,64.15
+Hawke's Bay,2005,g/m3,River Quality,0.41,NA,7.64
+Hawke's Bay,2006,cfu/100ml,Groundwater Quality,NA,126,NA
+Hawke's Bay,2006,g/m3,Groundwater Quality,NA,NA,92.74
+Hawke's Bay,2006,g/m3,River Quality,0.3,NA,7.68
+Hawke's Bay,2007,cfu/100ml,Groundwater Quality,NA,86,NA
+Hawke's Bay,2007,g/m3,Groundwater Quality,NA,NA,80
+Hawke's Bay,2007,g/m3,River Quality,0.28,NA,8.52
+Hawke's Bay,2008,cfu/100ml,Groundwater Quality,NA,105,NA
+Hawke's Bay,2008,g/m3,Groundwater Quality,NA,NA,60.51
+Hawke's Bay,2008,g/m3,River Quality,0.3,NA,9.45
+Hawke's Bay,2009,cfu/100ml,Groundwater Quality,NA,80,NA
+Hawke's Bay,2009,g/m3,Groundwater Quality,NA,NA,81.83
+Hawke's Bay,2009,g/m3,River Quality,0.3,NA,9.56
+Hawke's Bay,2010,cfu/100ml,Groundwater Quality,NA,97,NA
+Hawke's Bay,2010,g/m3,Groundwater Quality,NA,NA,116.32
+Hawke's Bay,2010,g/m3,River Quality,0.32,NA,12.93
+Hawke's Bay,2011,cfu/100ml,Groundwater Quality,NA,92,NA
+Hawke's Bay,2011,g/m3,Groundwater Quality,NA,NA,103.57
+Hawke's Bay,2011,g/m3,River Quality,0.28,NA,16.32
+Hawke's Bay,2012,cfu/100ml,Groundwater Quality,NA,96,NA
+Hawke's Bay,2012,cfu/100ml,River Quality,NA,167,NA
+Hawke's Bay,2012,g/m3,Groundwater Quality,NA,NA,109.61
+Hawke's Bay,2012,g/m3,River Quality,0.25,NA,16.77
+Hawke's Bay,2013,cfu/100ml,Groundwater Quality,NA,51,NA
+Hawke's Bay,2013,cfu/100ml,River Quality,NA,1922.65,NA
+Hawke's Bay,2013,g/m3,Groundwater Quality,NA,NA,132.82
+Hawke's Bay,2013,g/m3,River Quality,0.48,NA,24.05
+Hawke's Bay,2014,cfu/100ml,Groundwater Quality,NA,159,NA
+Hawke's Bay,2014,cfu/100ml,River Quality,NA,2488.25,NA
+Hawke's Bay,2014,g/m3,Groundwater Quality,NA,NA,379.86
+Hawke's Bay,2014,g/m3,River Quality,0.35,NA,21.65
+Hawke's Bay,2015,cfu/100ml,Groundwater Quality,NA,395,NA
+Hawke's Bay,2015,cfu/100ml,River Quality,NA,3374.8,NA
+Hawke's Bay,2015,g/m3,Groundwater Quality,NA,NA,424.92
+Hawke's Bay,2015,g/m3,River Quality,0.36,NA,21.01
+Hawke's Bay,2016,cfu/100ml,Groundwater Quality,NA,1980,NA
+Hawke's Bay,2016,cfu/100ml,River Quality,NA,3887.15,NA
+Hawke's Bay,2016,g/m3,Groundwater Quality,NA,NA,395.16
+Hawke's Bay,2016,g/m3,River Quality,0.35,NA,22.08
+Hawke's Bay,2017,cfu/100ml,Groundwater Quality,NA,320,NA
+Hawke's Bay,2017,cfu/100ml,River Quality,NA,4260.35,NA
+Hawke's Bay,2017,g/m3,Groundwater Quality,NA,NA,720.28
+Hawke's Bay,2017,g/m3,River Quality,0.33,NA,24.25
+Hawke's Bay,2018,cfu/100ml,Groundwater Quality,NA,301,NA
+Hawke's Bay,2018,cfu/100ml,River Quality,NA,4749.3,NA
+Hawke's Bay,2018,g/m3,Groundwater Quality,NA,NA,772.84
+Hawke's Bay,2018,g/m3,River Quality,0.34,NA,19.46
+Hawke's Bay,2019,cfu/100ml,Groundwater Quality,NA,256,NA
+Hawke's Bay,2019,cfu/100ml,River Quality,NA,5359.8,NA
+Hawke's Bay,2019,g/m3,Groundwater Quality,NA,NA,723.13
+Hawke's Bay,2019,g/m3,River Quality,0.35,NA,19.54
+Manawatu-Whanganui,2002,g/m3,River Quality,NA,NA,2.06
+Manawatu-Whanganui,2003,g/m3,River Quality,NA,NA,2.23
+Manawatu-Whanganui,2004,g/m3,River Quality,0.12,NA,2.3
+Manawatu-Whanganui,2005,cfu/100ml,Groundwater Quality,NA,170,NA
+Manawatu-Whanganui,2005,g/m3,Groundwater Quality,NA,NA,195.35
+Manawatu-Whanganui,2005,g/m3,River Quality,0.11,NA,2.19
+Manawatu-Whanganui,2006,g/m3,Groundwater Quality,NA,NA,188.08
+Manawatu-Whanganui,2006,g/m3,River Quality,0.11,NA,2.19
+Manawatu-Whanganui,2007,cfu/100ml,Groundwater Quality,NA,9,NA
+Manawatu-Whanganui,2007,g/m3,Groundwater Quality,NA,NA,314.49
+Manawatu-Whanganui,2007,g/m3,River Quality,0.11,NA,2.18
+Manawatu-Whanganui,2008,cfu/100ml,Groundwater Quality,NA,72,NA
+Manawatu-Whanganui,2008,g/m3,Groundwater Quality,NA,NA,244.62
+Manawatu-Whanganui,2008,g/m3,River Quality,0.11,NA,2.17
+Manawatu-Whanganui,2009,cfu/100ml,Groundwater Quality,NA,12,NA
+Manawatu-Whanganui,2009,g/m3,Groundwater Quality,NA,NA,306.34
+Manawatu-Whanganui,2009,g/m3,River Quality,0.3,NA,5.54
+Manawatu-Whanganui,2010,cfu/100ml,Groundwater Quality,NA,28,NA
+Manawatu-Whanganui,2010,cfu/100ml,River Quality,NA,1691,NA
+Manawatu-Whanganui,2010,g/m3,Groundwater Quality,NA,NA,250.59
+Manawatu-Whanganui,2010,g/m3,River Quality,0.35,NA,18.2
+Manawatu-Whanganui,2011,cfu/100ml,Groundwater Quality,NA,21.1,NA
+Manawatu-Whanganui,2011,cfu/100ml,River Quality,NA,1683.05,NA
+Manawatu-Whanganui,2011,g/m3,Groundwater Quality,NA,NA,215.79
+Manawatu-Whanganui,2011,g/m3,River Quality,0.33,NA,5.5
+Manawatu-Whanganui,2012,cfu/100ml,Groundwater Quality,NA,27,NA
+Manawatu-Whanganui,2012,cfu/100ml,River Quality,NA,1537,NA
+Manawatu-Whanganui,2012,g/m3,Groundwater Quality,NA,NA,288.76
+Manawatu-Whanganui,2012,g/m3,River Quality,0.36,NA,5.68
+Manawatu-Whanganui,2013,cfu/100ml,Groundwater Quality,NA,96,NA
+Manawatu-Whanganui,2013,cfu/100ml,River Quality,NA,2561.9,NA
+Manawatu-Whanganui,2013,g/m3,Groundwater Quality,NA,NA,285.25
+Manawatu-Whanganui,2013,g/m3,River Quality,0.37,NA,5.84
+Manawatu-Whanganui,2014,cfu/100ml,Groundwater Quality,NA,148.4,NA
+Manawatu-Whanganui,2014,cfu/100ml,River Quality,NA,5166.9,NA
+Manawatu-Whanganui,2014,g/m3,Groundwater Quality,NA,NA,297.59
+Manawatu-Whanganui,2014,g/m3,River Quality,0.44,NA,8.28
+Manawatu-Whanganui,2015,cfu/100ml,Groundwater Quality,NA,148,NA
+Manawatu-Whanganui,2015,cfu/100ml,River Quality,NA,6842.45,NA
+Manawatu-Whanganui,2015,g/m3,Groundwater Quality,NA,NA,507.44
+Manawatu-Whanganui,2015,g/m3,River Quality,0.75,NA,12.41
+Manawatu-Whanganui,2016,cfu/100ml,Groundwater Quality,NA,646,NA
+Manawatu-Whanganui,2016,cfu/100ml,River Quality,NA,14577.95,NA
+Manawatu-Whanganui,2016,g/m3,Groundwater Quality,NA,NA,479.69
+Manawatu-Whanganui,2016,g/m3,River Quality,2.12,NA,27.27
+Manawatu-Whanganui,2017,cfu/100ml,Groundwater Quality,NA,149,NA
+Manawatu-Whanganui,2017,cfu/100ml,River Quality,NA,22016.65,NA
+Manawatu-Whanganui,2017,g/m3,Groundwater Quality,NA,NA,492.68
+Manawatu-Whanganui,2017,g/m3,River Quality,2.89,NA,34.51
+Manawatu-Whanganui,2018,cfu/100ml,Groundwater Quality,NA,176,NA
+Manawatu-Whanganui,2018,cfu/100ml,River Quality,NA,24510,NA
+Manawatu-Whanganui,2018,g/m3,Groundwater Quality,NA,NA,519
+Manawatu-Whanganui,2018,g/m3,River Quality,2.9,NA,37.46
+Manawatu-Whanganui,2019,cfu/100ml,Groundwater Quality,NA,291,NA
+Manawatu-Whanganui,2019,cfu/100ml,River Quality,NA,26850.5,NA
+Manawatu-Whanganui,2019,g/m3,Groundwater Quality,NA,NA,585.72
+Manawatu-Whanganui,2019,g/m3,River Quality,3.25,NA,41.16
+Marlborough,2002,g/m3,River Quality,NA,NA,0.06
+Marlborough,2003,g/m3,River Quality,NA,NA,0.07
+Marlborough,2004,g/m3,Groundwater Quality,NA,NA,23.26
+Marlborough,2004,g/m3,River Quality,0,NA,0.07
+Marlborough,2005,cfu/100ml,Groundwater Quality,NA,37,NA
+Marlborough,2005,g/m3,Groundwater Quality,NA,NA,82.25
+Marlborough,2005,g/m3,River Quality,0,NA,0.06
+Marlborough,2006,cfu/100ml,Groundwater Quality,NA,7,NA
+Marlborough,2006,g/m3,Groundwater Quality,NA,NA,92.49
+Marlborough,2006,g/m3,River Quality,0,NA,0.07
+Marlborough,2007,g/m3,Groundwater Quality,NA,NA,94.65
+Marlborough,2007,g/m3,River Quality,0,NA,0.08
+Marlborough,2008,cfu/100ml,Groundwater Quality,NA,27,NA
+Marlborough,2008,g/m3,Groundwater Quality,NA,NA,111.94
+Marlborough,2008,g/m3,River Quality,0,NA,0.08
+Marlborough,2009,cfu/100ml,Groundwater Quality,NA,9,NA
+Marlborough,2009,g/m3,Groundwater Quality,NA,NA,96.81
+Marlborough,2009,g/m3,River Quality,0,NA,0.09
+Marlborough,2010,cfu/100ml,Groundwater Quality,NA,9,NA
+Marlborough,2010,g/m3,Groundwater Quality,NA,NA,86.58
+Marlborough,2010,g/m3,River Quality,0,NA,0.1
+Marlborough,2011,cfu/100ml,Groundwater Quality,NA,9,NA
+Marlborough,2011,g/m3,Groundwater Quality,NA,NA,60.07
+Marlborough,2011,g/m3,River Quality,0,NA,0.11
+Marlborough,2012,cfu/100ml,Groundwater Quality,NA,48,NA
+Marlborough,2012,g/m3,Groundwater Quality,NA,NA,60.89
+Marlborough,2012,g/m3,River Quality,0,NA,0.11
+Marlborough,2013,cfu/100ml,Groundwater Quality,NA,14,NA
+Marlborough,2013,g/m3,Groundwater Quality,NA,NA,62.21
+Marlborough,2013,g/m3,River Quality,0,NA,0.11
+Marlborough,2014,cfu/100ml,Groundwater Quality,NA,9,NA
+Marlborough,2014,cfu/100ml,River Quality,NA,9.9,NA
+Marlborough,2014,g/m3,Groundwater Quality,NA,NA,65.58
+Marlborough,2014,g/m3,River Quality,0,NA,0.11
+Marlborough,2015,cfu/100ml,Groundwater Quality,NA,12,NA
+Marlborough,2015,cfu/100ml,River Quality,NA,10.5,NA
+Marlborough,2015,g/m3,Groundwater Quality,NA,NA,71.49
+Marlborough,2015,g/m3,River Quality,0,NA,0.11
+Marlborough,2016,cfu/100ml,Groundwater Quality,NA,9,NA
+Marlborough,2016,cfu/100ml,River Quality,NA,1357.5,NA
+Marlborough,2016,g/m3,Groundwater Quality,NA,NA,75.79
+Marlborough,2016,g/m3,River Quality,0.11,NA,5.5
+Marlborough,2017,cfu/100ml,Groundwater Quality,NA,9,NA
+Marlborough,2017,cfu/100ml,River Quality,NA,1724.5,NA
+Marlborough,2017,g/m3,Groundwater Quality,NA,NA,79.72
+Marlborough,2017,g/m3,River Quality,0.11,NA,8.31
+Marlborough,2018,cfu/100ml,Groundwater Quality,NA,11,NA
+Marlborough,2018,cfu/100ml,River Quality,NA,2563.1,NA
+Marlborough,2018,g/m3,Groundwater Quality,NA,NA,77.5
+Marlborough,2018,g/m3,River Quality,0.09,NA,11.34
+Marlborough,2019,cfu/100ml,Groundwater Quality,NA,2,NA
+Marlborough,2019,cfu/100ml,River Quality,NA,2736.6,NA
+Marlborough,2019,g/m3,Groundwater Quality,NA,NA,63.16
+Marlborough,2019,g/m3,River Quality,0.09,NA,10.98
+Nelson,2009,cfu/100ml,River Quality,NA,5119.5,NA
+Nelson,2009,g/m3,River Quality,NA,NA,4.29
+Nelson,2010,cfu/100ml,River Quality,NA,5059.5,NA
+Nelson,2010,g/m3,River Quality,NA,NA,4.45
+Nelson,2011,cfu/100ml,River Quality,NA,4870.5,NA
+Nelson,2011,g/m3,River Quality,0.16,NA,4.79
+Nelson,2012,cfu/100ml,River Quality,NA,4327,NA
+Nelson,2012,g/m3,River Quality,0.15,NA,5.03
+Nelson,2013,cfu/100ml,River Quality,NA,4170.5,NA
+Nelson,2013,g/m3,River Quality,0.14,NA,5.29
+Nelson,2014,cfu/100ml,River Quality,NA,2698.5,NA
+Nelson,2014,g/m3,River Quality,0.11,NA,4.26
+Nelson,2015,cfu/100ml,River Quality,NA,2533,NA
+Nelson,2015,g/m3,River Quality,0.11,NA,4.47
+Nelson,2016,cfu/100ml,River Quality,NA,2717.5,NA
+Nelson,2016,g/m3,River Quality,0.1,NA,5.03
+Nelson,2017,cfu/100ml,River Quality,NA,2978,NA
+Nelson,2017,g/m3,River Quality,0.12,NA,5.48
+Nelson,2018,cfu/100ml,River Quality,NA,3078.5,NA
+Nelson,2018,g/m3,River Quality,0.11,NA,5.31
+Nelson,2019,cfu/100ml,River Quality,NA,3291.5,NA
+Nelson,2019,g/m3,River Quality,0.11,NA,5.48
+Northland,2002,g/m3,River Quality,NA,NA,0.86
+Northland,2003,g/m3,River Quality,NA,NA,0.9
+Northland,2004,cfu/100ml,Groundwater Quality,NA,428,NA
+Northland,2004,g/m3,Groundwater Quality,NA,NA,183.81
+Northland,2004,g/m3,River Quality,0.08,NA,0.9
+Northland,2005,cfu/100ml,Groundwater Quality,NA,1538,NA
+Northland,2005,g/m3,Groundwater Quality,NA,NA,218.85
+Northland,2005,g/m3,River Quality,0.16,NA,1.38
+Northland,2006,cfu/100ml,Groundwater Quality,NA,1483,NA
+Northland,2006,g/m3,Groundwater Quality,NA,NA,239.77
+Northland,2006,g/m3,River Quality,0.27,NA,2.48
+Northland,2007,cfu/100ml,Groundwater Quality,NA,6091,NA
+Northland,2007,g/m3,Groundwater Quality,NA,NA,253.04
+Northland,2007,g/m3,River Quality,0.27,NA,2.42
+Northland,2008,cfu/100ml,Groundwater Quality,NA,3360,NA
+Northland,2008,cfu/100ml,River Quality,NA,1379.5,NA
+Northland,2008,g/m3,Groundwater Quality,NA,NA,277.56
+Northland,2008,g/m3,River Quality,0.26,NA,2.8
+Northland,2009,cfu/100ml,Groundwater Quality,NA,1013,NA
+Northland,2009,cfu/100ml,River Quality,NA,3096.5,NA
+Northland,2009,g/m3,Groundwater Quality,NA,NA,300.65
+Northland,2009,g/m3,River Quality,0.26,NA,2.97
+Northland,2010,cfu/100ml,Groundwater Quality,NA,626,NA
+Northland,2010,cfu/100ml,River Quality,NA,3607,NA
+Northland,2010,g/m3,Groundwater Quality,NA,NA,309.56
+Northland,2010,g/m3,River Quality,0.22,NA,3.61
+Northland,2011,cfu/100ml,Groundwater Quality,NA,7068,NA
+Northland,2011,cfu/100ml,River Quality,NA,4066,NA
+Northland,2011,g/m3,Groundwater Quality,NA,NA,311.64
+Northland,2011,g/m3,River Quality,0.24,NA,3.69
+Northland,2012,cfu/100ml,Groundwater Quality,NA,3223,NA
+Northland,2012,cfu/100ml,River Quality,NA,3965.5,NA
+Northland,2012,g/m3,Groundwater Quality,NA,NA,312.27
+Northland,2012,g/m3,River Quality,0.22,NA,3.58
+Northland,2013,cfu/100ml,Groundwater Quality,NA,2772,NA
+Northland,2013,cfu/100ml,River Quality,NA,4207.95,NA
+Northland,2013,g/m3,Groundwater Quality,NA,NA,301.99
+Northland,2013,g/m3,River Quality,0.26,NA,3.81
+Northland,2014,cfu/100ml,Groundwater Quality,NA,3156,NA
+Northland,2014,cfu/100ml,River Quality,NA,5401.05,NA
+Northland,2014,g/m3,Groundwater Quality,NA,NA,289.55
+Northland,2014,g/m3,River Quality,0.29,NA,4.21
+Northland,2015,cfu/100ml,Groundwater Quality,NA,3190,NA
+Northland,2015,cfu/100ml,River Quality,NA,6969.5,NA
+Northland,2015,g/m3,Groundwater Quality,NA,NA,277.48
+Northland,2015,g/m3,River Quality,0.35,NA,4.63
+Northland,2016,cfu/100ml,Groundwater Quality,NA,3821,NA
+Northland,2016,cfu/100ml,River Quality,NA,8774.5,NA
+Northland,2016,g/m3,Groundwater Quality,NA,NA,298.31
+Northland,2016,g/m3,River Quality,0.43,NA,8.08
+Northland,2017,cfu/100ml,Groundwater Quality,NA,1347,NA
+Northland,2017,cfu/100ml,River Quality,NA,8871.4,NA
+Northland,2017,g/m3,Groundwater Quality,NA,NA,277.73
+Northland,2017,g/m3,River Quality,0.43,NA,8.48
+Northland,2018,cfu/100ml,Groundwater Quality,NA,20456.4,NA
+Northland,2018,cfu/100ml,River Quality,NA,9276.08,NA
+Northland,2018,g/m3,Groundwater Quality,NA,NA,270.59
+Northland,2018,g/m3,River Quality,0.41,NA,8.36
+Northland,2019,cfu/100ml,Groundwater Quality,NA,25353,NA
+Northland,2019,cfu/100ml,River Quality,NA,8897.65,NA
+Northland,2019,g/m3,Groundwater Quality,NA,NA,265.77
+Northland,2019,g/m3,River Quality,0.41,NA,7.88
+Otago,2002,g/m3,River Quality,0.05,NA,1.42
+Otago,2003,g/m3,River Quality,1.03,NA,2.03
+Otago,2004,g/m3,Groundwater Quality,NA,NA,20.3
+Otago,2004,g/m3,River Quality,0.8,NA,1.82
+Otago,2005,g/m3,Groundwater Quality,NA,NA,13.92
+Otago,2005,g/m3,River Quality,0.78,NA,1.78
+Otago,2006,g/m3,Groundwater Quality,NA,NA,16.9
+Otago,2006,g/m3,River Quality,0.8,NA,5.28
+Otago,2007,cfu/100ml,River Quality,NA,2458.5,NA
+Otago,2007,g/m3,Groundwater Quality,NA,NA,10.77
+Otago,2007,g/m3,River Quality,0.59,NA,3.81
+Otago,2008,cfu/100ml,River Quality,NA,2912.5,NA
+Otago,2008,g/m3,Groundwater Quality,NA,NA,0.46
+Otago,2008,g/m3,River Quality,0.63,NA,5
+Otago,2009,cfu/100ml,River Quality,NA,2483,NA
+Otago,2009,g/m3,River Quality,0.57,NA,4.93
+Otago,2010,cfu/100ml,Groundwater Quality,NA,5,NA
+Otago,2010,cfu/100ml,River Quality,NA,2692.75,NA
+Otago,2010,g/m3,Groundwater Quality,NA,NA,0.12
+Otago,2010,g/m3,River Quality,0.54,NA,5.01
+Otago,2011,cfu/100ml,Groundwater Quality,NA,6488,NA
+Otago,2011,cfu/100ml,River Quality,NA,2910,NA
+Otago,2011,g/m3,River Quality,0.59,NA,5.38
+Otago,2012,cfu/100ml,Groundwater Quality,NA,111,NA
+Otago,2012,cfu/100ml,River Quality,NA,3093.75,NA
+Otago,2012,g/m3,River Quality,0.47,NA,5.65
+Otago,2013,cfu/100ml,Groundwater Quality,NA,1190,NA
+Otago,2013,cfu/100ml,River Quality,NA,3424.5,NA
+Otago,2013,g/m3,River Quality,0.4,NA,6.32
+Otago,2014,cfu/100ml,Groundwater Quality,NA,104.1,NA
+Otago,2014,cfu/100ml,River Quality,NA,4108.3,NA
+Otago,2014,g/m3,Groundwater Quality,NA,NA,299.83
+Otago,2014,g/m3,River Quality,0.4,NA,6.75
+Otago,2015,cfu/100ml,Groundwater Quality,NA,198.1,NA
+Otago,2015,cfu/100ml,River Quality,NA,4593.15,NA
+Otago,2015,g/m3,Groundwater Quality,NA,NA,311.21
+Otago,2015,g/m3,River Quality,0.47,NA,8.07
+Otago,2016,cfu/100ml,Groundwater Quality,NA,359.5,NA
+Otago,2016,cfu/100ml,River Quality,NA,4803.6,NA
+Otago,2016,g/m3,Groundwater Quality,NA,NA,270.55
+Otago,2016,g/m3,River Quality,0.48,NA,8.76
+Otago,2017,cfu/100ml,Groundwater Quality,NA,375.7,NA
+Otago,2017,cfu/100ml,River Quality,NA,5099.55,NA
+Otago,2017,g/m3,Groundwater Quality,NA,NA,340.12
+Otago,2017,g/m3,River Quality,0.48,NA,9.82
+Otago,2018,cfu/100ml,Groundwater Quality,NA,816,NA
+Otago,2018,cfu/100ml,River Quality,NA,5324.55,NA
+Otago,2018,g/m3,Groundwater Quality,NA,NA,605.68
+Otago,2018,g/m3,River Quality,0.51,NA,10.42
+Otago,2019,cfu/100ml,Groundwater Quality,NA,294,NA
+Otago,2019,cfu/100ml,River Quality,NA,5442.45,NA
+Otago,2019,g/m3,Groundwater Quality,NA,NA,573.29
+Otago,2019,g/m3,River Quality,0.31,NA,11.96
+Southland,2002,g/m3,River Quality,NA,NA,3.28
+Southland,2003,g/m3,River Quality,NA,NA,3.42
+Southland,2004,cfu/100ml,Groundwater Quality,NA,159,NA
+Southland,2004,g/m3,Groundwater Quality,NA,NA,392.21
+Southland,2004,g/m3,River Quality,0.71,NA,20.48
+Southland,2005,cfu/100ml,Groundwater Quality,NA,2517,NA
+Southland,2005,g/m3,Groundwater Quality,NA,NA,451.75
+Southland,2005,g/m3,River Quality,0.72,NA,21.01
+Southland,2006,cfu/100ml,Groundwater Quality,NA,178,NA
+Southland,2006,g/m3,Groundwater Quality,NA,NA,405.19
+Southland,2006,g/m3,River Quality,0.7,NA,20.71
+Southland,2007,cfu/100ml,Groundwater Quality,NA,164,NA
+Southland,2007,cfu/100ml,River Quality,NA,1282,NA
+Southland,2007,g/m3,Groundwater Quality,NA,NA,494.55
+Southland,2007,g/m3,River Quality,0.71,NA,21.19
+Southland,2008,cfu/100ml,Groundwater Quality,NA,1008,NA
+Southland,2008,cfu/100ml,River Quality,NA,6927.5,NA
+Southland,2008,g/m3,Groundwater Quality,NA,NA,618.61
+Southland,2008,g/m3,River Quality,0.77,NA,24.17
+Southland,2009,cfu/100ml,Groundwater Quality,NA,142,NA
+Southland,2009,cfu/100ml,River Quality,NA,11773.98,NA
+Southland,2009,g/m3,Groundwater Quality,NA,NA,710.4
+Southland,2009,g/m3,River Quality,0.84,NA,26
+Southland,2010,cfu/100ml,Groundwater Quality,NA,2134,NA
+Southland,2010,cfu/100ml,River Quality,NA,17860.1,NA
+Southland,2010,g/m3,Groundwater Quality,NA,NA,773.74
+Southland,2010,g/m3,River Quality,1.27,NA,37.63
+Southland,2011,cfu/100ml,Groundwater Quality,NA,2648,NA
+Southland,2011,cfu/100ml,River Quality,NA,18567.7,NA
+Southland,2011,g/m3,Groundwater Quality,NA,NA,701.18
+Southland,2011,g/m3,River Quality,1.27,NA,39.12
+Southland,2012,cfu/100ml,Groundwater Quality,NA,1163,NA
+Southland,2012,cfu/100ml,River Quality,NA,19988.4,NA
+Southland,2012,g/m3,Groundwater Quality,NA,NA,611.93
+Southland,2012,g/m3,River Quality,1.3,NA,47.18
+Southland,2013,cfu/100ml,Groundwater Quality,NA,1333,NA
+Southland,2013,cfu/100ml,River Quality,NA,19955.4,NA
+Southland,2013,g/m3,Groundwater Quality,NA,NA,590.09
+Southland,2013,g/m3,River Quality,1.18,NA,48.34
+Southland,2014,cfu/100ml,Groundwater Quality,NA,3701,NA
+Southland,2014,cfu/100ml,River Quality,NA,22974.95,NA
+Southland,2014,g/m3,Groundwater Quality,NA,NA,557.79
+Southland,2014,g/m3,River Quality,1.19,NA,55.95
+Southland,2015,cfu/100ml,Groundwater Quality,NA,742,NA
+Southland,2015,cfu/100ml,River Quality,NA,20696.25,NA
+Southland,2015,g/m3,Groundwater Quality,NA,NA,509.75
+Southland,2015,g/m3,River Quality,1.05,NA,42.18
+Southland,2016,cfu/100ml,Groundwater Quality,NA,2649,NA
+Southland,2016,cfu/100ml,River Quality,NA,19868.05,NA
+Southland,2016,g/m3,Groundwater Quality,NA,NA,520.26
+Southland,2016,g/m3,River Quality,0.97,NA,43.27
+Southland,2017,cfu/100ml,Groundwater Quality,NA,187,NA
+Southland,2017,cfu/100ml,River Quality,NA,19943.3,NA
+Southland,2017,g/m3,Groundwater Quality,NA,NA,569.38
+Southland,2017,g/m3,River Quality,0.86,NA,41.87
+Southland,2018,cfu/100ml,Groundwater Quality,NA,401,NA
+Southland,2018,cfu/100ml,River Quality,NA,18950.1,NA
+Southland,2018,g/m3,Groundwater Quality,NA,NA,644.58
+Southland,2018,g/m3,River Quality,0.75,NA,42.75
+Southland,2019,cfu/100ml,Groundwater Quality,NA,432,NA
+Southland,2019,cfu/100ml,River Quality,NA,18296.8,NA
+Southland,2019,g/m3,Groundwater Quality,NA,NA,841.91
+Southland,2019,g/m3,River Quality,0.77,NA,43.34
+Taranaki,2002,g/m3,River Quality,NA,NA,2.27
+Taranaki,2003,g/m3,River Quality,NA,NA,2.34
+Taranaki,2004,cfu/100ml,Groundwater Quality,NA,12,NA
+Taranaki,2004,g/m3,Groundwater Quality,NA,NA,79.85
+Taranaki,2004,g/m3,River Quality,0.06,NA,2.4
+Taranaki,2005,g/m3,Groundwater Quality,NA,NA,40.43
+Taranaki,2005,g/m3,River Quality,0.06,NA,2.36
+Taranaki,2006,cfu/100ml,Groundwater Quality,NA,200,NA
+Taranaki,2006,g/m3,Groundwater Quality,NA,NA,150.92
+Taranaki,2006,g/m3,River Quality,0.06,NA,2.39
+Taranaki,2007,cfu/100ml,Groundwater Quality,NA,1083,NA
+Taranaki,2007,cfu/100ml,River Quality,NA,675,NA
+Taranaki,2007,g/m3,Groundwater Quality,NA,NA,165.55
+Taranaki,2007,g/m3,River Quality,0.06,NA,2.36
+Taranaki,2008,cfu/100ml,River Quality,NA,690,NA
+Taranaki,2008,g/m3,Groundwater Quality,NA,NA,16.05
+Taranaki,2008,g/m3,River Quality,0.06,NA,2.39
+Taranaki,2009,cfu/100ml,River Quality,NA,1986,NA
+Taranaki,2009,g/m3,Groundwater Quality,NA,NA,55.75
+Taranaki,2009,g/m3,River Quality,0.21,NA,2.35
+Taranaki,2010,cfu/100ml,River Quality,NA,1973,NA
+Taranaki,2010,g/m3,Groundwater Quality,NA,NA,13.11
+Taranaki,2010,g/m3,River Quality,0.21,NA,2.32
+Taranaki,2011,cfu/100ml,Groundwater Quality,NA,27,NA
+Taranaki,2011,cfu/100ml,River Quality,NA,1994,NA
+Taranaki,2011,g/m3,Groundwater Quality,NA,NA,68.63
+Taranaki,2011,g/m3,River Quality,0.21,NA,2.28
+Taranaki,2012,cfu/100ml,Groundwater Quality,NA,245,NA
+Taranaki,2012,cfu/100ml,River Quality,NA,2301,NA
+Taranaki,2012,g/m3,Groundwater Quality,NA,NA,206.1
+Taranaki,2012,g/m3,River Quality,0.22,NA,2.28
+Taranaki,2013,cfu/100ml,Groundwater Quality,NA,53,NA
+Taranaki,2013,cfu/100ml,River Quality,NA,2776.95,NA
+Taranaki,2013,g/m3,Groundwater Quality,NA,NA,103.04
+Taranaki,2013,g/m3,River Quality,0.26,NA,8.81
+Taranaki,2014,cfu/100ml,Groundwater Quality,NA,350,NA
+Taranaki,2014,cfu/100ml,River Quality,NA,3382.3,NA
+Taranaki,2014,g/m3,Groundwater Quality,NA,NA,335.95
+Taranaki,2014,g/m3,River Quality,0.27,NA,8.58
+Taranaki,2015,cfu/100ml,Groundwater Quality,NA,735,NA
+Taranaki,2015,cfu/100ml,River Quality,NA,3367.65,NA
+Taranaki,2015,g/m3,Groundwater Quality,NA,NA,467.1
+Taranaki,2015,g/m3,River Quality,0.28,NA,8.61
+Taranaki,2016,cfu/100ml,Groundwater Quality,NA,714,NA
+Taranaki,2016,cfu/100ml,River Quality,NA,3179,NA
+Taranaki,2016,g/m3,Groundwater Quality,NA,NA,347.55
+Taranaki,2016,g/m3,River Quality,0.24,NA,6.86
+Taranaki,2017,cfu/100ml,Groundwater Quality,NA,9188.6,NA
+Taranaki,2017,cfu/100ml,River Quality,NA,3460.85,NA
+Taranaki,2017,g/m3,Groundwater Quality,NA,NA,398.56
+Taranaki,2017,g/m3,River Quality,0.24,NA,6.95
+Taranaki,2018,cfu/100ml,Groundwater Quality,NA,320,NA
+Taranaki,2018,cfu/100ml,River Quality,NA,3336.45,NA
+Taranaki,2018,g/m3,Groundwater Quality,NA,NA,428.69
+Taranaki,2018,g/m3,River Quality,0.23,NA,6.89
+Taranaki,2019,cfu/100ml,Groundwater Quality,NA,4319,NA
+Taranaki,2019,cfu/100ml,River Quality,NA,3361.15,NA
+Taranaki,2019,g/m3,Groundwater Quality,NA,NA,456.13
+Taranaki,2019,g/m3,River Quality,0.22,NA,6.94
+Tasman,2002,g/m3,River Quality,NA,NA,0.16
+Tasman,2003,g/m3,River Quality,NA,NA,0.16
+Tasman,2004,g/m3,Groundwater Quality,NA,NA,223.59
+Tasman,2004,g/m3,River Quality,0.01,NA,0.17
+Tasman,2005,g/m3,Groundwater Quality,NA,NA,178.95
+Tasman,2005,g/m3,River Quality,0.01,NA,0.16
+Tasman,2006,g/m3,Groundwater Quality,NA,NA,213.08
+Tasman,2006,g/m3,River Quality,0.01,NA,0.16
+Tasman,2007,g/m3,Groundwater Quality,NA,NA,203.53
+Tasman,2007,g/m3,River Quality,0.01,NA,0.17
+Tasman,2008,cfu/100ml,River Quality,NA,137.5,NA
+Tasman,2008,g/m3,Groundwater Quality,NA,NA,198.95
+Tasman,2008,g/m3,River Quality,0.02,NA,0.28
+Tasman,2009,cfu/100ml,River Quality,NA,1882.5,NA
+Tasman,2009,g/m3,Groundwater Quality,NA,NA,206.37
+Tasman,2009,g/m3,River Quality,0.1,NA,2.22
+Tasman,2010,cfu/100ml,River Quality,NA,2002.1,NA
+Tasman,2010,g/m3,Groundwater Quality,NA,NA,212.77
+Tasman,2010,g/m3,River Quality,0.14,NA,2.29
+Tasman,2011,cfu/100ml,River Quality,NA,2469,NA
+Tasman,2011,g/m3,Groundwater Quality,NA,NA,221.04
+Tasman,2011,g/m3,River Quality,0.14,NA,2.48
+Tasman,2012,cfu/100ml,River Quality,NA,2580.75,NA
+Tasman,2012,g/m3,Groundwater Quality,NA,NA,193.89
+Tasman,2012,g/m3,River Quality,0.12,NA,2.58
+Tasman,2013,cfu/100ml,River Quality,NA,2791,NA
+Tasman,2013,g/m3,Groundwater Quality,NA,NA,172.53
+Tasman,2013,g/m3,River Quality,0.12,NA,4.32
+Tasman,2014,cfu/100ml,River Quality,NA,4918.1,NA
+Tasman,2014,g/m3,Groundwater Quality,NA,NA,171.57
+Tasman,2014,g/m3,River Quality,0.2,NA,6.36
+Tasman,2015,cfu/100ml,River Quality,NA,5454.6,NA
+Tasman,2015,g/m3,Groundwater Quality,NA,NA,182.6
+Tasman,2015,g/m3,River Quality,0.26,NA,8.02
+Tasman,2016,cfu/100ml,Groundwater Quality,NA,5,NA
+Tasman,2016,cfu/100ml,River Quality,NA,3930.25,NA
+Tasman,2016,g/m3,Groundwater Quality,NA,NA,244.1
+Tasman,2016,g/m3,River Quality,0.09,NA,5.48
+Tasman,2017,cfu/100ml,River Quality,NA,2995.55,NA
+Tasman,2017,g/m3,Groundwater Quality,NA,NA,211.1
+Tasman,2017,g/m3,River Quality,0.05,NA,3.84
+Tasman,2018,cfu/100ml,River Quality,NA,3640.95,NA
+Tasman,2018,g/m3,Groundwater Quality,NA,NA,267.48
+Tasman,2018,g/m3,River Quality,0.06,NA,3.9
+Tasman,2019,cfu/100ml,River Quality,NA,3684.95,NA
+Tasman,2019,g/m3,Groundwater Quality,NA,NA,271.2
+Tasman,2019,g/m3,River Quality,0.06,NA,3.94
+Waikato,2002,g/m3,River Quality,3.44,NA,44.69
+Waikato,2003,g/m3,River Quality,6.02,NA,66.88
+Waikato,2004,g/m3,Groundwater Quality,NA,NA,1166.89
+Waikato,2004,g/m3,River Quality,6.09,NA,68
+Waikato,2005,g/m3,Groundwater Quality,NA,NA,1039.07
+Waikato,2005,g/m3,River Quality,5.89,NA,68.06
+Waikato,2006,cfu/100ml,River Quality,NA,170,NA
+Waikato,2006,g/m3,Groundwater Quality,NA,NA,1054.58
+Waikato,2006,g/m3,River Quality,5.68,NA,68.21
+Waikato,2007,cfu/100ml,River Quality,NA,24861.5,NA
+Waikato,2007,g/m3,Groundwater Quality,NA,NA,1084.12
+Waikato,2007,g/m3,River Quality,5.51,NA,68.36
+Waikato,2008,cfu/100ml,River Quality,NA,26495,NA
+Waikato,2008,g/m3,Groundwater Quality,NA,NA,1241.7
+Waikato,2008,g/m3,River Quality,5.38,NA,69.41
+Waikato,2009,cfu/100ml,River Quality,NA,26222.5,NA
+Waikato,2009,g/m3,Groundwater Quality,NA,NA,1253.69
+Waikato,2009,g/m3,River Quality,5.37,NA,72.5
+Waikato,2010,cfu/100ml,River Quality,NA,25768.5,NA
+Waikato,2010,g/m3,Groundwater Quality,NA,NA,1175.49
+Waikato,2010,g/m3,River Quality,5.3,NA,72.99
+Waikato,2011,cfu/100ml,River Quality,NA,26854,NA
+Waikato,2011,g/m3,Groundwater Quality,NA,NA,1131.95
+Waikato,2011,g/m3,River Quality,5.23,NA,74.15
+Waikato,2012,cfu/100ml,River Quality,NA,26010.5,NA
+Waikato,2012,g/m3,Groundwater Quality,NA,NA,1136.22
+Waikato,2012,g/m3,River Quality,5.12,NA,75.28
+Waikato,2013,cfu/100ml,River Quality,NA,23397.5,NA
+Waikato,2013,g/m3,Groundwater Quality,NA,NA,1147.63
+Waikato,2013,g/m3,River Quality,5.1,NA,75.9
+Waikato,2014,cfu/100ml,River Quality,NA,22343.05,NA
+Waikato,2014,g/m3,Groundwater Quality,NA,NA,1175.34
+Waikato,2014,g/m3,River Quality,4.98,NA,74.08
+Waikato,2015,cfu/100ml,River Quality,NA,20039.65,NA
+Waikato,2015,g/m3,Groundwater Quality,NA,NA,1190.47
+Waikato,2015,g/m3,River Quality,4.9,NA,74.47
+Waikato,2016,cfu/100ml,River Quality,NA,20375.85,NA
+Waikato,2016,g/m3,Groundwater Quality,NA,NA,1202.75
+Waikato,2016,g/m3,River Quality,4.86,NA,74.81
+Waikato,2017,cfu/100ml,River Quality,NA,19867.85,NA
+Waikato,2017,g/m3,Groundwater Quality,NA,NA,1195.85
+Waikato,2017,g/m3,River Quality,4.92,NA,78.13
+Waikato,2018,cfu/100ml,River Quality,NA,19957.3,NA
+Waikato,2018,g/m3,Groundwater Quality,NA,NA,1327.66
+Waikato,2018,g/m3,River Quality,5.02,NA,78.04
+Waikato,2019,cfu/100ml,River Quality,NA,20782.2,NA
+Waikato,2019,g/m3,Groundwater Quality,NA,NA,638.75
+Waikato,2019,g/m3,River Quality,5.04,NA,80.33
+Wellington,2002,g/m3,River Quality,NA,NA,1.21
+Wellington,2003,g/m3,River Quality,NA,NA,1.24
+Wellington,2004,cfu/100ml,Groundwater Quality,NA,236,NA
+Wellington,2004,g/m3,Groundwater Quality,NA,NA,498.82
+Wellington,2004,g/m3,River Quality,0.03,NA,1.28
+Wellington,2005,cfu/100ml,Groundwater Quality,NA,721,NA
+Wellington,2005,g/m3,Groundwater Quality,NA,NA,563.01
+Wellington,2005,g/m3,River Quality,0.03,NA,1.25
+Wellington,2006,cfu/100ml,Groundwater Quality,NA,327,NA
+Wellington,2006,g/m3,Groundwater Quality,NA,NA,606.93
+Wellington,2006,g/m3,River Quality,0.03,NA,1.25
+Wellington,2007,cfu/100ml,Groundwater Quality,NA,1914,NA
+Wellington,2007,g/m3,Groundwater Quality,NA,NA,504.56
+Wellington,2007,g/m3,River Quality,0.03,NA,1.24
+Wellington,2008,cfu/100ml,Groundwater Quality,NA,256,NA
+Wellington,2008,g/m3,Groundwater Quality,NA,NA,547.37
+Wellington,2008,g/m3,River Quality,0.03,NA,1.25
+Wellington,2009,cfu/100ml,Groundwater Quality,NA,275,NA
+Wellington,2009,g/m3,Groundwater Quality,NA,NA,511.26
+Wellington,2009,g/m3,River Quality,0.03,NA,1.25
+Wellington,2010,cfu/100ml,Groundwater Quality,NA,261,NA
+Wellington,2010,g/m3,Groundwater Quality,NA,NA,496.91
+Wellington,2010,g/m3,River Quality,0.03,NA,1.21
+Wellington,2011,cfu/100ml,Groundwater Quality,NA,564,NA
+Wellington,2011,g/m3,Groundwater Quality,NA,NA,498.51
+Wellington,2011,g/m3,River Quality,0.03,NA,1.19
+Wellington,2012,cfu/100ml,Groundwater Quality,NA,311,NA
+Wellington,2012,cfu/100ml,River Quality,NA,8851,NA
+Wellington,2012,g/m3,Groundwater Quality,NA,NA,460.64
+Wellington,2012,g/m3,River Quality,0.71,NA,27.22
+Wellington,2013,cfu/100ml,Groundwater Quality,NA,265,NA
+Wellington,2013,cfu/100ml,River Quality,NA,9414.3,NA
+Wellington,2013,g/m3,Groundwater Quality,NA,NA,462.85
+Wellington,2013,g/m3,River Quality,0.72,NA,28.47
+Wellington,2014,cfu/100ml,Groundwater Quality,NA,274,NA
+Wellington,2014,cfu/100ml,River Quality,NA,9400.5,NA
+Wellington,2014,g/m3,Groundwater Quality,NA,NA,464.42
+Wellington,2014,g/m3,River Quality,0.69,NA,27.18
+Wellington,2015,cfu/100ml,Groundwater Quality,NA,351,NA
+Wellington,2015,cfu/100ml,River Quality,NA,9545.85,NA
+Wellington,2015,g/m3,Groundwater Quality,NA,NA,434.13
+Wellington,2015,g/m3,River Quality,0.67,NA,27.12
+Wellington,2016,cfu/100ml,Groundwater Quality,NA,216,NA
+Wellington,2016,cfu/100ml,River Quality,NA,9077.8,NA
+Wellington,2016,g/m3,Groundwater Quality,NA,NA,410.08
+Wellington,2016,g/m3,River Quality,0.59,NA,25.98
+Wellington,2017,cfu/100ml,Groundwater Quality,NA,449,NA
+Wellington,2017,cfu/100ml,River Quality,NA,8445.35,NA
+Wellington,2017,g/m3,Groundwater Quality,NA,NA,391.7
+Wellington,2017,g/m3,River Quality,0.41,NA,23.99
+Wellington,2018,cfu/100ml,Groundwater Quality,NA,859,NA
+Wellington,2018,cfu/100ml,River Quality,NA,8893.6,NA
+Wellington,2018,g/m3,Groundwater Quality,NA,NA,437.89
+Wellington,2018,g/m3,River Quality,0.39,NA,23.21
+Wellington,2019,cfu/100ml,Groundwater Quality,NA,302,NA
+Wellington,2019,cfu/100ml,River Quality,NA,9505.25,NA
+Wellington,2019,g/m3,Groundwater Quality,NA,NA,492.25
+Wellington,2019,g/m3,River Quality,0.38,NA,23.01
+West Coast,2002,g/m3,River Quality,NA,NA,0.17
+West Coast,2003,g/m3,River Quality,NA,NA,0.18
+West Coast,2004,cfu/100ml,Groundwater Quality,NA,17,NA
+West Coast,2004,g/m3,Groundwater Quality,NA,NA,18.87
+West Coast,2004,g/m3,River Quality,0.02,NA,0.19
+West Coast,2005,cfu/100ml,Groundwater Quality,NA,44,NA
+West Coast,2005,g/m3,Groundwater Quality,NA,NA,30.94
+West Coast,2005,g/m3,River Quality,0.01,NA,0.19
+West Coast,2006,cfu/100ml,Groundwater Quality,NA,53,NA
+West Coast,2006,g/m3,Groundwater Quality,NA,NA,55.31
+West Coast,2006,g/m3,River Quality,0.01,NA,0.2
+West Coast,2007,cfu/100ml,Groundwater Quality,NA,50,NA
+West Coast,2007,g/m3,Groundwater Quality,NA,NA,114
+West Coast,2007,g/m3,River Quality,0.01,NA,0.2
+West Coast,2008,cfu/100ml,Groundwater Quality,NA,63,NA
+West Coast,2008,g/m3,Groundwater Quality,NA,NA,96.71
+West Coast,2008,g/m3,River Quality,0.01,NA,0.22
+West Coast,2009,cfu/100ml,Groundwater Quality,NA,64,NA
+West Coast,2009,g/m3,Groundwater Quality,NA,NA,84.72
+West Coast,2009,g/m3,River Quality,0.01,NA,0.23
+West Coast,2010,cfu/100ml,Groundwater Quality,NA,73,NA
+West Coast,2010,g/m3,Groundwater Quality,NA,NA,141.06
+West Coast,2010,g/m3,River Quality,0.01,NA,0.24
+West Coast,2011,cfu/100ml,Groundwater Quality,NA,215,NA
+West Coast,2011,cfu/100ml,River Quality,NA,5,NA
+West Coast,2011,g/m3,Groundwater Quality,NA,NA,203.12
+West Coast,2011,g/m3,River Quality,0.01,NA,0.24
+West Coast,2012,cfu/100ml,Groundwater Quality,NA,120,NA
+West Coast,2012,cfu/100ml,River Quality,NA,35,NA
+West Coast,2012,g/m3,Groundwater Quality,NA,NA,182.01
+West Coast,2012,g/m3,River Quality,0.01,NA,0.23
+West Coast,2013,cfu/100ml,Groundwater Quality,NA,1098,NA
+West Coast,2013,cfu/100ml,River Quality,NA,3027.5,NA
+West Coast,2013,g/m3,Groundwater Quality,NA,NA,197.12
+West Coast,2013,g/m3,River Quality,0.09,NA,0.3
+West Coast,2014,cfu/100ml,Groundwater Quality,NA,553,NA
+West Coast,2014,cfu/100ml,River Quality,NA,3600,NA
+West Coast,2014,g/m3,Groundwater Quality,NA,NA,259.31
+West Coast,2014,g/m3,River Quality,0.21,NA,0.42
+West Coast,2015,cfu/100ml,Groundwater Quality,NA,237,NA
+West Coast,2015,cfu/100ml,River Quality,NA,4143.15,NA
+West Coast,2015,g/m3,Groundwater Quality,NA,NA,242.66
+West Coast,2015,g/m3,River Quality,0.62,NA,0.42
+West Coast,2016,cfu/100ml,Groundwater Quality,NA,1864,NA
+West Coast,2016,cfu/100ml,River Quality,NA,4555.75,NA
+West Coast,2016,g/m3,Groundwater Quality,NA,NA,194.41
+West Coast,2016,g/m3,River Quality,0.58,NA,0.43
+West Coast,2017,cfu/100ml,Groundwater Quality,NA,64,NA
+West Coast,2017,cfu/100ml,River Quality,NA,4654.65,NA
+West Coast,2017,g/m3,Groundwater Quality,NA,NA,164.65
+West Coast,2017,g/m3,River Quality,0.57,NA,0.97
+West Coast,2018,cfu/100ml,Groundwater Quality,NA,208,NA
+West Coast,2018,cfu/100ml,River Quality,NA,3957.7,NA
+West Coast,2018,g/m3,Groundwater Quality,NA,NA,204.49
+West Coast,2018,g/m3,River Quality,0.62,NA,4.42
+West Coast,2019,cfu/100ml,Groundwater Quality,NA,2012,NA
+West Coast,2019,cfu/100ml,River Quality,NA,3863.7,NA
+West Coast,2019,g/m3,Groundwater Quality,NA,NA,220.25
+West Coast,2019,g/m3,River Quality,0.47,NA,4.49
