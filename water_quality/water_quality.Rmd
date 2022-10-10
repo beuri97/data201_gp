@@ -7,24 +7,32 @@ output:
 runtime: shiny
 ---
 
+GROUNDWATER
+===
 ```{r setup, include=FALSE}
 library(flexdashboard)
 library(tidyverse)
 library(plotly)
 library(shiny)
 
-water_quality <- read_csv("water_quality.csv")
-
+groundwater_quality <- read_csv("groundwater_quality.csv")
+river_quality <- read_csv("river_quality.csv")
+df <- groundwater_quality %>% 
+  gather(key = Indicator,
+         value = Total_MedVal, c(`E.coli (cfu/100ml)`, `Nitrate nitrogen (g/m3)`),
+         -c(Region, Year)) %>% 
+  filter(Indicator == "E.coli (cfu/100ml)") %>% 
+  group_by(Year) %>% 
+  na.omit() %>% 
+  summarise(meanval = mean(Total_MedVal))
 ```
 
 Column {.sidebar}
 -----------------------------------------------------------------------
 ```{r}
-selectInput("region", label = "Region", choices = c("All", sort(water_quality$Region)), selected = "All")
+selectInput("region", label = "Region", choices = c("All", sort(river_quality$Region)), selected = "All")
 
-radioButtons("category", label = "Category", choices = c(water_quality$Water_Categ %>% unique()))
-
-radioButtons("indicator", label = "Indicator", choices = c(water_quality$Indicator %>% unique()))
+radioButtons("indicator", label = "Indicator", choices = c("E.coli", "Nitrate nitrogen"))
 ```
 
 
@@ -34,14 +42,42 @@ Column {data-width=650}
 ### Plot 1
 
 ```{r}
-renderPlotly(ggplotly(water_quality %>%
+renderPlotly(ggplotly(df %>% 
   filter(str_detect(Region, if_else(input$region == "All", "", input$region)),
-         Indicator == input$indicator, Water_Categ == input$category) %>% 
-  ggplot(aes(x = Year, y = Total_MedVal, fill = Region), text = paste("Region:", Region)) +
-  geom_bar(stat = "identity")))
+         Indicator == if_else(input$indicator == "E.coli", "E.coli (cfu/100ml)", "Nitrate nitrogen (g/m3)")) %>% 
+  ggplot(aes(x = Year, y = Total_MedVal,
+             fill = Region), text = paste("Region:", Region)) +
+  geom_bar(stat = "identity") +
+  theme_bw()))
 ```
 
-Row {data-width=350}
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+renderValueBox({
+  new_df <- df %>% 
+  filter(str_detect(Region, if_else(input$region == "All", "", input$region)),
+         Indicator == if_else(input$indicator == "E.coli", "E.coli (cfu/100ml)", "Nitrate nitrogen (g/m3)")) %>% 
+  group_by(Region) %>% 
+  summarise(not_assessed = sum(is.na(Total_MedVal)))
+  
+  new_df %>% 
+    valueBox()
+})
+```
+
+### Chart C
+
+```{r}
+
+```
+
+RIVER
+===
+Column {data-width=350}
 -----------------------------------------------------------------------
 
 ### Chart B
@@ -53,23 +89,13 @@ Row {data-width=350}
 ### Chart C
 
 ```{r}
-water_quality %>% 
-  filter(Indicator != "E.coli", Water_Categ == "Groundwater Quality") %>%
-  ggplot(aes(x = Year, y = Total_MedVal, fill = Region)) +
-  geom_bar(stat = "identity") +
-  xlim(2002, 2019) +
-  theme_bw()
+
 ```
 
 ### Chart D
 
 ```{r}
-water_quality %>% 
-  filter(Water_Categ == "Groundwater Quality") %>%
-  ggplot(aes(x = Year, y = Total_MedVal, fill = Region)) +
-  geom_bar(stat = "identity") +
-  xlim(2002, 2019) +
-  theme_bw()
+
 ```
  
  

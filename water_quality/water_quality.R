@@ -41,16 +41,16 @@ new_groundwq <- groundwq %>%
   filter(Indicator %in% c("E.coli", "Nitrate nitrogen"), Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Indicator, Year) %>% 
   na.omit() %>% 
-  summarise(Total_MedVal = round(sum(CensoredValue), 2)) %>% 
+  summarise(Total_MedVal = round(mean(CensoredValue), 2)) %>% 
   distinct()
 
 # Takes the new_groundwq then convert it to wide format.
-groundwq_wide <- new_groundwq %>% 
+groundwater_quality <- new_groundwq %>% 
   spread(key = Indicator,
          value = Total_MedVal) %>% 
   mutate(`E.coli (cfu/100ml)` = E.coli, `Nitrate nitrogen (g/m3)` = `Nitrate nitrogen`) %>% 
   select(-c("E.coli", "Nitrate nitrogen"))
-groundwq_wide
+groundwater_quality
 
 # Load 'new_river_ecoli.csv' data
 river_ecoli <- "new_river_ecoli.csv" %>% 
@@ -79,7 +79,7 @@ river_ecoli %>%
 new_riverecoli <- river_ecoli %>%
   filter(Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Year, Indicator) %>% 
-  summarise(Total_MedVal = round(sum(Median), 2)) %>% 
+  summarise(Total_MedVal = round(mean(Median), 2)) %>% 
   unique()
 
 # Wide format data set spread by Region as key
@@ -115,7 +115,7 @@ new_rivernitrogen <- river_nitrogen %>%
   filter(Indicator %in% c("Ammoniacal nitrogen", "Nitrate-nitrite nitrogen"),
          Year >= 2002, Year <= 2019) %>% 
   group_by(Region, Indicator, Year) %>% 
-  summarise(Total_MedVal = round(sum(Med_Value), 2)) %>% 
+  summarise(Total_MedVal = round(mean(Med_Value), 2)) %>% 
   distinct()
 
 # Takes the new_rivernitrogen then convert it to wide format.
@@ -131,12 +131,6 @@ rivernitrogen_wide
 river_quality <- rivernitrogen_wide %>% 
   full_join(riverecoli_wide)
 
-# Merge the tibble of categories with the existing groundwq and river_quality dataframes.
-
-
-# Join the groundwq and river_quality to create water quality dataframe.
-# Normalise the indicator for all E.coli observation.
-
-
 # Generate csv file
-write_csv(water_quality, "water_quality.csv")
+write_csv(river_quality, "river_quality.csv")
+write_csv(groundwater_quality, "groundwater_quality.csv")
