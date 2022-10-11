@@ -42,13 +42,7 @@ Column {data-width=650}
 ### Plot 1
 
 ```{r}
-renderPlotly(ggplotly(df %>% 
-  filter(str_detect(Region, if_else(input$region == "All", "", input$region)),
-         Indicator == if_else(input$indicator == "E.coli", "E.coli (cfu/100ml)", "Nitrate nitrogen (g/m3)")) %>% 
-  ggplot(aes(x = Year, y = Total_MedVal,
-             fill = Region), text = paste("Region:", Region)) +
-  geom_bar(stat = "identity") +
-  theme_bw()))
+df
 ```
 
 Column {data-width=350}
