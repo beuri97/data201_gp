@@ -17,7 +17,7 @@ library(shiny)
 
 groundwater_quality <- read_csv("groundwater_quality.csv")
 river_quality <- read_csv("river_quality.csv")
-df <- groundwater_quality %>% 
+mean_groundwq <- groundwater_quality %>% 
   gather(key = Indicator,
          value = Total_MedVal, c(`E.coli (cfu/100ml)`, `Nitrate nitrogen (g/m3)`),
          -c(Region, Year)) %>% 
@@ -42,7 +42,11 @@ Column {data-width=650}
 ### Plot 1
 
 ```{r}
-df
+mean_vals <- rbind(pmin(mean_groundwq$meanval, 11), pmax(mean_groundwq$meanval-11, 0))
+
+mean_vals %>% 
+  barplot(names.arg=mean_groundwq$Year, col=c("green", "red"), ylim = c(0, 80))
+abline(h = 11, col="red", lty=2)
 ```
 
 Column {data-width=350}
@@ -51,16 +55,7 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-renderValueBox({
-  new_df <- df %>% 
-  filter(str_detect(Region, if_else(input$region == "All", "", input$region)),
-         Indicator == if_else(input$indicator == "E.coli", "E.coli (cfu/100ml)", "Nitrate nitrogen (g/m3)")) %>% 
-  group_by(Region) %>% 
-  summarise(not_assessed = sum(is.na(Total_MedVal)))
-  
-  new_df %>% 
-    valueBox()
-})
+
 ```
 
 ### Chart C
