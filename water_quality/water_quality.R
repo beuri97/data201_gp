@@ -134,3 +134,26 @@ river_quality <- rivernitrogen_wide %>%
 # Generate csv file
 write_csv(river_quality, "river_quality.csv")
 write_csv(groundwater_quality, "groundwater_quality.csv")
+
+
+# Prototype Line Plot
+my_df <- river_quality %>% 
+  group_by(Year) %>% 
+  summarise(`NO3-N (g/m3)` = mean(`Nitrate-nitrite nitrogen (g/m3)`), 
+            `NH3-N (g/m3)` = mean(`Ammoniacal nitrogen (g/m3)` %>% na.omit()),
+            `E.coli (cfu/100ml)` = mean(`E.coli (cfu/100ml)` %>% na.omit()))
+
+NO3<-ggplot(my_df %>% select(Year, `NO3-N (g/m3)`), aes(x = Year, y = `NO3-N (g/m3)`)) +
+  geom_line()+
+  geom_point()
+
+NO3
+NH3 <- ggplot(my_df %>% select(Year, `NH3-N (g/m3)`), aes(x = Year, y = `NH3-N (g/m3)`)) +
+  geom_line()+
+  geom_point()
+NH3
+
+E_coli <- ggplot(my_df %>% select(Year, `E.coli (cfu/100ml)`), aes(x = Year, y = `E.coli (cfu/100ml)`)) +
+  geom_line()+
+  geom_point()
+E_coli
