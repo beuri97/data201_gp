@@ -2,7 +2,7 @@
 title: "Water Quality"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: rows
+    orientation: columns
     vertical_layout: fill
 runtime: shiny
 ---
@@ -19,8 +19,7 @@ library(shiny)
 groundwater_quality <- read_csv("groundwater_quality.csv")
 river_quality <- read_csv("river_quality.csv")
 gwq_sites <- read_csv("groundwq_sites.csv")
-re_srcs <- read_csv("riverecoli_src.csv")
-rn_srcs <- read_csv("rivernitrogen_src.csv")
+river_srcs <- read_csv("river_src.csv")
 
 gwq <- groundwater_quality %>% 
   filter(Indicator == "E.coli cfu/100ml") %>% 
@@ -32,7 +31,9 @@ gwq_regional_sites <- gwq_sites %>%
   group_by(Region) %>% 
   summarise(TotalSites = n())
 
-
+river_regional_srcs <- river_srcs %>% 
+  group_by(Region) %>% 
+  summarise(TotalSites = n())
 
 # mean_vals <- rbind(pmin(mean_groundwq$meanval, 11), pmax(mean_groundwq$meanval-11, 0))
 # 
@@ -41,40 +42,39 @@ gwq_regional_sites <- gwq_sites %>%
 # abline(h = 11, col="red", lty=2)
 ```
 
-Row {.sidebar}
------------------------------------------------------------------------
-```{r}
-selectInput("region", label = "Region", choices = c("All", sort(river_quality$Region)), selected = "All")
+Column {data-width=350}
+-------------------------------------
+    
+### No. of Wells Sampled
 
-radioButtons("indicator", label = "Indicator", choices = c("E.coli", "Nitrate nitrogen"))
+```{r}
+renderValueBox(
+  valueBox(value = sum(gwq_regional_sites$TotalSites), icon = "fas fa-heart-crack")
+)
 ```
 
-
-Row {data-width=650}
------------------------------------------------------------------------
-
-### Plot 1
+### No. of Source of Flow Sampled
 
 ```{r}
-
-
-
-
+renderValueBox(
+  valueBox(value = sum(river_regional_srcs$TotalSites),
+           icon = "fa-water")
+)
 ```
-
-Row {data-width=350}
------------------------------------------------------------------------
-
-### Chart B
-
-```{r}
-
-```
-
-### Chart C
+   
+Column {data-width=250 .tabset .tabset-fade}
+-------------------------------------
+   
+### E.COLI
 
 ```{r}
-
+selectInput("region", label = "Region", choices = c("All", sort(groundwater_quality$Region)), selected = "All")
+```   
+ 
+### NITRATE NITROGEN
+    
+```{r}
+selectInput("region", label = "Region", choices = c("All", sort(groundwater_quality$Region)), selected = "All")
 ```
 
 RIVER

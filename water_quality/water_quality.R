@@ -50,7 +50,8 @@ new_groundwq <- groundwq %>%
   mutate(CensoredValue = ifelse(is.na(CensoredValue), NA_integer_, CensoredValue),
          Year = year(Date),
          Indicator = case_when(Indicator == "E.coli" ~ "E.coli cfu/100ml", TRUE ~ "Nitrate nitrogen g/m3"),
-         Region = case_when(Region == "Hawkes Bay" ~ "Hawke's Bay", TRUE ~ Region),
+         Region = case_when(Region == "Hawkes Bay" ~ "Hawke's Bay",
+                            Region == "Manawatu-Whanganui" ~ "Manawatū-Whanganui", TRUE ~ Region),
          WellName = LAWAWellName) %>% 
   select(Region, WellName, Latitude, Longitude, Indicator, Year, CensoredValue) %>% 
   filter(Indicator %in% c("E.coli cfu/100ml", "Nitrate nitrogen g/m3"), Year >= 2002, Year <= 2019)
