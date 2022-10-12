@@ -1,0 +1,188 @@
+Region,Year,E.coli cfu/100ml
+Auckland,2009,1721.25
+Auckland,2010,1630
+Auckland,2011,1575
+Auckland,2012,1437.5
+Auckland,2013,1550
+Auckland,2014,943.84
+Auckland,2015,634.79
+Auckland,2016,524.51
+Auckland,2017,479.22
+Auckland,2018,435.44
+Auckland,2019,545.32
+Bay of Plenty,2002,112.8
+Bay of Plenty,2003,121.5
+Bay of Plenty,2004,104.42
+Bay of Plenty,2005,104
+Bay of Plenty,2006,103.33
+Bay of Plenty,2007,110.67
+Bay of Plenty,2008,109
+Bay of Plenty,2009,100.17
+Bay of Plenty,2010,102
+Bay of Plenty,2011,102.08
+Bay of Plenty,2012,129.67
+Bay of Plenty,2013,97.54
+Bay of Plenty,2014,61.34
+Bay of Plenty,2015,68.39
+Bay of Plenty,2016,77.41
+Bay of Plenty,2017,76.94
+Bay of Plenty,2018,78.14
+Bay of Plenty,2019,89.02
+Canterbury,2009,81.62
+Canterbury,2010,86.66
+Canterbury,2011,173.96
+Canterbury,2012,208.72
+Canterbury,2013,230.07
+Canterbury,2014,192.6
+Canterbury,2015,195.47
+Canterbury,2016,245.11
+Canterbury,2017,259.01
+Canterbury,2018,259.3
+Canterbury,2019,259.51
+Gisborne,2002,287.56
+Gisborne,2003,296.22
+Gisborne,2004,309.22
+Gisborne,2005,317
+Gisborne,2006,325.5
+Gisborne,2007,327.47
+Gisborne,2008,331.91
+Gisborne,2009,337.81
+Gisborne,2010,332.44
+Gisborne,2011,326.31
+Gisborne,2012,292.48
+Gisborne,2013,247.74
+Gisborne,2014,224.46
+Gisborne,2015,210.04
+Gisborne,2016,199.98
+Gisborne,2017,213.34
+Gisborne,2018,222.84
+Gisborne,2019,215.28
+Hawke's Bay,2012,41.75
+Hawke's Bay,2013,46.89
+Hawke's Bay,2014,50.78
+Hawke's Bay,2015,66.17
+Hawke's Bay,2016,74.75
+Hawke's Bay,2017,81.93
+Hawke's Bay,2018,98.94
+Hawke's Bay,2019,107.2
+Manawatū-Whanganui,2010,187.89
+Manawatū-Whanganui,2011,187.01
+Manawatū-Whanganui,2012,170.78
+Manawatū-Whanganui,2013,170.79
+Manawatū-Whanganui,2014,156.57
+Manawatū-Whanganui,2015,155.51
+Manawatū-Whanganui,2016,194.37
+Manawatū-Whanganui,2017,224.66
+Manawatū-Whanganui,2018,233.43
+Manawatū-Whanganui,2019,237.62
+Marlborough,2014,4.95
+Marlborough,2015,5.25
+Marlborough,2016,54.3
+Marlborough,2017,59.47
+Marlborough,2018,80.1
+Marlborough,2019,85.52
+Nelson,2009,255.98
+Nelson,2010,210.81
+Nelson,2011,194.82
+Nelson,2012,173.08
+Nelson,2013,166.82
+Nelson,2014,122.66
+Nelson,2015,110.13
+Nelson,2016,118.15
+Nelson,2017,124.08
+Nelson,2018,139.93
+Nelson,2019,156.74
+Northland,2008,275.9
+Northland,2009,344.06
+Northland,2010,327.91
+Northland,2011,290.43
+Northland,2012,283.25
+Northland,2013,263
+Northland,2014,245.5
+Northland,2015,268.06
+Northland,2016,274.2
+Northland,2017,268.83
+Northland,2018,281.09
+Northland,2019,278.05
+Otago,2007,175.61
+Otago,2008,171.32
+Otago,2009,146.06
+Otago,2010,128.23
+Otago,2011,132.27
+Otago,2012,128.91
+Otago,2013,131.71
+Otago,2014,117.38
+Otago,2015,104.39
+Otago,2016,106.75
+Otago,2017,115.9
+Otago,2018,115.75
+Otago,2019,126.57
+Southland,2007,160.25
+Southland,2008,247.41
+Southland,2009,294.35
+Southland,2010,330.74
+Southland,2011,325.75
+Southland,2012,317.28
+Southland,2013,316.75
+Southland,2014,323.59
+Southland,2015,350.78
+Southland,2016,331.13
+Southland,2017,349.88
+Southland,2018,338.39
+Southland,2019,321
+Taranaki,2007,675
+Taranaki,2008,690
+Taranaki,2009,220.67
+Taranaki,2010,219.22
+Taranaki,2011,221.56
+Taranaki,2012,230.1
+Taranaki,2013,231.41
+Taranaki,2014,241.59
+Taranaki,2015,240.55
+Taranaki,2016,244.54
+Taranaki,2017,266.22
+Taranaki,2018,256.65
+Taranaki,2019,258.55
+Tasman,2008,45.83
+Tasman,2009,117.66
+Tasman,2010,87.05
+Tasman,2011,98.76
+Tasman,2012,88.99
+Tasman,2013,90.03
+Tasman,2014,122.95
+Tasman,2015,129.87
+Tasman,2016,157.21
+Tasman,2017,157.66
+Tasman,2018,182.05
+Tasman,2019,175.47
+Waikato,2006,170
+Waikato,2007,318.74
+Waikato,2008,339.68
+Waikato,2009,336.19
+Waikato,2010,322.11
+Waikato,2011,339.92
+Waikato,2012,329.25
+Waikato,2013,296.17
+Waikato,2014,256.82
+Waikato,2015,227.72
+Waikato,2016,228.94
+Waikato,2017,225.77
+Waikato,2018,232.06
+Waikato,2019,238.88
+Wellington,2012,170.21
+Wellington,2013,168.11
+Wellington,2014,162.08
+Wellington,2015,167.47
+Wellington,2016,162.1
+Wellington,2017,196.4
+Wellington,2018,222.34
+Wellington,2019,237.63
+West Coast,2011,5
+West Coast,2012,17.5
+West Coast,2013,302.75
+West Coast,2014,180
+West Coast,2015,218.06
+West Coast,2016,216.94
+West Coast,2017,193.94
+West Coast,2018,152.22
+West Coast,2019,160.99

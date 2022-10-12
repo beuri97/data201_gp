@@ -1,234 +1,417 @@
-Region,Year,E.coli (cfu/100ml),Nitrate nitrogen (g/m3)
-Auckland,2004,NA,2.5
-Auckland,2005,6,3.26
-Auckland,2006,55.69,3.1
-Auckland,2007,539.29,3.51
-Auckland,2008,31.38,9.85
-Auckland,2009,17.69,8
-Auckland,2010,9.67,5.62
-Auckland,2011,12.29,6.94
-Auckland,2012,7.09,12.32
-Auckland,2013,10.78,13.49
-Auckland,2014,21.57,10.88
-Auckland,2015,6.46,11.29
-Auckland,2016,19.56,10.29
-Auckland,2017,9.14,11.05
-Auckland,2018,21.74,10.82
-Auckland,2019,45.17,10.15
-Bay of Plenty,2009,NA,0.6
-Bay of Plenty,2010,NA,0.36
-Bay of Plenty,2011,NA,0.3
-Bay of Plenty,2012,NA,0.26
-Bay of Plenty,2013,NA,0.34
-Bay of Plenty,2014,NA,0.22
-Bay of Plenty,2015,1,0.62
-Bay of Plenty,2016,4.94,0.62
-Bay of Plenty,2017,2.59,0.45
-Bay of Plenty,2018,1.61,0.42
-Bay of Plenty,2019,5.05,0.37
-Canterbury,2004,2.72,4.81
-Canterbury,2005,15.98,4.7
-Canterbury,2006,12.67,5.6
-Canterbury,2007,7.3,5.19
-Canterbury,2008,14.58,5.66
-Canterbury,2009,10.28,5.53
-Canterbury,2010,3.23,5.86
-Canterbury,2011,12.22,5.47
-Canterbury,2012,2.65,5.74
-Canterbury,2013,7.5,5.47
-Canterbury,2014,3.86,5.06
-Canterbury,2015,5.42,4.31
-Canterbury,2016,4.16,4.35
-Canterbury,2017,13.59,4.91
-Canterbury,2018,5.24,5.25
-Canterbury,2019,12.64,5.1
-Gisborne,2004,29.51,0.12
-Gisborne,2005,1,0.15
-Gisborne,2006,NA,0.12
-Gisborne,2007,NA,0.14
-Gisborne,2008,NA,0.15
-Gisborne,2009,NA,0.26
-Gisborne,2010,NA,0.42
-Gisborne,2011,7.86,0.35
-Gisborne,2012,74.55,0.21
-Gisborne,2013,28.13,0.31
-Gisborne,2014,9.02,0.49
-Gisborne,2015,14.17,0.14
-Gisborne,2016,3.95,0.47
-Gisborne,2017,23.86,0.46
-Gisborne,2018,2.49,0.34
-Gisborne,2019,15.11,0.42
-Hawke's Bay,2004,NA,0.03
-Hawke's Bay,2005,1.33,1.07
-Hawke's Bay,2006,1.03,1.15
-Hawke's Bay,2007,1,1
-Hawke's Bay,2008,1.21,0.84
-Hawke's Bay,2009,1,1.06
-Hawke's Bay,2010,1.05,1.29
-Hawke's Bay,2011,1.03,1.18
-Hawke's Bay,2012,1,1.17
-Hawke's Bay,2013,1,2.08
-Hawke's Bay,2014,1.07,2.25
-Hawke's Bay,2015,2.19,2.11
-Hawke's Bay,2016,11.31,2
-Hawke's Bay,2017,1.31,2.63
-Hawke's Bay,2018,1.25,2.66
-Hawke's Bay,2019,1.06,2.6
-Manawatu-Whanganui,2005,21.25,8.88
-Manawatu-Whanganui,2006,NA,11.76
-Manawatu-Whanganui,2007,1.12,9.83
-Manawatu-Whanganui,2008,9,6.27
-Manawatu-Whanganui,2009,1,9.88
-Manawatu-Whanganui,2010,1.22,6.59
-Manawatu-Whanganui,2011,1.76,7.99
-Manawatu-Whanganui,2012,1.17,6.88
-Manawatu-Whanganui,2013,4,6.63
-Manawatu-Whanganui,2014,3.71,5.22
-Manawatu-Whanganui,2015,1.66,5.13
-Manawatu-Whanganui,2016,6.27,4.66
-Manawatu-Whanganui,2017,1.45,4.78
-Manawatu-Whanganui,2018,1.52,4.47
-Manawatu-Whanganui,2019,2.26,4.37
-Marlborough,2004,NA,0.73
-Marlborough,2005,2.85,1.17
-Marlborough,2006,1,1.34
-Marlborough,2007,NA,1.26
-Marlborough,2008,3.38,1.4
-Marlborough,2009,1,1.18
-Marlborough,2010,1.12,1.07
-Marlborough,2011,1,0.72
-Marlborough,2012,3.69,0.72
-Marlborough,2013,1,0.71
-Marlborough,2014,1,0.75
-Marlborough,2015,1,0.79
-Marlborough,2016,1,0.84
-Marlborough,2017,1,0.86
-Marlborough,2018,1.57,0.97
-Marlborough,2019,1,0.93
-Northland,2004,6.03,2.48
-Northland,2005,16.02,2.49
-Northland,2006,13.99,2.76
-Northland,2007,53.9,2.72
-Northland,2008,28.97,2.78
-Northland,2009,8.81,2.76
-Northland,2010,5.4,2.72
-Northland,2011,57.93,2.64
-Northland,2012,27.78,2.56
-Northland,2013,23.1,2.48
-Northland,2014,26.97,2.39
-Northland,2015,27.5,2.33
-Northland,2016,32.94,2.49
-Northland,2017,11.42,2.24
-Northland,2018,177.88,2.22
-Northland,2019,241.46,2.44
-Otago,2004,NA,3.38
-Otago,2005,NA,2.32
-Otago,2006,NA,2.82
-Otago,2007,NA,1.54
-Otago,2008,NA,0.15
-Otago,2010,1,0.12
-Otago,2011,104.65,NA
-Otago,2012,1.73,NA
-Otago,2013,16.3,NA
-Otago,2014,1.49,5.88
-Otago,2015,2.54,4.51
-Otago,2016,4.55,4.23
-Otago,2017,2.59,3.78
-Otago,2018,5.4,3.86
-Otago,2019,2.09,4.07
-Southland,2004,1.89,4.26
-Southland,2005,26.49,4.56
-Southland,2006,2.05,4.36
-Southland,2007,1.93,4.95
-Southland,2008,11.2,5.95
-Southland,2009,1.75,6.12
-Southland,2010,25.11,6.14
-Southland,2011,28.78,6.1
-Southland,2012,13.22,5.88
-Southland,2013,13.89,5.67
-Southland,2014,38.55,5.69
-Southland,2015,7.89,5.42
-Southland,2016,28.48,5.72
-Southland,2017,1.95,5.99
-Southland,2018,3.86,6.2
-Southland,2019,3.25,5.65
-Taranaki,2004,6,1.43
-Taranaki,2005,NA,1.01
-Taranaki,2006,9.09,2.74
-Taranaki,2007,47.09,3.12
-Taranaki,2008,NA,0.7
-Taranaki,2009,NA,1.43
-Taranaki,2010,NA,0.87
-Taranaki,2011,1.8,2.37
-Taranaki,2012,6.62,3.22
-Taranaki,2013,3.79,3.03
-Taranaki,2014,5.93,4.2
-Taranaki,2015,7.42,3.46
-Taranaki,2016,8.71,2.8
-Taranaki,2017,112.06,3.53
-Taranaki,2018,3.6,3.63
-Taranaki,2019,40.75,3.33
-Tasman,2004,NA,3.79
-Tasman,2005,NA,3.03
-Tasman,2006,NA,3.55
-Tasman,2007,NA,3.39
-Tasman,2008,NA,3.9
-Tasman,2009,NA,3.44
-Tasman,2010,NA,3.38
-Tasman,2011,NA,3.45
-Tasman,2012,NA,3.03
-Tasman,2013,NA,2.74
-Tasman,2014,NA,2.6
-Tasman,2015,NA,2.5
-Tasman,2016,5,2.81
-Tasman,2017,NA,2.64
-Tasman,2018,NA,2.82
-Tasman,2019,NA,2.74
-Waikato,2004,NA,6.45
-Waikato,2005,NA,5.33
-Waikato,2006,NA,5.86
-Waikato,2007,NA,5.16
-Waikato,2008,NA,5.57
-Waikato,2009,NA,6.4
-Waikato,2010,NA,6.64
-Waikato,2011,NA,6.29
-Waikato,2012,NA,6.11
-Waikato,2013,NA,6.24
-Waikato,2014,NA,6.49
-Waikato,2015,NA,6.65
-Waikato,2016,NA,6.65
-Waikato,2017,NA,6.87
-Waikato,2018,NA,5.98
-Waikato,2019,NA,4.7
-Wellington,2004,1.22,2.57
-Wellington,2005,2.81,2.06
-Wellington,2006,1.56,2.34
-Wellington,2007,11.19,2.03
-Wellington,2008,1.51,2.03
-Wellington,2009,1.6,1.93
-Wellington,2010,1.54,1.91
-Wellington,2011,3.69,2.03
-Wellington,2012,1.88,1.83
-Wellington,2013,1.59,1.82
-Wellington,2014,1.65,1.84
-Wellington,2015,2.15,1.71
-Wellington,2016,1.29,1.58
-Wellington,2017,2.86,1.66
-Wellington,2018,4.62,1.62
-Wellington,2019,1.56,1.86
-West Coast,2004,2.12,1.45
-West Coast,2005,2.59,1.63
-West Coast,2006,1.71,1.78
-West Coast,2007,1.85,2.33
-West Coast,2008,1.62,2.76
-West Coast,2009,2,2.17
-West Coast,2010,1.62,3.13
-West Coast,2011,2.99,3.12
-West Coast,2012,2.79,3.5
-West Coast,2013,23.36,3.18
-West Coast,2014,9.88,3.5
-West Coast,2015,3.49,3.28
-West Coast,2016,53.26,2.9
-West Coast,2017,2.21,3.11
-West Coast,2018,3.2,2.88
-West Coast,2019,29.59,3.1
+Region,Year,Indicator,MeanVal
+Auckland,2004,Nitrate nitrogen g/m3,68.1
+Auckland,2005,E.coli cfu/100ml,6
+Auckland,2005,Nitrate nitrogen g/m3,69.66
+Auckland,2006,E.coli cfu/100ml,55.69
+Auckland,2006,Nitrate nitrogen g/m3,82.27
+Auckland,2007,E.coli cfu/100ml,539.29
+Auckland,2007,Nitrate nitrogen g/m3,98.69
+Auckland,2008,E.coli cfu/100ml,31.38
+Auckland,2008,Nitrate nitrogen g/m3,76.79
+Auckland,2009,E.coli cfu/100ml,17.69
+Auckland,2009,Nitrate nitrogen g/m3,65.77
+Auckland,2010,E.coli cfu/100ml,9.67
+Auckland,2010,Nitrate nitrogen g/m3,88.01
+Auckland,2011,E.coli cfu/100ml,12.29
+Auckland,2011,Nitrate nitrogen g/m3,95.16
+Auckland,2012,E.coli cfu/100ml,7.09
+Auckland,2012,Nitrate nitrogen g/m3,89.64
+Auckland,2013,E.coli cfu/100ml,10.78
+Auckland,2013,Nitrate nitrogen g/m3,65.6
+Auckland,2014,E.coli cfu/100ml,21.57
+Auckland,2014,Nitrate nitrogen g/m3,86.37
+Auckland,2015,E.coli cfu/100ml,6.46
+Auckland,2015,Nitrate nitrogen g/m3,82.58
+Auckland,2016,E.coli cfu/100ml,19.56
+Auckland,2016,Nitrate nitrogen g/m3,85.03
+Auckland,2017,E.coli cfu/100ml,9.14
+Auckland,2017,Nitrate nitrogen g/m3,89.1
+Auckland,2018,E.coli cfu/100ml,21.74
+Auckland,2018,Nitrate nitrogen g/m3,84.54
+Auckland,2019,E.coli cfu/100ml,45.17
+Auckland,2019,Nitrate nitrogen g/m3,84.93
+Bay of Plenty,2004,Nitrate nitrogen g/m3,88.97
+Bay of Plenty,2005,Nitrate nitrogen g/m3,166.14
+Bay of Plenty,2006,Nitrate nitrogen g/m3,104.14
+Bay of Plenty,2007,Nitrate nitrogen g/m3,265.74
+Bay of Plenty,2008,Nitrate nitrogen g/m3,137.7
+Bay of Plenty,2009,Nitrate nitrogen g/m3,209.21
+Bay of Plenty,2010,Nitrate nitrogen g/m3,218.18
+Bay of Plenty,2011,Nitrate nitrogen g/m3,221.46
+Bay of Plenty,2012,Nitrate nitrogen g/m3,221.03
+Bay of Plenty,2013,Nitrate nitrogen g/m3,218.75
+Bay of Plenty,2014,Nitrate nitrogen g/m3,213.36
+Bay of Plenty,2015,E.coli cfu/100ml,1
+Bay of Plenty,2015,Nitrate nitrogen g/m3,168.09
+Bay of Plenty,2016,E.coli cfu/100ml,4.94
+Bay of Plenty,2016,Nitrate nitrogen g/m3,139.38
+Bay of Plenty,2017,E.coli cfu/100ml,2.59
+Bay of Plenty,2017,Nitrate nitrogen g/m3,174.3
+Bay of Plenty,2018,E.coli cfu/100ml,1.61
+Bay of Plenty,2018,Nitrate nitrogen g/m3,250.09
+Bay of Plenty,2019,E.coli cfu/100ml,5.05
+Bay of Plenty,2019,Nitrate nitrogen g/m3,340.6
+Canterbury,2004,E.coli cfu/100ml,2.72
+Canterbury,2004,Nitrate nitrogen g/m3,18.05
+Canterbury,2005,E.coli cfu/100ml,15.98
+Canterbury,2005,Nitrate nitrogen g/m3,15.51
+Canterbury,2006,E.coli cfu/100ml,12.67
+Canterbury,2006,Nitrate nitrogen g/m3,14.14
+Canterbury,2007,E.coli cfu/100ml,7.3
+Canterbury,2007,Nitrate nitrogen g/m3,12.65
+Canterbury,2008,E.coli cfu/100ml,14.58
+Canterbury,2008,Nitrate nitrogen g/m3,12.7
+Canterbury,2009,E.coli cfu/100ml,10.28
+Canterbury,2009,Nitrate nitrogen g/m3,13.97
+Canterbury,2010,E.coli cfu/100ml,3.23
+Canterbury,2010,Nitrate nitrogen g/m3,14.54
+Canterbury,2011,E.coli cfu/100ml,12.22
+Canterbury,2011,Nitrate nitrogen g/m3,13.72
+Canterbury,2012,E.coli cfu/100ml,2.65
+Canterbury,2012,Nitrate nitrogen g/m3,13.01
+Canterbury,2013,E.coli cfu/100ml,7.5
+Canterbury,2013,Nitrate nitrogen g/m3,14.4
+Canterbury,2014,E.coli cfu/100ml,3.86
+Canterbury,2014,Nitrate nitrogen g/m3,11.91
+Canterbury,2015,E.coli cfu/100ml,5.42
+Canterbury,2015,Nitrate nitrogen g/m3,11.39
+Canterbury,2016,E.coli cfu/100ml,4.16
+Canterbury,2016,Nitrate nitrogen g/m3,11.35
+Canterbury,2017,E.coli cfu/100ml,13.59
+Canterbury,2017,Nitrate nitrogen g/m3,12.54
+Canterbury,2018,E.coli cfu/100ml,5.24
+Canterbury,2018,Nitrate nitrogen g/m3,13.11
+Canterbury,2019,E.coli cfu/100ml,12.64
+Canterbury,2019,Nitrate nitrogen g/m3,12.84
+Gisborne,2004,E.coli cfu/100ml,29.51
+Gisborne,2004,Nitrate nitrogen g/m3,400.34
+Gisborne,2005,E.coli cfu/100ml,1
+Gisborne,2005,Nitrate nitrogen g/m3,480.25
+Gisborne,2006,Nitrate nitrogen g/m3,416.02
+Gisborne,2007,Nitrate nitrogen g/m3,419.64
+Gisborne,2008,Nitrate nitrogen g/m3,413.26
+Gisborne,2009,Nitrate nitrogen g/m3,413.71
+Gisborne,2010,Nitrate nitrogen g/m3,377.57
+Gisborne,2011,E.coli cfu/100ml,7.86
+Gisborne,2011,Nitrate nitrogen g/m3,421.84
+Gisborne,2012,E.coli cfu/100ml,74.55
+Gisborne,2012,Nitrate nitrogen g/m3,454.16
+Gisborne,2013,E.coli cfu/100ml,28.13
+Gisborne,2013,Nitrate nitrogen g/m3,390.33
+Gisborne,2014,E.coli cfu/100ml,9.02
+Gisborne,2014,Nitrate nitrogen g/m3,386.12
+Gisborne,2015,E.coli cfu/100ml,14.17
+Gisborne,2015,Nitrate nitrogen g/m3,392.55
+Gisborne,2016,E.coli cfu/100ml,3.95
+Gisborne,2016,Nitrate nitrogen g/m3,338.66
+Gisborne,2017,E.coli cfu/100ml,23.86
+Gisborne,2017,Nitrate nitrogen g/m3,379.56
+Gisborne,2018,E.coli cfu/100ml,2.49
+Gisborne,2018,Nitrate nitrogen g/m3,495.28
+Gisborne,2019,E.coli cfu/100ml,15.11
+Gisborne,2019,Nitrate nitrogen g/m3,399.15
+Hawke's Bay,2004,Nitrate nitrogen g/m3,0.03
+Hawke's Bay,2005,E.coli cfu/100ml,1.33
+Hawke's Bay,2005,Nitrate nitrogen g/m3,73.28
+Hawke's Bay,2006,E.coli cfu/100ml,1.03
+Hawke's Bay,2006,Nitrate nitrogen g/m3,68.51
+Hawke's Bay,2007,E.coli cfu/100ml,1
+Hawke's Bay,2007,Nitrate nitrogen g/m3,69.1
+Hawke's Bay,2008,E.coli cfu/100ml,1.21
+Hawke's Bay,2008,Nitrate nitrogen g/m3,67.66
+Hawke's Bay,2009,E.coli cfu/100ml,1
+Hawke's Bay,2009,Nitrate nitrogen g/m3,70.89
+Hawke's Bay,2010,E.coli cfu/100ml,1.05
+Hawke's Bay,2010,Nitrate nitrogen g/m3,79.38
+Hawke's Bay,2011,E.coli cfu/100ml,1.03
+Hawke's Bay,2011,Nitrate nitrogen g/m3,69.82
+Hawke's Bay,2012,E.coli cfu/100ml,1
+Hawke's Bay,2012,Nitrate nitrogen g/m3,72.71
+Hawke's Bay,2013,E.coli cfu/100ml,1
+Hawke's Bay,2013,Nitrate nitrogen g/m3,68.63
+Hawke's Bay,2014,E.coli cfu/100ml,1.07
+Hawke's Bay,2014,Nitrate nitrogen g/m3,57.47
+Hawke's Bay,2015,E.coli cfu/100ml,2.19
+Hawke's Bay,2015,Nitrate nitrogen g/m3,68.74
+Hawke's Bay,2016,E.coli cfu/100ml,11.31
+Hawke's Bay,2016,Nitrate nitrogen g/m3,68.28
+Hawke's Bay,2017,E.coli cfu/100ml,1.31
+Hawke's Bay,2017,Nitrate nitrogen g/m3,58.12
+Hawke's Bay,2018,E.coli cfu/100ml,1.25
+Hawke's Bay,2018,Nitrate nitrogen g/m3,56.91
+Hawke's Bay,2019,E.coli cfu/100ml,1.06
+Hawke's Bay,2019,Nitrate nitrogen g/m3,64.27
+Manawatu-Whanganui,2005,E.coli cfu/100ml,21.25
+Manawatu-Whanganui,2005,Nitrate nitrogen g/m3,25.49
+Manawatu-Whanganui,2006,Nitrate nitrogen g/m3,170.21
+Manawatu-Whanganui,2007,E.coli cfu/100ml,1.12
+Manawatu-Whanganui,2007,Nitrate nitrogen g/m3,124.46
+Manawatu-Whanganui,2008,E.coli cfu/100ml,9
+Manawatu-Whanganui,2008,Nitrate nitrogen g/m3,178.83
+Manawatu-Whanganui,2009,E.coli cfu/100ml,1
+Manawatu-Whanganui,2009,Nitrate nitrogen g/m3,214.18
+Manawatu-Whanganui,2010,E.coli cfu/100ml,1.22
+Manawatu-Whanganui,2010,Nitrate nitrogen g/m3,172.69
+Manawatu-Whanganui,2011,E.coli cfu/100ml,1.76
+Manawatu-Whanganui,2011,Nitrate nitrogen g/m3,129.6
+Manawatu-Whanganui,2012,E.coli cfu/100ml,1.17
+Manawatu-Whanganui,2012,Nitrate nitrogen g/m3,149.88
+Manawatu-Whanganui,2013,E.coli cfu/100ml,4
+Manawatu-Whanganui,2013,Nitrate nitrogen g/m3,160.1
+Manawatu-Whanganui,2014,E.coli cfu/100ml,3.71
+Manawatu-Whanganui,2014,Nitrate nitrogen g/m3,133.29
+Manawatu-Whanganui,2015,E.coli cfu/100ml,1.66
+Manawatu-Whanganui,2015,Nitrate nitrogen g/m3,130.33
+Manawatu-Whanganui,2016,E.coli cfu/100ml,6.27
+Manawatu-Whanganui,2016,Nitrate nitrogen g/m3,118
+Manawatu-Whanganui,2017,E.coli cfu/100ml,1.45
+Manawatu-Whanganui,2017,Nitrate nitrogen g/m3,118.53
+Manawatu-Whanganui,2018,E.coli cfu/100ml,1.52
+Manawatu-Whanganui,2018,Nitrate nitrogen g/m3,118.84
+Manawatu-Whanganui,2019,E.coli cfu/100ml,2.26
+Manawatu-Whanganui,2019,Nitrate nitrogen g/m3,115.47
+Marlborough,2004,Nitrate nitrogen g/m3,35.34
+Marlborough,2005,E.coli cfu/100ml,2.85
+Marlborough,2005,Nitrate nitrogen g/m3,67.39
+Marlborough,2006,E.coli cfu/100ml,1
+Marlborough,2006,Nitrate nitrogen g/m3,45.85
+Marlborough,2007,Nitrate nitrogen g/m3,68.82
+Marlborough,2008,E.coli cfu/100ml,3.38
+Marlborough,2008,Nitrate nitrogen g/m3,72.41
+Marlborough,2009,E.coli cfu/100ml,1
+Marlborough,2009,Nitrate nitrogen g/m3,64.89
+Marlborough,2010,E.coli cfu/100ml,1.12
+Marlborough,2010,Nitrate nitrogen g/m3,67.79
+Marlborough,2011,E.coli cfu/100ml,1
+Marlborough,2011,Nitrate nitrogen g/m3,60.01
+Marlborough,2012,E.coli cfu/100ml,3.69
+Marlborough,2012,Nitrate nitrogen g/m3,55.97
+Marlborough,2013,E.coli cfu/100ml,1
+Marlborough,2013,Nitrate nitrogen g/m3,56.35
+Marlborough,2014,E.coli cfu/100ml,1
+Marlborough,2014,Nitrate nitrogen g/m3,55.06
+Marlborough,2015,E.coli cfu/100ml,1
+Marlborough,2015,Nitrate nitrogen g/m3,53.07
+Marlborough,2016,E.coli cfu/100ml,1
+Marlborough,2016,Nitrate nitrogen g/m3,50.86
+Marlborough,2017,E.coli cfu/100ml,1
+Marlborough,2017,Nitrate nitrogen g/m3,54.26
+Marlborough,2018,E.coli cfu/100ml,1.57
+Marlborough,2018,Nitrate nitrogen g/m3,50.48
+Marlborough,2019,E.coli cfu/100ml,1
+Marlborough,2019,Nitrate nitrogen g/m3,54.05
+Northland,2004,E.coli cfu/100ml,6.03
+Northland,2004,Nitrate nitrogen g/m3,159.35
+Northland,2005,E.coli cfu/100ml,16.02
+Northland,2005,Nitrate nitrogen g/m3,180.24
+Northland,2006,E.coli cfu/100ml,13.99
+Northland,2006,Nitrate nitrogen g/m3,210.56
+Northland,2007,E.coli cfu/100ml,53.9
+Northland,2007,Nitrate nitrogen g/m3,222.21
+Northland,2008,E.coli cfu/100ml,28.97
+Northland,2008,Nitrate nitrogen g/m3,197.71
+Northland,2009,E.coli cfu/100ml,8.81
+Northland,2009,Nitrate nitrogen g/m3,198.56
+Northland,2010,E.coli cfu/100ml,5.4
+Northland,2010,Nitrate nitrogen g/m3,181.51
+Northland,2011,E.coli cfu/100ml,57.93
+Northland,2011,Nitrate nitrogen g/m3,186.93
+Northland,2012,E.coli cfu/100ml,27.78
+Northland,2012,Nitrate nitrogen g/m3,178.47
+Northland,2013,E.coli cfu/100ml,23.1
+Northland,2013,Nitrate nitrogen g/m3,200.51
+Northland,2014,E.coli cfu/100ml,26.97
+Northland,2014,Nitrate nitrogen g/m3,201.32
+Northland,2015,E.coli cfu/100ml,27.5
+Northland,2015,Nitrate nitrogen g/m3,207.29
+Northland,2016,E.coli cfu/100ml,32.94
+Northland,2016,Nitrate nitrogen g/m3,186.54
+Northland,2017,E.coli cfu/100ml,11.42
+Northland,2017,Nitrate nitrogen g/m3,201.71
+Northland,2018,E.coli cfu/100ml,177.88
+Northland,2018,Nitrate nitrogen g/m3,197.69
+Northland,2019,E.coli cfu/100ml,241.46
+Northland,2019,Nitrate nitrogen g/m3,213.6
+Otago,2004,Nitrate nitrogen g/m3,10.53
+Otago,2005,Nitrate nitrogen g/m3,9.68
+Otago,2006,Nitrate nitrogen g/m3,9.04
+Otago,2007,Nitrate nitrogen g/m3,8.14
+Otago,2008,Nitrate nitrogen g/m3,5.81
+Otago,2009,Nitrate nitrogen g/m3,6.8
+Otago,2010,E.coli cfu/100ml,1
+Otago,2010,Nitrate nitrogen g/m3,5.33
+Otago,2011,E.coli cfu/100ml,104.65
+Otago,2011,Nitrate nitrogen g/m3,11.41
+Otago,2012,E.coli cfu/100ml,1.73
+Otago,2012,Nitrate nitrogen g/m3,15.86
+Otago,2013,E.coli cfu/100ml,16.3
+Otago,2013,Nitrate nitrogen g/m3,14.92
+Otago,2014,E.coli cfu/100ml,1.49
+Otago,2014,Nitrate nitrogen g/m3,13.17
+Otago,2015,E.coli cfu/100ml,2.54
+Otago,2015,Nitrate nitrogen g/m3,13.44
+Otago,2016,E.coli cfu/100ml,4.55
+Otago,2016,Nitrate nitrogen g/m3,12.67
+Otago,2017,E.coli cfu/100ml,2.59
+Otago,2017,Nitrate nitrogen g/m3,14.77
+Otago,2018,E.coli cfu/100ml,5.4
+Otago,2018,Nitrate nitrogen g/m3,13.69
+Otago,2019,E.coli cfu/100ml,2.09
+Otago,2019,Nitrate nitrogen g/m3,13.86
+Southland,2004,E.coli cfu/100ml,1.89
+Southland,2004,Nitrate nitrogen g/m3,66.46
+Southland,2005,E.coli cfu/100ml,26.49
+Southland,2005,Nitrate nitrogen g/m3,64.5
+Southland,2006,E.coli cfu/100ml,2.05
+Southland,2006,Nitrate nitrogen g/m3,63.08
+Southland,2007,E.coli cfu/100ml,1.93
+Southland,2007,Nitrate nitrogen g/m3,62.76
+Southland,2008,E.coli cfu/100ml,11.2
+Southland,2008,Nitrate nitrogen g/m3,61.16
+Southland,2009,E.coli cfu/100ml,1.75
+Southland,2009,Nitrate nitrogen g/m3,59.89
+Southland,2010,E.coli cfu/100ml,25.11
+Southland,2010,Nitrate nitrogen g/m3,59.49
+Southland,2011,E.coli cfu/100ml,28.78
+Southland,2011,Nitrate nitrogen g/m3,61.27
+Southland,2012,E.coli cfu/100ml,13.22
+Southland,2012,Nitrate nitrogen g/m3,60.43
+Southland,2013,E.coli cfu/100ml,13.89
+Southland,2013,Nitrate nitrogen g/m3,62.48
+Southland,2014,E.coli cfu/100ml,38.55
+Southland,2014,Nitrate nitrogen g/m3,65.16
+Southland,2015,E.coli cfu/100ml,7.89
+Southland,2015,Nitrate nitrogen g/m3,68.49
+Southland,2016,E.coli cfu/100ml,28.48
+Southland,2016,Nitrate nitrogen g/m3,63.98
+Southland,2017,E.coli cfu/100ml,1.95
+Southland,2017,Nitrate nitrogen g/m3,68.2
+Southland,2018,E.coli cfu/100ml,3.86
+Southland,2018,Nitrate nitrogen g/m3,67.18
+Southland,2019,E.coli cfu/100ml,3.25
+Southland,2019,Nitrate nitrogen g/m3,66.07
+Taranaki,2004,E.coli cfu/100ml,6
+Taranaki,2004,Nitrate nitrogen g/m3,48.37
+Taranaki,2005,Nitrate nitrogen g/m3,65.85
+Taranaki,2006,E.coli cfu/100ml,9.09
+Taranaki,2006,Nitrate nitrogen g/m3,50.92
+Taranaki,2007,E.coli cfu/100ml,47.09
+Taranaki,2007,Nitrate nitrogen g/m3,59.63
+Taranaki,2008,Nitrate nitrogen g/m3,78.24
+Taranaki,2009,Nitrate nitrogen g/m3,72.91
+Taranaki,2010,Nitrate nitrogen g/m3,100.7
+Taranaki,2011,E.coli cfu/100ml,1.8
+Taranaki,2011,Nitrate nitrogen g/m3,65.36
+Taranaki,2012,E.coli cfu/100ml,6.62
+Taranaki,2012,Nitrate nitrogen g/m3,67.58
+Taranaki,2013,E.coli cfu/100ml,3.79
+Taranaki,2013,Nitrate nitrogen g/m3,72.65
+Taranaki,2014,E.coli cfu/100ml,5.93
+Taranaki,2014,Nitrate nitrogen g/m3,48.8
+Taranaki,2015,E.coli cfu/100ml,7.42
+Taranaki,2015,Nitrate nitrogen g/m3,40.7
+Taranaki,2016,E.coli cfu/100ml,8.71
+Taranaki,2016,Nitrate nitrogen g/m3,23.96
+Taranaki,2017,E.coli cfu/100ml,112.06
+Taranaki,2017,Nitrate nitrogen g/m3,23.87
+Taranaki,2018,E.coli cfu/100ml,3.6
+Taranaki,2018,Nitrate nitrogen g/m3,19.76
+Taranaki,2019,E.coli cfu/100ml,40.75
+Taranaki,2019,Nitrate nitrogen g/m3,32.94
+Tasman,2004,Nitrate nitrogen g/m3,37.26
+Tasman,2005,Nitrate nitrogen g/m3,46.29
+Tasman,2006,Nitrate nitrogen g/m3,47.44
+Tasman,2007,Nitrate nitrogen g/m3,46.93
+Tasman,2008,Nitrate nitrogen g/m3,54.03
+Tasman,2009,Nitrate nitrogen g/m3,50.45
+Tasman,2010,Nitrate nitrogen g/m3,45.52
+Tasman,2011,Nitrate nitrogen g/m3,73.72
+Tasman,2012,Nitrate nitrogen g/m3,74.1
+Tasman,2013,Nitrate nitrogen g/m3,44.33
+Tasman,2014,Nitrate nitrogen g/m3,49.24
+Tasman,2015,Nitrate nitrogen g/m3,47.7
+Tasman,2016,E.coli cfu/100ml,5
+Tasman,2016,Nitrate nitrogen g/m3,42.1
+Tasman,2017,Nitrate nitrogen g/m3,69.48
+Tasman,2018,Nitrate nitrogen g/m3,58.18
+Tasman,2019,Nitrate nitrogen g/m3,41.81
+Waikato,2004,Nitrate nitrogen g/m3,14.78
+Waikato,2005,Nitrate nitrogen g/m3,13.45
+Waikato,2006,Nitrate nitrogen g/m3,14.79
+Waikato,2007,Nitrate nitrogen g/m3,12.9
+Waikato,2008,Nitrate nitrogen g/m3,14.15
+Waikato,2009,Nitrate nitrogen g/m3,15.77
+Waikato,2010,Nitrate nitrogen g/m3,16.31
+Waikato,2011,Nitrate nitrogen g/m3,15.16
+Waikato,2012,Nitrate nitrogen g/m3,15.28
+Waikato,2013,Nitrate nitrogen g/m3,15.45
+Waikato,2014,Nitrate nitrogen g/m3,13.1
+Waikato,2015,Nitrate nitrogen g/m3,12.66
+Waikato,2016,Nitrate nitrogen g/m3,14.38
+Waikato,2017,Nitrate nitrogen g/m3,14.51
+Waikato,2018,Nitrate nitrogen g/m3,11.46
+Waikato,2019,Nitrate nitrogen g/m3,10.53
+Wellington,2004,E.coli cfu/100ml,1.22
+Wellington,2004,Nitrate nitrogen g/m3,79.15
+Wellington,2005,E.coli cfu/100ml,2.81
+Wellington,2005,Nitrate nitrogen g/m3,78.85
+Wellington,2006,E.coli cfu/100ml,1.56
+Wellington,2006,Nitrate nitrogen g/m3,78.25
+Wellington,2007,E.coli cfu/100ml,11.19
+Wellington,2007,Nitrate nitrogen g/m3,78.54
+Wellington,2008,E.coli cfu/100ml,1.51
+Wellington,2008,Nitrate nitrogen g/m3,77.58
+Wellington,2009,E.coli cfu/100ml,1.6
+Wellington,2009,Nitrate nitrogen g/m3,78.44
+Wellington,2010,E.coli cfu/100ml,1.54
+Wellington,2010,Nitrate nitrogen g/m3,77.71
+Wellington,2011,E.coli cfu/100ml,3.69
+Wellington,2011,Nitrate nitrogen g/m3,81.87
+Wellington,2012,E.coli cfu/100ml,1.88
+Wellington,2012,Nitrate nitrogen g/m3,79.1
+Wellington,2013,E.coli cfu/100ml,1.59
+Wellington,2013,Nitrate nitrogen g/m3,81.68
+Wellington,2014,E.coli cfu/100ml,1.65
+Wellington,2014,Nitrate nitrogen g/m3,81.53
+Wellington,2015,E.coli cfu/100ml,2.15
+Wellington,2015,Nitrate nitrogen g/m3,81.86
+Wellington,2016,E.coli cfu/100ml,1.29
+Wellington,2016,Nitrate nitrogen g/m3,80.91
+Wellington,2017,E.coli cfu/100ml,2.86
+Wellington,2017,Nitrate nitrogen g/m3,83.33
+Wellington,2018,E.coli cfu/100ml,4.62
+Wellington,2018,Nitrate nitrogen g/m3,80.62
+Wellington,2019,E.coli cfu/100ml,1.56
+Wellington,2019,Nitrate nitrogen g/m3,76.12
+West Coast,2004,E.coli cfu/100ml,2.12
+West Coast,2004,Nitrate nitrogen g/m3,16.64
+West Coast,2005,E.coli cfu/100ml,2.59
+West Coast,2005,Nitrate nitrogen g/m3,7.25
+West Coast,2006,E.coli cfu/100ml,1.71
+West Coast,2006,Nitrate nitrogen g/m3,22.86
+West Coast,2007,E.coli cfu/100ml,1.85
+West Coast,2007,Nitrate nitrogen g/m3,23.62
+West Coast,2008,E.coli cfu/100ml,1.62
+West Coast,2008,Nitrate nitrogen g/m3,34.46
+West Coast,2009,E.coli cfu/100ml,2
+West Coast,2009,Nitrate nitrogen g/m3,25.17
+West Coast,2010,E.coli cfu/100ml,1.62
+West Coast,2010,Nitrate nitrogen g/m3,27.52
+West Coast,2011,E.coli cfu/100ml,2.99
+West Coast,2011,Nitrate nitrogen g/m3,31.8
+West Coast,2012,E.coli cfu/100ml,2.79
+West Coast,2012,Nitrate nitrogen g/m3,36.24
+West Coast,2013,E.coli cfu/100ml,23.36
+West Coast,2013,Nitrate nitrogen g/m3,36.44
+West Coast,2014,E.coli cfu/100ml,9.88
+West Coast,2014,Nitrate nitrogen g/m3,33.85
+West Coast,2015,E.coli cfu/100ml,3.49
+West Coast,2015,Nitrate nitrogen g/m3,31.55
+West Coast,2016,E.coli cfu/100ml,53.26
+West Coast,2016,Nitrate nitrogen g/m3,33.16
+West Coast,2017,E.coli cfu/100ml,2.21
+West Coast,2017,Nitrate nitrogen g/m3,32.48
+West Coast,2018,E.coli cfu/100ml,3.2
+West Coast,2018,Nitrate nitrogen g/m3,32.16
+West Coast,2019,E.coli cfu/100ml,29.59
+West Coast,2019,Nitrate nitrogen g/m3,32.05

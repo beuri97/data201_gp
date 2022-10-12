@@ -32,25 +32,46 @@ groundwq %>%
 # Takes the groundwq modify and rename CensoredValue, Date, and Units, select the relevant columns 
 # and rows, group the rows by Region, Indicator, and Year then create an new data frame containing the sum of
 # the CensoredValue rounded off to 2.
+
+# new_groundwq <- groundwq %>% 
+#   mutate(CensoredValue = ifelse(is.na(CensoredValue), NA_integer_, CensoredValue),
+#          Year = year(Date),
+#          Units = case_when(Indicator == "E.coli" ~ "cfu/100ml", TRUE ~ "g/m3"),
+#          Region = case_when(Region == "Hawkes Bay" ~ "Hawke's Bay", TRUE ~ Region)) %>% 
+#   select(Region, Indicator, Units, Year, CensoredValue) %>% 
+#   filter(Indicator %in% c("E.coli", "Nitrate nitrogen"), Year >= 2002, Year <= 2019) %>% 
+#   group_by(Region, Indicator, Year) %>% 
+#   na.omit() %>% 
+#   summarise(Mean_MedVal = round(mean(CensoredValue), 2))
+
+# Takes the groundwq modify the values and rename some columns, select the relevant columns 
+# and rows.
 new_groundwq <- groundwq %>% 
   mutate(CensoredValue = ifelse(is.na(CensoredValue), NA_integer_, CensoredValue),
          Year = year(Date),
-         Units = case_when(Indicator == "E.coli" ~ "cfu/100ml", TRUE ~ "g/m3"),
-         Region = case_when(Region == "Hawkes Bay" ~ "Hawke's Bay", TRUE ~ Region)) %>% 
-  select(Region, Indicator, Units, Year, CensoredValue) %>% 
-  filter(Indicator %in% c("E.coli", "Nitrate nitrogen"), Year >= 2002, Year <= 2019) %>% 
-  group_by(Region, Indicator, Year) %>% 
-  na.omit() %>% 
-  summarise(Total_MedVal = round(mean(CensoredValue), 2)) %>% 
-  distinct()
+         Indicator = case_when(Indicator == "E.coli" ~ "E.coli cfu/100ml", TRUE ~ "Nitrate nitrogen g/m3"),
+         Region = case_when(Region == "Hawkes Bay" ~ "Hawke's Bay", TRUE ~ Region),
+         WellName = LAWAWellName) %>% 
+  select(Region, WellName, Latitude, Longitude, Indicator, Year, CensoredValue) %>% 
+  filter(Indicator %in% c("E.coli cfu/100ml", "Nitrate nitrogen g/m3"), Year >= 2002, Year <= 2019)
 
-# Takes the new_groundwq then convert it to wide format.
-groundwater_quality <- new_groundwq %>% 
+# Take the new_groundwq to create a data frame about the quality of the groundwater.
+groundwater_quality <- new_groundwq %>%
+  select(Region, Year, Indicator, CensoredValue) %>% 
+  group_by(Region, Year, Indicator) %>% 
+  na.omit() %>% 
+  summarise(MeanVal = round(mean(CensoredValue), 2))
+
+# Takes the groundwater_quality then convert it to wide format.
+groundwater_quality_wide <- groundwater_quality %>% 
   spread(key = Indicator,
-         value = Total_MedVal) %>% 
-  mutate(`E.coli (cfu/100ml)` = E.coli, `Nitrate nitrogen (g/m3)` = `Nitrate nitrogen`) %>% 
-  select(-c("E.coli", "Nitrate nitrogen"))
-groundwater_quality
+         value = MeanVal)
+groundwater_quality_wide
+
+# Take the new_groundwq to create a data frame containing the information about the sites where the measurements are taken.
+sites <- new_groundwq %>% 
+  select(Region, WellName, Latitude, Longitude) %>% 
+  distinct()
 
 # Load 'new_river_ecoli.csv' data
 river_ecoli <- "new_river_ecoli.csv" %>% 
@@ -65,29 +86,33 @@ river_ecoli %>%
   vis_miss()
 
 # Select and rename the columns we need.
-river_ecoli <- river_ecoli %>% 
-  rename(Region = state, Year = end_year, Indicator = measure, Median = median, 
-         Units = units) %>% 
-  select(Region, Year, Indicator, Median, Units)
+new_river_ecoli <- river_ecoli %>% 
+  rename(Region = state, Year = end_year, Indicator = measure, Median = median, Units = units, SOF = sof,
+         Latitude = lat, Longitude = long) %>% 
+  mutate(Indicator = "E.coli cfu/100ml") %>% 
+  select(Region, Year, SOF, Median, Indicator, Latitude, Longitude) %>% 
+  filter(Year >= 2002, Year <= 2019)
 
 # Check for missing data again (NA)
 river_ecoli %>% 
   vis_miss()
 
-# Takes the river_ecoli group the rows by Region, Indicator, and Year then create an new data frame containing the 
-# sum of the Median rounded off to 2.
-new_riverecoli <- river_ecoli %>%
-  filter(Year >= 2002, Year <= 2019) %>% 
+# Takes the new_river_ecoli group the rows by Region, Indicator, and Year then create an new data frame containing the 
+# mean of the Median rounded off to 2.
+riverecoli <- new_river_ecoli %>%
+  select(Region, Year, Indicator, Median) %>% 
   group_by(Region, Year, Indicator) %>% 
-  summarise(Total_MedVal = round(mean(Median), 2)) %>% 
-  unique()
+  summarise(MeanVal = round(mean(Median), 2))
 
-# Wide format data set spread by Region as key
-riverecoli_wide <- new_riverecoli %>% 
+# Wide format data set spread by Indicator as key
+riverecoli_wide <- riverecoli %>% 
   spread(key = Indicator,
-         value = Total_MedVal) %>% 
-  mutate(`E.coli (cfu/100ml)` = `E. coli`) %>% 
-  select(-"E. coli")
+         value = MeanVal)
+
+# # Take the new_river_ecoli to create a data frame containing the information about the sites where the measurements are taken.
+# riverecoli_src <- new_river_ecoli %>% 
+#   select(Region, SOF, Latitude, Longitude) %>% 
+#   distinct()
 
 # Read the new_river_nitrogen.csv and store it as river_nitrogen for analysis.
 river_nitrogen <- "new_river_nitrogen.csv" %>% 
@@ -99,42 +124,53 @@ river_nitrogen %>%
   glimpse()
 
 # Select the relevant columns for analysis.
-river_nitrogen <- river_nitrogen %>% 
-  select(measure, units, median, end_year, state)
-
-# Reads the entirety of river_nitrogen and creates a plot to check if it contains missing data (NA). 
-river_nitrogen %>% 
+new_river_nitrogen <- river_nitrogen %>% 
+  rename(Region = state, Year = end_year, Indicator = measure, Median = median, Units = units, SOF = sof,
+         Latitude = lat, Longitude = long) %>% 
+  filter(Year >= 2002, Year <= 2019, Indicator %in% c("Ammoniacal nitrogen", "Nitrate-nitrite nitrogen")) %>%
+  mutate(Indicator = case_when(Indicator == "Ammoniacal nitrogen" ~ "Ammoniacal nitrogen (g/m3)",
+                               TRUE ~ "Nitrate-nitrite nitrogen (g/m3)")) %>%
+  select(Region, Year, SOF, Median, Indicator, Latitude, Longitude)
+  
+# Reads the entirety of new_river_nitrogen and creates a plot to check if it contains missing data (NA). 
+new_river_nitrogen %>% 
   vis_miss()
 
-# Takes the river_nitrogen data frame then rename the columns, select the necessary rows, group them
-# by Region, Indicator, and Year. Lastly, summarise them by getting the sum of the median values rounded
+# Takes the new_river_nitrogen data frame then select the necessary rows, group them
+# by Region, Indicator, and Year. Lastly, summarise them by getting the mean of the median values rounded
 # off by 2 s.f.
-new_rivernitrogen <- river_nitrogen %>% 
-  rename(Region = state, Indicator = measure, Units = units, Med_Value = median,
-         Year = end_year) %>% 
-  filter(Indicator %in% c("Ammoniacal nitrogen", "Nitrate-nitrite nitrogen"),
-         Year >= 2002, Year <= 2019) %>% 
-  group_by(Region, Indicator, Year) %>% 
-  summarise(Total_MedVal = round(mean(Med_Value), 2)) %>% 
-  distinct()
+rivernitrogen <- new_river_nitrogen %>% 
+  select(Region, Year, Indicator, Median) %>% 
+  group_by(Region, Year, Indicator) %>% 
+  summarise(MeanVal = round(mean(Median), 2))
 
-# Takes the new_rivernitrogen then convert it to wide format.
-rivernitrogen_wide <- new_rivernitrogen %>% 
+# Takes the rivernitrogen then convert it to wide format.
+rivernitrogen_wide <- rivernitrogen %>% 
   spread(key = Indicator,
-         value = Total_MedVal) %>% 
-  mutate(`Ammoniacal nitrogen (g/m3)` = `Ammoniacal nitrogen`,
-         `Nitrate-nitrite nitrogen (g/m3)` = `Nitrate-nitrite nitrogen`) %>% 
-  select(-c(`Ammoniacal nitrogen`, `Nitrate-nitrite nitrogen`))
-rivernitrogen_wide
+         value = MeanVal) 
+
+# # Takes the new-river_nitrogen data frame to create a data frame containing the information about the sites where the measurements are taken
+# rivernitrogen_src <- new_river_nitrogen %>% 
+#   select(Region, SOF, Latitude, Longitude) %>% 
+#   distinct()
 
 # Join new_rivernitrogen and new_riverecoli to create river_quality dataframe.
-river_quality <- rivernitrogen_wide %>% 
-  full_join(riverecoli_wide)
+river_quality <- rivernitrogen %>% 
+  full_join(riverecoli)
+
+river_src <- new_river_ecoli %>% 
+  full_join(new_river_nitrogen) %>% 
+  select(-c(Median, Indicator, Year)) %>% 
+  distinct()
 
 # Generate csv file
 write_csv(river_quality, "river_quality.csv")
 write_csv(groundwater_quality, "groundwater_quality.csv")
-
+write_csv(sites, "groundwq_sites.csv")
+write_csv(river_src, "river_src.csv")
+write_csv(groundwater_quality_wide, "groundwq_wide.csv")
+write_csv(riverecoli_wide, "riverecoli_wide.csv")
+write_csv(rivernitrogen_wide, "rivernitrogen_wide.csv")
 
 # Prototype Line Plot
 my_df <- river_quality %>% 

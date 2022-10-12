@@ -2,7 +2,7 @@
 title: "Water Quality"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: columns
+    orientation: rows
     vertical_layout: fill
 runtime: shiny
 ---
@@ -13,21 +13,35 @@ GROUNDWATER
 library(flexdashboard)
 library(tidyverse)
 library(plotly)
+library(highcharter)
 library(shiny)
 
 groundwater_quality <- read_csv("groundwater_quality.csv")
 river_quality <- read_csv("river_quality.csv")
-mean_groundwq <- groundwater_quality %>% 
-  gather(key = Indicator,
-         value = Total_MedVal, c(`E.coli (cfu/100ml)`, `Nitrate nitrogen (g/m3)`),
-         -c(Region, Year)) %>% 
-  filter(Indicator == "E.coli (cfu/100ml)") %>% 
+gwq_sites <- read_csv("groundwq_sites.csv")
+re_srcs <- read_csv("riverecoli_src.csv")
+rn_srcs <- read_csv("rivernitrogen_src.csv")
+
+gwq <- groundwater_quality %>% 
+  filter(Indicator == "E.coli cfu/100ml") %>% 
   group_by(Year) %>% 
-  na.omit() %>% 
-  summarise(meanval = mean(Total_MedVal))
+  summarise(yearlymeanval = mean(MeanVal))
+
+
+gwq_regional_sites <- gwq_sites %>% 
+  group_by(Region) %>% 
+  summarise(TotalSites = n())
+
+
+
+# mean_vals <- rbind(pmin(mean_groundwq$meanval, 11), pmax(mean_groundwq$meanval-11, 0))
+# 
+# mean_vals %>%
+#   barplot(names.arg=mean_groundwq$Year, col=c("green", "red"), ylim = c(0, 80))
+# abline(h = 11, col="red", lty=2)
 ```
 
-Column {.sidebar}
+Row {.sidebar}
 -----------------------------------------------------------------------
 ```{r}
 selectInput("region", label = "Region", choices = c("All", sort(river_quality$Region)), selected = "All")
@@ -36,20 +50,19 @@ radioButtons("indicator", label = "Indicator", choices = c("E.coli", "Nitrate ni
 ```
 
 
-Column {data-width=650}
+Row {data-width=650}
 -----------------------------------------------------------------------
 
 ### Plot 1
 
 ```{r}
-mean_vals <- rbind(pmin(mean_groundwq$meanval, 11), pmax(mean_groundwq$meanval-11, 0))
 
-mean_vals %>% 
-  barplot(names.arg=mean_groundwq$Year, col=c("green", "red"), ylim = c(0, 80))
-abline(h = 11, col="red", lty=2)
+
+
+
 ```
 
-Column {data-width=350}
+Row {data-width=350}
 -----------------------------------------------------------------------
 
 ### Chart B

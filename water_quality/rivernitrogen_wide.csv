@@ -1,0 +1,282 @@
+Region,Year,Ammoniacal nitrogen (g/m3),Nitrate-nitrite nitrogen (g/m3)
+Auckland,2002,0.05,0.45
+Auckland,2003,0.05,0.53
+Auckland,2004,0.05,0.54
+Auckland,2005,0.04,0.49
+Auckland,2006,0.04,0.47
+Auckland,2007,0.04,0.45
+Auckland,2008,0.04,0.44
+Auckland,2009,0.04,0.44
+Auckland,2010,0.04,0.41
+Auckland,2011,0.04,0.38
+Auckland,2012,0.03,0.36
+Auckland,2013,0.03,0.35
+Auckland,2014,0.03,0.34
+Auckland,2015,0.03,0.34
+Auckland,2016,0.03,0.3
+Auckland,2017,0.03,0.3
+Auckland,2018,0.03,0.78
+Auckland,2019,0.03,0.8
+Bay of Plenty,2002,0.03,0.31
+Bay of Plenty,2003,0.02,0.31
+Bay of Plenty,2004,0.02,0.29
+Bay of Plenty,2005,0.02,0.29
+Bay of Plenty,2006,0.02,0.3
+Bay of Plenty,2007,0.02,0.3
+Bay of Plenty,2008,0.02,0.31
+Bay of Plenty,2009,0.02,0.31
+Bay of Plenty,2010,0.02,0.32
+Bay of Plenty,2011,0.02,0.32
+Bay of Plenty,2012,0.02,0.33
+Bay of Plenty,2013,0.02,0.36
+Bay of Plenty,2014,0.02,0.37
+Bay of Plenty,2015,0.02,0.39
+Bay of Plenty,2016,0.02,0.42
+Bay of Plenty,2017,0.02,0.42
+Bay of Plenty,2018,0.02,0.47
+Bay of Plenty,2019,0.02,0.5
+Canterbury,2002,0.03,0.83
+Canterbury,2003,0.03,1.14
+Canterbury,2004,0.01,1.15
+Canterbury,2005,0.01,1.13
+Canterbury,2006,0.02,0.82
+Canterbury,2007,0.02,0.78
+Canterbury,2008,0.02,0.8
+Canterbury,2009,0.02,0.82
+Canterbury,2010,0.02,0.78
+Canterbury,2011,0.02,1.26
+Canterbury,2012,0.02,1.36
+Canterbury,2013,0.01,1.45
+Canterbury,2014,0.01,1.32
+Canterbury,2015,0.01,1.34
+Canterbury,2016,0.02,1.21
+Canterbury,2017,0.02,1.22
+Canterbury,2018,0.02,1.24
+Canterbury,2019,0.02,1.25
+Gisborne,2002,NA,0.1
+Gisborne,2003,NA,0.12
+Gisborne,2004,0.01,0.13
+Gisborne,2005,0.01,0.12
+Gisborne,2006,0.01,0.13
+Gisborne,2007,0.01,0.13
+Gisborne,2008,0.01,0.13
+Gisborne,2009,0.01,0.13
+Gisborne,2010,0.01,0.13
+Gisborne,2011,0.01,0.12
+Gisborne,2012,0.01,0.18
+Gisborne,2013,0.02,0.16
+Gisborne,2014,0.02,0.16
+Gisborne,2015,0.02,0.14
+Gisborne,2016,0.02,0.14
+Gisborne,2017,0.02,0.18
+Gisborne,2018,0.02,0.19
+Gisborne,2019,0.02,0.18
+Hawke's Bay,2002,0.03,0.17
+Hawke's Bay,2003,0.03,0.17
+Hawke's Bay,2004,0.02,0.21
+Hawke's Bay,2005,0.02,0.27
+Hawke's Bay,2006,0.01,0.27
+Hawke's Bay,2007,0.01,0.28
+Hawke's Bay,2008,0.01,0.3
+Hawke's Bay,2009,0.01,0.28
+Hawke's Bay,2010,0.01,0.37
+Hawke's Bay,2011,0.01,0.45
+Hawke's Bay,2012,0.01,0.47
+Hawke's Bay,2013,0.01,0.45
+Hawke's Bay,2014,0.01,0.44
+Hawke's Bay,2015,0.01,0.41
+Hawke's Bay,2016,0.01,0.42
+Hawke's Bay,2017,0.01,0.47
+Hawke's Bay,2018,0.01,0.41
+Hawke's Bay,2019,0.01,0.39
+Manawatū-Whanganui,2002,NA,0.29
+Manawatū-Whanganui,2003,NA,0.32
+Manawatū-Whanganui,2004,0.02,0.33
+Manawatū-Whanganui,2005,0.02,0.31
+Manawatū-Whanganui,2006,0.02,0.31
+Manawatū-Whanganui,2007,0.02,0.31
+Manawatū-Whanganui,2008,0.02,0.31
+Manawatū-Whanganui,2009,0.03,0.37
+Manawatū-Whanganui,2010,0.03,1.07
+Manawatū-Whanganui,2011,0.02,0.34
+Manawatū-Whanganui,2012,0.02,0.33
+Manawatū-Whanganui,2013,0.02,0.31
+Manawatū-Whanganui,2014,0.01,0.27
+Manawatū-Whanganui,2015,0.02,0.29
+Manawatū-Whanganui,2016,0.03,0.36
+Manawatū-Whanganui,2017,0.03,0.35
+Manawatū-Whanganui,2018,0.03,0.35
+Manawatū-Whanganui,2019,0.03,0.36
+Marlborough,2002,NA,0.03
+Marlborough,2003,NA,0.03
+Marlborough,2004,0,0.04
+Marlborough,2005,0,0.03
+Marlborough,2006,0,0.03
+Marlborough,2007,0,0.04
+Marlborough,2008,0,0.04
+Marlborough,2009,0,0.05
+Marlborough,2010,0,0.05
+Marlborough,2011,0,0.05
+Marlborough,2012,0,0.06
+Marlborough,2013,0,0.06
+Marlborough,2014,0,0.06
+Marlborough,2015,0,0.06
+Marlborough,2016,0,0.22
+Marlborough,2017,0,0.3
+Marlborough,2018,0,0.35
+Marlborough,2019,0,0.33
+Nelson,2009,NA,0.19
+Nelson,2010,NA,0.19
+Nelson,2011,0.01,0.18
+Nelson,2012,0.01,0.19
+Nelson,2013,0.01,0.2
+Nelson,2014,0,0.17
+Nelson,2015,0,0.18
+Nelson,2016,0,0.19
+Nelson,2017,0,0.21
+Nelson,2018,0.01,0.22
+Nelson,2019,0,0.23
+Northland,2002,NA,0.22
+Northland,2003,NA,0.22
+Northland,2004,0.02,0.22
+Northland,2005,0.02,0.15
+Northland,2006,0.03,0.23
+Northland,2007,0.03,0.22
+Northland,2008,0.02,0.23
+Northland,2009,0.02,0.23
+Northland,2010,0.02,0.24
+Northland,2011,0.02,0.2
+Northland,2012,0.01,0.2
+Northland,2013,0.01,0.19
+Northland,2014,0.01,0.19
+Northland,2015,0.01,0.19
+Northland,2016,0.01,0.25
+Northland,2017,0.01,0.26
+Northland,2018,0.01,0.25
+Northland,2019,0.01,0.25
+Otago,2002,0.01,0.12
+Otago,2003,0.17,0.14
+Otago,2004,0.06,0.13
+Otago,2005,0.05,0.12
+Otago,2006,0.03,0.23
+Otago,2007,0.03,0.17
+Otago,2008,0.03,0.2
+Otago,2009,0.02,0.19
+Otago,2010,0.02,0.17
+Otago,2011,0.02,0.18
+Otago,2012,0.02,0.18
+Otago,2013,0.02,0.19
+Otago,2014,0.01,0.19
+Otago,2015,0.01,0.18
+Otago,2016,0.01,0.19
+Otago,2017,0.01,0.22
+Otago,2018,0.01,0.22
+Otago,2019,0.01,0.27
+Southland,2002,NA,0.47
+Southland,2003,NA,0.49
+Southland,2004,0.02,0.71
+Southland,2005,0.02,0.72
+Southland,2006,0.02,0.71
+Southland,2007,0.02,0.73
+Southland,2008,0.02,0.71
+Southland,2009,0.02,0.65
+Southland,2010,0.02,0.72
+Southland,2011,0.02,0.71
+Southland,2012,0.02,0.79
+Southland,2013,0.02,0.79
+Southland,2014,0.02,0.84
+Southland,2015,0.02,0.78
+Southland,2016,0.02,0.8
+Southland,2017,0.02,0.84
+Southland,2018,0.02,0.87
+Southland,2019,0.02,0.88
+Taranaki,2002,NA,0.76
+Taranaki,2003,NA,0.78
+Taranaki,2004,0.01,0.8
+Taranaki,2005,0.01,0.79
+Taranaki,2006,0.01,0.8
+Taranaki,2007,0.01,0.79
+Taranaki,2008,0.02,0.8
+Taranaki,2009,0.02,0.78
+Taranaki,2010,0.02,0.77
+Taranaki,2011,0.02,0.76
+Taranaki,2012,0.02,0.76
+Taranaki,2013,0.02,0.63
+Taranaki,2014,0.02,0.61
+Taranaki,2015,0.02,0.61
+Taranaki,2016,0.02,0.53
+Taranaki,2017,0.02,0.53
+Taranaki,2018,0.02,0.53
+Taranaki,2019,0.02,0.53
+Tasman,2002,NA,0.05
+Tasman,2003,NA,0.05
+Tasman,2004,0,0.06
+Tasman,2005,0,0.05
+Tasman,2006,0,0.05
+Tasman,2007,0,0.06
+Tasman,2008,0,0.07
+Tasman,2009,0.01,0.28
+Tasman,2010,0.01,0.29
+Tasman,2011,0.01,0.28
+Tasman,2012,0.01,0.32
+Tasman,2013,0.01,0.48
+Tasman,2014,0.01,0.45
+Tasman,2015,0.01,0.53
+Tasman,2016,0.01,0.55
+Tasman,2017,0,0.43
+Tasman,2018,0.01,0.43
+Tasman,2019,0,0.44
+Waikato,2002,0.05,0.53
+Waikato,2003,0.06,0.6
+Waikato,2004,0.06,0.61
+Waikato,2005,0.05,0.61
+Waikato,2006,0.05,0.61
+Waikato,2007,0.05,0.62
+Waikato,2008,0.05,0.63
+Waikato,2009,0.05,0.64
+Waikato,2010,0.05,0.64
+Waikato,2011,0.05,0.65
+Waikato,2012,0.05,0.66
+Waikato,2013,0.05,0.65
+Waikato,2014,0.05,0.64
+Waikato,2015,0.05,0.65
+Waikato,2016,0.05,0.65
+Waikato,2017,0.05,0.69
+Waikato,2018,0.05,0.69
+Waikato,2019,0.05,0.7
+Wellington,2002,NA,0.24
+Wellington,2003,NA,0.25
+Wellington,2004,0.01,0.26
+Wellington,2005,0.01,0.25
+Wellington,2006,0.01,0.25
+Wellington,2007,0.01,0.25
+Wellington,2008,0.01,0.25
+Wellington,2009,0.01,0.25
+Wellington,2010,0.01,0.24
+Wellington,2011,0.01,0.24
+Wellington,2012,0.01,0.48
+Wellington,2013,0.01,0.47
+Wellington,2014,0.01,0.47
+Wellington,2015,0.01,0.47
+Wellington,2016,0.01,0.46
+Wellington,2017,0.01,0.56
+Wellington,2018,0.01,0.57
+Wellington,2019,0.01,0.56
+West Coast,2002,NA,0.04
+West Coast,2003,NA,0.05
+West Coast,2004,0,0.05
+West Coast,2005,0,0.05
+West Coast,2006,0,0.05
+West Coast,2007,0,0.05
+West Coast,2008,0,0.06
+West Coast,2009,0,0.06
+West Coast,2010,0,0.06
+West Coast,2011,0,0.06
+West Coast,2012,0,0.06
+West Coast,2013,0.01,0.06
+West Coast,2014,0.01,0.07
+West Coast,2015,0.03,0.07
+West Coast,2016,0.03,0.07
+West Coast,2017,0.02,0.1
+West Coast,2018,0.02,0.18
+West Coast,2019,0.02,0.18
