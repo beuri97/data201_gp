@@ -15,17 +15,29 @@ library(tidyverse)
 library(plotly)
 library(highcharter)
 library(shiny)
+library(maps)
 
 groundwater_quality <- read_csv("groundwater_quality.csv")
+groundwq_wide <- read_csv("groundwq_wide.csv")
+
 river_quality <- read_csv("river_quality.csv")
 gwq_sites <- read_csv("groundwq_sites.csv")
 river_srcs <- read_csv("river_src.csv")
 
-gwq <- groundwater_quality %>% 
+gwq_ecoli <- groundwater_quality %>% 
   filter(Indicator == "E.coli cfu/100ml") %>% 
   group_by(Year) %>% 
   summarise(yearlymeanval = mean(MeanVal))
 
+gwq_nitrogen <- groundwater_quality %>% 
+  filter(Indicator == "Nitrate nitrogen g/m3") %>% 
+  group_by(Year) %>% 
+  summarise(yearlymeanval = mean(MeanVal))
+
+gwq_joined <- gwq_ecoli %>% 
+  full_join(gwq_nitrogen, by = "Year") %>% 
+  rename(MeanEcoli = yearlymeanval.x,
+         MeanNitrogen = yearlymeanval.y)
 
 gwq_regional_sites <- gwq_sites %>% 
   group_by(Region) %>% 
@@ -40,27 +52,53 @@ river_regional_srcs <- river_srcs %>%
 # mean_vals %>%
 #   barplot(names.arg=mean_groundwq$Year, col=c("green", "red"), ylim = c(0, 80))
 # abline(h = 11, col="red", lty=2)
+
+map('nz')
+map('nz', xlim = c(166, 179), ylim = c(-48, -34))
+
 ```
 
 Column {data-width=350}
 -------------------------------------
-    
-### No. of Wells Sampled
+
+### E. coli and Nitrate Nitrogen Change in New Zealand (2004 - 2019)
 
 ```{r}
-renderValueBox(
-  valueBox(value = sum(gwq_regional_sites$TotalSites), icon = "fas fa-heart-crack")
+renderHighchart(
+  highchart() %>% 
+  hc_yAxis_multiples(
+    list(lineWidth = 3, lineColor='blue', title=list(text="E.coli cfu/100ml")),
+    list(lineWidth = 3, lineColor="green", title=list(text="Nitrate nitrogen g/m3"))
+  ) %>% 
+  hc_add_series(data = gwq_joined$MeanEcoli, color='blue', name = "E.coli") %>% 
+  hc_add_series(data = gwq_joined$MeanNitrogen, color='green', name = "Nitrate nitrogen", yAxis = 1) %>%
+  hc_xAxis(categories = gwq_joined$Year, title = list(text = "Year"))
 )
 ```
 
-### No. of Source of Flow Sampled
+### E. coli and Nitrate Nitrogen Change in New Zealand (2004 - 2019)
 
 ```{r}
-renderValueBox(
-  valueBox(value = sum(river_regional_srcs$TotalSites),
-           icon = "fa-water")
-)
+
 ```
+
+
+<!-- ### No. of Wells Sampled -->
+
+<!-- ```{r} -->
+<!-- renderValueBox( -->
+<!--   valueBox(value = sum(gwq_regional_sites$TotalSites), icon = "fas fa-heart-crack") -->
+<!-- ) -->
+<!-- ``` -->
+
+<!-- ### No. of Source of Flow Sampled -->
+
+<!-- ```{r} -->
+<!-- renderValueBox( -->
+<!--   valueBox(value = sum(river_regional_srcs$TotalSites), -->
+<!--            icon = "fa-water") -->
+<!-- ) -->
+<!-- ``` -->
    
 Column {data-width=250 .tabset .tabset-fade}
 -------------------------------------
