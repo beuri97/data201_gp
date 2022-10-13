@@ -51,7 +51,7 @@ new_groundwq <- groundwq %>%
          Year = year(Date),
          Indicator = case_when(Indicator == "E.coli" ~ "E.coli cfu/100ml", TRUE ~ "Nitrate nitrogen g/m3"),
          Region = case_when(Region == "Hawkes Bay" ~ "Hawke's Bay",
-                            Region == "Manawatu-Whanganui" ~ "Manawatū-Whanganui", TRUE ~ Region),
+                            Region == "Manawatu-Whanganui" ~ "Manawat??-Whanganui", TRUE ~ Region),
          WellName = LAWAWellName) %>% 
   select(Region, WellName, Latitude, Longitude, Indicator, Year, CensoredValue) %>% 
   filter(Indicator %in% c("E.coli cfu/100ml", "Nitrate nitrogen g/m3"), Year >= 2002, Year <= 2019)
@@ -71,8 +71,8 @@ groundwater_quality_wide
 
 # Take the new_groundwq to create a data frame containing the information about the sites where the measurements are taken.
 sites <- new_groundwq %>% 
-  select(Region, WellName, Latitude, Longitude) %>% 
-  distinct()
+  select(Region, WellName, Latitude, Longitude, CensoredValue, Indicator) %>%
+  distinct() 
 
 # Load 'new_river_ecoli.csv' data
 river_ecoli <- "new_river_ecoli.csv" %>% 

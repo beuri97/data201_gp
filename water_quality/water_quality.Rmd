@@ -15,14 +15,22 @@ library(tidyverse)
 library(plotly)
 library(highcharter)
 library(shiny)
-library(maps)
+library(leaflet)
 
 groundwater_quality <- read_csv("groundwater_quality.csv")
 groundwq_wide <- read_csv("groundwq_wide.csv")
 
-river_quality <- read_csv("river_quality.csv")
 gwq_sites <- read_csv("groundwq_sites.csv")
-river_srcs <- read_csv("river_src.csv")
+
+gwq_sites %>% 
+  filter()
+
+g <- gwq_sites %>% 
+  select(Region, WellName, Latitude, Longitude) %>%
+  distinct() 
+
+g2 <- gwq_sites %>% 
+  select(WellName, Latitude, Longitude, CensoredValue, Indicator)
 
 gwq_ecoli <- groundwater_quality %>% 
   filter(Indicator == "E.coli cfu/100ml") %>% 
@@ -43,9 +51,7 @@ gwq_regional_sites <- gwq_sites %>%
   group_by(Region) %>% 
   summarise(TotalSites = n())
 
-river_regional_srcs <- river_srcs %>% 
-  group_by(Region) %>% 
-  summarise(TotalSites = n())
+
 
 # mean_vals <- rbind(pmin(mean_groundwq$meanval, 11), pmax(mean_groundwq$meanval-11, 0))
 # 
@@ -53,8 +59,10 @@ river_regional_srcs <- river_srcs %>%
 #   barplot(names.arg=mean_groundwq$Year, col=c("green", "red"), ylim = c(0, 80))
 # abline(h = 11, col="red", lty=2)
 
-map('nz')
-map('nz', xlim = c(166, 179), ylim = c(-48, -34))
+m <- leaflet() %>% 
+  addTiles() %>% 
+  addMarkers(lng = gwq_sites$Longitude, lat = gwq_sites$Latitude, popup = gwq_sites$WellName)
+m
 
 ```
 
@@ -79,7 +87,15 @@ renderHighchart(
 ### E. coli and Nitrate Nitrogen Change in New Zealand (2004 - 2019)
 
 ```{r}
+selectInput("indicator", label = "Indicator", choices = c("E.coli", "Nitrate nitrogen"), selected)
 
+renderLeaflet(
+  gwq_sites %>% 
+  leaflet() %>% 
+  setView(lng = "170.1433", lat = "-44.27234", zoom = 9) %>% 
+  addTiles() %>% 
+  addMarkers(lng = g$Longitude, lat = g$Latitude, popup = g$WellName)
+)
 ```
 
 
