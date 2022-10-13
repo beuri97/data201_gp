@@ -71,7 +71,7 @@ groundwater_quality_wide
 
 # Take the new_groundwq to create a data frame containing the information about the sites where the measurements are taken.
 sites <- new_groundwq %>% 
-  select(Region, WellName, Latitude, Longitude, CensoredValue, Indicator) %>%
+  select(Region, Year, WellName, Latitude, Longitude, CensoredValue, Indicator) %>%
   distinct() 
 
 # Load 'new_river_ecoli.csv' data
@@ -194,3 +194,17 @@ E_coli <- ggplot(my_df %>% select(Year, `E.coli (cfu/100ml)`), aes(x = Year, y =
   geom_line()+
   geom_point()
 E_coli
+
+
+ # <- gwq_sites %>% 
+ #  group_by(Region, Year, WellName, Indicator) %>% 
+ #  summarise(Mean = mean(CensoredValue %>% na.omit()))
+
+
+mean_by_well <- gwq_sites %>% 
+  group_by(Region, WellName, Indicator) %>% 
+  summarise(mean(CensoredValue))
+
+# df <- alzen_is_stats %>% 
+#   select(Region) %>% 
+#   distinct()

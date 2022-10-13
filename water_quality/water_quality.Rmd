@@ -51,7 +51,9 @@ gwq_regional_sites <- gwq_sites %>%
   group_by(Region) %>% 
   summarise(TotalSites = n())
 
-
+mean_by_well <- gwq_sites %>% 
+  group_by(Region, WellName, Indicator) %>% 
+  summarise(mean(CensoredValue))
 
 # mean_vals <- rbind(pmin(mean_groundwq$meanval, 11), pmax(mean_groundwq$meanval-11, 0))
 # 
@@ -61,7 +63,7 @@ gwq_regional_sites <- gwq_sites %>%
 
 m <- leaflet() %>% 
   addTiles() %>% 
-  addMarkers(lng = gwq_sites$Longitude, lat = gwq_sites$Latitude, popup = gwq_sites$WellName)
+  addCircles(lng = gwq_sites$Longitude, lat = gwq_sites$Latitude, popup = gwq_sites$WellName)
 m
 
 ```
@@ -87,14 +89,14 @@ renderHighchart(
 ### E. coli and Nitrate Nitrogen Change in New Zealand (2004 - 2019)
 
 ```{r}
-selectInput("indicator", label = "Indicator", choices = c("E.coli", "Nitrate nitrogen"), selected)
+selectInput("indicator", label = "Indicator", choices = c("E.coli", "Nitrate nitrogen"))
 
 renderLeaflet(
   gwq_sites %>% 
   leaflet() %>% 
   setView(lng = "170.1433", lat = "-44.27234", zoom = 9) %>% 
   addTiles() %>% 
-  addMarkers(lng = g$Longitude, lat = g$Latitude, popup = g$WellName)
+  addCircles(lng = g$Longitude, lat = g$Latitude, popup = g$WellName)
 )
 ```
 
