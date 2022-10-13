@@ -16,6 +16,7 @@ library(plotly)
 library(highcharter)
 library(shiny)
 library(leaflet)
+library(glue)
 
 groundwater_quality <- read_csv("groundwater_quality.csv")
 groundwq_wide <- read_csv("groundwq_wide.csv")
@@ -52,8 +53,9 @@ gwq_regional_sites <- gwq_sites %>%
   summarise(TotalSites = n())
 
 mean_by_well <- gwq_sites %>% 
-  group_by(Region, WellName, Indicator) %>% 
-  summarise(mean(CensoredValue))
+  group_by(Region, WellName, Latitude, Longitude, Indicator) %>% 
+  summarise(m = mean(CensoredValue))
+  
 
 # mean_vals <- rbind(pmin(mean_groundwq$meanval, 11), pmax(mean_groundwq$meanval-11, 0))
 # 
@@ -67,6 +69,13 @@ m <- leaflet() %>%
 m
 
 ```
+
+Column {.sidebar}
+-------------------------------------
+```{r}
+selectInput("indicator", label = "Indicator", choices = c("E.coli cfu/100ml", "Nitrate nitrogen g/m3"))
+```
+
 
 Column {data-width=350}
 -------------------------------------
@@ -89,14 +98,30 @@ renderHighchart(
 ### E. coli and Nitrate Nitrogen Change in New Zealand (2004 - 2019)
 
 ```{r}
-selectInput("indicator", label = "Indicator", choices = c("E.coli", "Nitrate nitrogen"))
-
 renderLeaflet(
-  gwq_sites %>% 
-  leaflet() %>% 
-  setView(lng = "170.1433", lat = "-44.27234", zoom = 9) %>% 
-  addTiles() %>% 
-  addCircles(lng = g$Longitude, lat = g$Latitude, popup = g$WellName)
+  if(input$indicator == "E.coli cfu/100ml") {
+    mean_by_well %>% 
+    filter(Indicator == input$indicator) %>% 
+    leaflet() %>% 
+    setView(lng = "170.1433", lat = "-44.27234", zoom = 9) %>% 
+    addTiles() %>% 
+    addCircleMarkers(lng = mean_by_well$Longitude, lat = mean_by_well$Latitude, 
+                   popup = if_else(!is.na(mean_by_well$m), glue("{mean_by_well$WellName}: {round(mean_by_well$m, 2)} cfu/100ml"), glue("{mean_by_well$WellName}: Not Assessed")) ,
+             color = if_else(!is.na(mean_by_well$m), "red", "grey"))
+  } else {
+    mean_by_well %>% 
+    filter(Indicator == input$indicator) %>% 
+    leaflet() %>% 
+    setView(lng = "170.1433", lat = "-44.27234", zoom = 9) %>% 
+    addTiles() %>% 
+    addCircleMarkers(lng = mean_by_well$Longitude, lat = mean_by_well$Latitude, 
+                   popup = case_when(is.na(mean_by_well$m) ~ glue("{mean_by_well$WellName}: Not Assessed"), 
+                                     mean_by_well$m > 11.3 ~ glue("{mean_by_well$WellName}: High Risk"),
+                                     TRUE ~ glue("{mean_by_well$WellName}: Medium Risk")) ,
+             color = case_when(is.na(mean_by_well$m) ~ "grey",
+                               mean_by_well$m > 11.3 ~ "red",
+                               TRUE ~ "green"))
+  }
 )
 ```
 
