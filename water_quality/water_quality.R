@@ -92,10 +92,10 @@ river_ecoli %>%
 
 # Select and rename the columns we need.
 new_river_ecoli <- river_ecoli %>% 
-  rename(Region = state, Year = end_year, Indicator = measure, Median = median, Units = units, SOF = sof,
+  rename(Region = state, Year = end_year, Indicator = measure, Median = median, Units = units, S_ID = s_id,
          Latitude = lat, Longitude = long) %>% 
   mutate(Indicator = "E.coli cfu/100ml") %>% 
-  select(Region, Year, SOF, Median, Indicator, Latitude, Longitude) %>% 
+  select(Region, Year, S_ID, Median, Indicator, Latitude, Longitude) %>% 
   filter(Year >= 2002, Year <= 2019)
 
 # Check for missing data again (NA)
@@ -115,12 +115,12 @@ river_ecoli %>%
 #          value = MeanVal)
 
 river_src_quality_ecoli <- new_river_ecoli %>% 
-  select(Region, Year, SOF, Median, Indicator) %>% 
-  group_by(Region, Year, SOF, Indicator) %>% 
+  select(Region, Year, S_ID, Median, Indicator) %>% 
+  group_by(Region, Year, S_ID, Indicator) %>% 
   summarise(MeanVal = mean(Median))
 
 river_src_ecoli <- new_river_ecoli %>% 
-  select(Region, SOF, Latitude, Longitude) %>% 
+  select(Region, S_ID, Latitude, Longitude) %>% 
   distinct()
 
 # Read the new_river_nitrogen.csv and store it as river_nitrogen for analysis.
@@ -134,12 +134,12 @@ river_nitrogen %>%
 
 # Select the relevant columns for analysis.
 new_river_nitrogen <- river_nitrogen %>% 
-  rename(Region = state, Year = end_year, Indicator = measure, Median = median, Units = units, SOF = sof,
+  rename(Region = state, Year = end_year, Indicator = measure, Median = median, Units = units, S_ID = s_id,
          Latitude = lat, Longitude = long) %>% 
   filter(Year >= 2002, Year <= 2019, Indicator %in% c("Ammoniacal nitrogen", "Nitrate-nitrite nitrogen")) %>%
   mutate(Indicator = case_when(Indicator == "Ammoniacal nitrogen" ~ "Ammoniacal nitrogen g/m3",
                                TRUE ~ "Nitrate-nitrite nitrogen g/m3")) %>%
-  select(Region, Year, SOF, Median, Indicator, Latitude, Longitude)
+  select(Region, Year, S_ID, Median, Indicator, Latitude, Longitude)
   
 # Reads the entirety of new_river_nitrogen and creates a plot to check if it contains missing data (NA). 
 new_river_nitrogen %>% 
@@ -159,13 +159,13 @@ new_river_nitrogen %>%
 #          value = MeanVal) 
 
 river_src_quality_nitrogen <- new_river_nitrogen %>% 
-  select(Region, Year, SOF, Median, Indicator) %>% 
-  group_by(Region, Year, SOF, Indicator) %>% 
+  select(Region, Year, S_ID, Median, Indicator) %>% 
+  group_by(Region, Year, S_ID, Indicator) %>% 
   summarise(MeanVal = mean(Median))
 
 # Takes the new-river_nitrogen data frame to create a data frame containing the information about the sites where the measurements are taken
 river_src_nitrogen <- new_river_nitrogen %>%
-  select(Region, SOF, Latitude, Longitude) %>%
+  select(Region, S_ID, Latitude, Longitude) %>%
   distinct()
 
 # Join new_rivernitrogen and new_riverecoli to create river_quality dataframe.
@@ -231,8 +231,8 @@ m1 <- river_quality %>%
   na.omit() %>% 
   group_by(Year) %>% 
   summarise(MeanEcoli = mean(`E.coli cfu/100ml`),
-            MeanNitrogen = mean(`Nitrate-nitrite nitrogen (g/m3)`),
-            MeanAmmoniacal = mean(`Ammoniacal nitrogen (g/m3)`))
+            MeanNitrogen = mean(`Nitrate-nitrite nitrogen g/m3`),
+            MeanAmmoniacal = mean(`Ammoniacal nitrogen g/m3`))
 
 highchart() %>% 
   hc_yAxis_multiples(
@@ -262,12 +262,12 @@ sites_quality %>%
 df1 <- river_quality %>% 
   filter(Indicator == "E.coli cfu/100ml") %>% 
   group_by(Region) %>% 
-  ungroup() %>% 
-  count(MeanVal > 50) %>% 
-  spread(key = `MeanVal > 50`,
+  count(MeanVal >= 1) %>% 
+  spread(key = `MeanVal >= 1`,
          value = n) %>% 
   mutate(`FALSE` = if_else(is.na(as.double(`FALSE`)), 0, as.double(`FALSE`)),
          Total = `FALSE` + `TRUE`) %>% 
   group_by(Region) %>% 
-  summarise(prop = )
+  summarise(prop = `TRUE`/ Total)
+
   
