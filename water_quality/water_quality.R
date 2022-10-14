@@ -167,8 +167,8 @@ river_src_nitrogen <- new_river_nitrogen %>%
   distinct()
 
 # Join new_rivernitrogen and new_riverecoli to create river_quality dataframe.
-river_quality <- rivernitrogen %>% 
-  full_join(riverecoli)
+river_quality <- river_src_quality_ecoli %>% 
+  full_join(river_src_quality_nitrogen)
 
 river_src <- new_river_ecoli %>% 
   full_join(new_river_nitrogen) %>% 
@@ -216,6 +216,4 @@ mean_by_well <- gwq_sites %>%
   group_by(Region, WellName, Indicator) %>% 
   summarise(mean(CensoredValue))
 
-# df <- alzen_is_stats %>% 
-#   select(Region) %>% 
-#   distinct()
+
