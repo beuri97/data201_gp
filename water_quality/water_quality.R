@@ -170,19 +170,21 @@ river_src_nitrogen <- new_river_nitrogen %>%
 river_quality <- river_src_quality_ecoli %>% 
   full_join(river_src_quality_nitrogen)
 
-river_src <- new_river_ecoli %>% 
-  full_join(new_river_nitrogen) %>% 
-  select(-c(Median, Indicator, Year)) %>% 
+# river_src <- new_river_ecoli %>% 
+#   full_join(new_river_nitrogen) %>% 
+#   select(-c(Median, Indicator, Year)) %>% 
+#   distinct()
+
+river_src <- river_src_ecoli %>% 
+  full_join(river_src_nitrogen) %>% 
   distinct()
 
 # Generate csv file
+writes_csv(sites_quality, "groundwater_quality.csv")
+write_csv(sites, "groundwater_sites.csv")
+
 write_csv(river_quality, "river_quality.csv")
-write_csv(groundwater_quality, "groundwater_quality.csv")
-write_csv(sites, "groundwq_sites.csv")
-write_csv(river_src, "river_src.csv")
-write_csv(groundwater_quality_wide, "groundwq_wide.csv")
-write_csv(riverecoli_wide, "riverecoli_wide.csv")
-write_csv(rivernitrogen_wide, "rivernitrogen_wide.csv")
+write_csv()
 
 # Prototype Line Plot
 my_df <- river_quality %>% 
