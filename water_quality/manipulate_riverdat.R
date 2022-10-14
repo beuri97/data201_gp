@@ -6,6 +6,12 @@ library(tidyverse)
 # to address.
 library(tidygeocoder)
 
+# Read the river_ecoli.csv and save it as river_ecoli.
+river_ecoli <- read_csv("river_ecoli.csv")
+
+# Read the river_nitrogen.csv and save it as river_nitrogen.
+river_nitrogen <- read_csv("river_nitrogen.csv")
+
 # Takes the river_ecoli dataset then take the lat and long variables
 # to get the full address. Then save it as new_riverecoli.
 new_riverecoli <- river_ecoli %>%

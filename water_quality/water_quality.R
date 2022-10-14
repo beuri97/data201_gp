@@ -57,22 +57,24 @@ new_groundwq <- groundwq %>%
   filter(Indicator %in% c("E.coli cfu/100ml", "Nitrate nitrogen g/m3"), Year >= 2002, Year <= 2019)
 
 # Take the new_groundwq to create a data frame about the quality of the groundwater.
-groundwater_quality <- new_groundwq %>%
-  select(Region, Year, Indicator, CensoredValue) %>% 
-  group_by(Region, Year, Indicator) %>% 
-  na.omit() %>% 
-  summarise(MeanVal = round(mean(CensoredValue), 2))
+# groundwater_quality <- new_groundwq %>%
+#   select(Region, Year, Indicator, CensoredValue) %>% 
+#   group_by(Region, Year, Indicator) %>% 
+#   na.omit() %>% 
+#   summarise(MeanVal = round(mean(CensoredValue), 2))
 
-# Takes the groundwater_quality then convert it to wide format.
-groundwater_quality_wide <- groundwater_quality %>% 
+sites_quality <- new_groundwq %>% 
+  select(Region, Year, WellName, CensoredValue, Indicator) %>% 
+  group_by(Region, Year, WellName, Indicator) %>% 
+  summarise(MeanVal = mean(CensoredValue))
+
+sites <- new_groundwq %>% 
+  select(Region, WellName, Latitude, Longitude) %>% 
+  distinct
+
+sites_quality_wide <- sites_quality %>% 
   spread(key = Indicator,
          value = MeanVal)
-groundwater_quality_wide
-
-# Take the new_groundwq to create a data frame containing the information about the sites where the measurements are taken.
-sites <- new_groundwq %>% 
-  select(Region, Year, WellName, Latitude, Longitude, CensoredValue, Indicator) %>%
-  distinct() 
 
 # Load 'new_river_ecoli.csv' data
 river_ecoli <- "new_river_ecoli.csv" %>% 
@@ -98,22 +100,26 @@ new_river_ecoli <- river_ecoli %>%
 river_ecoli %>% 
   vis_miss()
 
-# Takes the new_river_ecoli group the rows by Region, Indicator, and Year then create an new data frame containing the 
-# mean of the Median rounded off to 2.
-riverecoli <- new_river_ecoli %>%
-  select(Region, Year, Indicator, Median) %>% 
-  group_by(Region, Year, Indicator) %>% 
-  summarise(MeanVal = round(mean(Median), 2))
+# # Takes the new_river_ecoli group the rows by Region, Indicator, and Year then create an new data frame containing the 
+# # mean of the Median rounded off to 2.
+# riverecoli <- new_river_ecoli %>%
+#   select(Region, Year, Indicator, Median) %>% 
+#   group_by(Region, Year, Indicator) %>% 
+#   summarise(MeanVal = round(mean(Median), 2))
+# 
+# # Wide format data set spread by Indicator as key
+# riverecoli_wide <- riverecoli %>% 
+#   spread(key = Indicator,
+#          value = MeanVal)
 
-# Wide format data set spread by Indicator as key
-riverecoli_wide <- riverecoli %>% 
-  spread(key = Indicator,
-         value = MeanVal)
+river_src_quality_ecoli <- new_river_ecoli %>% 
+  select(Region, Year, SOF, Median, Indicator) %>% 
+  group_by(Region, Year, SOF, Indicator) %>% 
+  summarise(MeanVal = mean(Median))
 
-# # Take the new_river_ecoli to create a data frame containing the information about the sites where the measurements are taken.
-# riverecoli_src <- new_river_ecoli %>% 
-#   select(Region, SOF, Latitude, Longitude) %>% 
-#   distinct()
+river_src_ecoli <- new_river_ecoli %>% 
+  select(Region, SOF, Latitude, Longitude) %>% 
+  distinct()
 
 # Read the new_river_nitrogen.csv and store it as river_nitrogen for analysis.
 river_nitrogen <- "new_river_nitrogen.csv" %>% 
@@ -137,23 +143,28 @@ new_river_nitrogen <- river_nitrogen %>%
 new_river_nitrogen %>% 
   vis_miss()
 
-# Takes the new_river_nitrogen data frame then select the necessary rows, group them
-# by Region, Indicator, and Year. Lastly, summarise them by getting the mean of the median values rounded
-# off by 2 s.f.
-rivernitrogen <- new_river_nitrogen %>% 
-  select(Region, Year, Indicator, Median) %>% 
-  group_by(Region, Year, Indicator) %>% 
-  summarise(MeanVal = round(mean(Median), 2))
+# # Takes the new_river_nitrogen data frame then select the necessary rows, group them
+# # by Region, Indicator, and Year. Lastly, summarise them by getting the mean of the median values rounded
+# # off by 2 s.f.
+# rivernitrogen <- new_river_nitrogen %>% 
+#   select(Region, Year, Indicator, Median) %>% 
+#   group_by(Region, Year, Indicator) %>% 
+#   summarise(MeanVal = round(mean(Median), 2))
+# 
+# # Takes the rivernitrogen then convert it to wide format.
+# rivernitrogen_wide <- rivernitrogen %>% 
+#   spread(key = Indicator,
+#          value = MeanVal) 
 
-# Takes the rivernitrogen then convert it to wide format.
-rivernitrogen_wide <- rivernitrogen %>% 
-  spread(key = Indicator,
-         value = MeanVal) 
+river_src_quality_nitrogen <- new_river_nitrogen %>% 
+  select(Region, Year, SOF, Median, Indicator) %>% 
+  group_by(Region, Year, SOF, Indicator) %>% 
+  summarise(MeanVal = mean(Median))
 
-# # Takes the new-river_nitrogen data frame to create a data frame containing the information about the sites where the measurements are taken
-# rivernitrogen_src <- new_river_nitrogen %>% 
-#   select(Region, SOF, Latitude, Longitude) %>% 
-#   distinct()
+# Takes the new-river_nitrogen data frame to create a data frame containing the information about the sites where the measurements are taken
+river_src_nitrogen <- new_river_nitrogen %>%
+  select(Region, SOF, Latitude, Longitude) %>%
+  distinct()
 
 # Join new_rivernitrogen and new_riverecoli to create river_quality dataframe.
 river_quality <- rivernitrogen %>% 
