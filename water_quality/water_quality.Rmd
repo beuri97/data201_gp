@@ -63,19 +63,8 @@ mean_by_well <- gwq_sites %>%
 #   barplot(names.arg=mean_groundwq$Year, col=c("green", "red"), ylim = c(0, 80))
 # abline(h = 11, col="red", lty=2)
 
-m <- leaflet() %>% 
-  addTiles() %>% 
-  addCircles(lng = gwq_sites$Longitude, lat = gwq_sites$Latitude, popup = gwq_sites$WellName)
-m
 
 ```
-
-Column {.sidebar}
--------------------------------------
-```{r}
-selectInput("indicator", label = "Indicator", choices = c("E.coli cfu/100ml", "Nitrate nitrogen g/m3"))
-```
-
 
 Column {data-width=350}
 -------------------------------------
@@ -95,34 +84,49 @@ renderHighchart(
 )
 ```
 
-### E. coli and Nitrate Nitrogen Change in New Zealand (2004 - 2019)
+### New Zealand Groundwater Quality State by E.coli and Nitrate Nitrogen (2004 - 2019)
 
 ```{r}
-renderLeaflet(
-  if(input$indicator == "E.coli cfu/100ml") {
-    mean_by_well %>% 
-    filter(Indicator == input$indicator) %>% 
-    leaflet() %>% 
-    setView(lng = "170.1433", lat = "-44.27234", zoom = 9) %>% 
-    addTiles() %>% 
-    addCircleMarkers(lng = mean_by_well$Longitude, lat = mean_by_well$Latitude, 
-                   popup = if_else(!is.na(mean_by_well$m), glue("{mean_by_well$WellName}: {round(mean_by_well$m, 2)} cfu/100ml"), glue("{mean_by_well$WellName}: Not Assessed")) ,
-             color = if_else(!is.na(mean_by_well$m), "red", "grey"))
-  } else {
-    mean_by_well %>% 
-    filter(Indicator == input$indicator) %>% 
-    leaflet() %>% 
-    setView(lng = "170.1433", lat = "-44.27234", zoom = 9) %>% 
-    addTiles() %>% 
-    addCircleMarkers(lng = mean_by_well$Longitude, lat = mean_by_well$Latitude, 
-                   popup = case_when(is.na(mean_by_well$m) ~ glue("{mean_by_well$WellName}: Not Assessed"), 
-                                     mean_by_well$m > 11.3 ~ glue("{mean_by_well$WellName}: High Risk"),
-                                     TRUE ~ glue("{mean_by_well$WellName}: Medium Risk")) ,
-             color = case_when(is.na(mean_by_well$m) ~ "grey",
-                               mean_by_well$m > 11.3 ~ "red",
-                               TRUE ~ "green"))
-  }
+bootstrapPage(
+  tags$style(type = "text/css", "html, body {width:100%;height:100%}"),
+  absolutePanel(top = 10, right = 10, 
+                selectInput("indicator", label = "", choices = c("E.coli cfu/100ml", "Nitrate nitrogen g/m3"))),
+  
+  renderLeaflet(
+    if(input$indicator == "E.coli cfu/100ml") {
+      mean_by_well %>% 
+      filter(Indicator == input$indicator) %>% 
+      leaflet() %>% 
+      setView(lng = "170.1433", lat = "-44.27234", zoom = 9) %>% 
+      addTiles() %>% 
+      addCircleMarkers(lng = mean_by_well$Longitude, lat = mean_by_well$Latitude,
+                       popup = mean_by_well$WellName,
+                       color = case_when(is.na(mean_by_well$m) ~ "#b0b0b0", mean_by_well$m == 0 ~ "#02db2e",
+                                         mean_by_well$m >= 1 & mean_by_well$m <= 10 ~ "#f62607",
+                                         mean_by_well$m >= 11 & mean_by_well$m <= 100 ~ "#a20c06",
+                                         TRUE ~ "#5c0404")) %>% 
+      addLegend("bottomright", title = "Site Status (2004 -2019)", colors = c("b0b0b0", "#02db2e", "#f62607", "#a20c06", "#5c0404"),
+                labels = c("Not Assessed", "No E. coli detected", "Low Risk", "Medium Risk", "High Risk"))
+
+    } else {
+      mean_by_well %>% 
+      filter(Indicator == input$indicator) %>% 
+      leaflet() %>% 
+      setView(lng = "170.1433", lat = "-44.27234", zoom = 9) %>% 
+      addTiles() %>% 
+      addCircleMarkers(lng = mean_by_well$Longitude, lat = mean_by_well$Latitude,
+                       popup = mean_by_well$WellName,
+                       color = case_when(is.na(mean_by_well$m) ~ "#b0b0b0",
+                                         mean_by_well$m >= 0 & mean_by_well$m <= 1 ~ "#ed5b5b",
+                                         mean_by_well$m > 1 & mean_by_well$m <= 5.65 ~ "#f62607",
+                                         mean_by_well$m > 5.65 & mean_by_well$m <= 11.3 ~ "#a20c06",
+                                         TRUE ~ "#5c0404"))%>% 
+      addLegend("bottomright", title = "Site Status (2004 -2019)", colors = c("#b0b0b0", "#ed5b5b", "#f62607", "#a20c06", "#5c0404"),
+                labels = c("Not Assessed", "No Risk", "Low Risk", "Medium Risk", "High Risk"))
+    }
+  )
 )
+
 ```
 
 
