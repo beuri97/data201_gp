@@ -17,6 +17,8 @@ library(visdat)
 # Load the lubridate package to be able to use function(s) for manipulating datetime data type.
 library(lubridate)
 
+library(highcharter)
+
 # Read the groundwq_2004-2020.xlsx and store it as groundwq for analysis.
 groundwq <- "groundwq_2004-2020.xlsx" %>% 
   read_excel()
@@ -218,4 +220,42 @@ mean_by_well <- gwq_sites %>%
   group_by(Region, WellName, Indicator) %>% 
   summarise(mean(CensoredValue))
 
+m <- sites_quality_wide %>%
+  na.omit() %>% 
+  group_by(Year) %>% 
+  summarise(MeanEcoli = mean(`E.coli cfu/100ml`), MeanNitrogen = mean(`Nitrate nitrogen g/m3`))
+
+m1 <- river_quality %>% 
+  spread(key = Indicator,
+         value = MeanVal) %>% 
+  na.omit() %>% 
+  group_by(Year) %>% 
+  summarise(MeanEcoli = mean(`E.coli cfu/100ml`),
+            MeanNitrogen = mean(`Nitrate-nitrite nitrogen (g/m3)`),
+            MeanAmmoniacal = mean(`Ammoniacal nitrogen (g/m3)`))
+
+highchart() %>% 
+  hc_yAxis_multiples(
+    list(lineWidth = 3, lineColor='blue', title=list(text="E.coli cfu/100ml")),
+    list(lineWidth = 3, lineColor="green", title=list(text="Nitrate nitrogen g/m3"))
+  ) %>% 
+  hc_add_series(data = m$MeanEcoli, color='blue', name = "E.coli") %>% 
+  hc_add_series(data = m$MeanNitrogen, color='green', name = "Nitrate nitrogen", yAxis = 1) %>%
+  hc_xAxis(categories = m$Year, title = list(text = "Year"))
+
+highchart() %>% 
+  hc_yAxis_multiples(
+    list(lineWidth = 3, lineColor='blue', title=list(text="E.coli cfu/100ml")),
+    list(lineWidth = 3, lineColor="green", title=list(text="Nitrogen g/m3"))
+  ) %>% 
+  hc_add_series(data = m1$MeanEcoli, color='blue', name = "E.coli") %>% 
+  hc_add_series(data = m1$MeanNitrogen, color='green', name = "Nitrate-nitrite nitrogen", yAxis = 1) %>%
+  hc_add_series(data = m1$MeanAmmoniacal, color='yellow', name = "Ammoniacal nitrogen", yAxis = 1) %>% 
+  hc_xAxis(categories = m1$Year, title = list(text = "Year"))
+
+sites_quality %>%
+  filter(Indicator == "E.coli cfu/100ml") %>% 
+  group_by(Region) %>% 
+  count()
+  # summarise(SiteExceeded = sum(MeanVal > 50)/n(WellName))
 
