@@ -137,8 +137,8 @@ new_river_nitrogen <- river_nitrogen %>%
   rename(Region = state, Year = end_year, Indicator = measure, Median = median, Units = units, SOF = sof,
          Latitude = lat, Longitude = long) %>% 
   filter(Year >= 2002, Year <= 2019, Indicator %in% c("Ammoniacal nitrogen", "Nitrate-nitrite nitrogen")) %>%
-  mutate(Indicator = case_when(Indicator == "Ammoniacal nitrogen" ~ "Ammoniacal nitrogen (g/m3)",
-                               TRUE ~ "Nitrate-nitrite nitrogen (g/m3)")) %>%
+  mutate(Indicator = case_when(Indicator == "Ammoniacal nitrogen" ~ "Ammoniacal nitrogen g/m3",
+                               TRUE ~ "Nitrate-nitrite nitrogen g/m3")) %>%
   select(Region, Year, SOF, Median, Indicator, Latitude, Longitude)
   
 # Reads the entirety of new_river_nitrogen and creates a plot to check if it contains missing data (NA). 
@@ -186,7 +186,7 @@ writes_csv(sites_quality, "groundwater_quality.csv")
 write_csv(sites, "groundwater_sites.csv")
 
 write_csv(river_quality, "river_quality.csv")
-write_csv()
+write_csv(river_src, "river_srcs.csv")
 
 # Prototype Line Plot
 my_df <- river_quality %>% 
@@ -259,3 +259,15 @@ sites_quality %>%
   count()
   # summarise(SiteExceeded = sum(MeanVal > 50)/n(WellName))
 
+df1 <- river_quality %>% 
+  filter(Indicator == "E.coli cfu/100ml") %>% 
+  group_by(Region) %>% 
+  ungroup() %>% 
+  count(MeanVal > 50) %>% 
+  spread(key = `MeanVal > 50`,
+         value = n) %>% 
+  mutate(`FALSE` = if_else(is.na(as.double(`FALSE`)), 0, as.double(`FALSE`)),
+         Total = `FALSE` + `TRUE`) %>% 
+  group_by(Region) %>% 
+  summarise(prop = )
+  
