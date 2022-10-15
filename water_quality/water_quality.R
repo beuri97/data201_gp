@@ -182,7 +182,7 @@ river_src <- river_src_ecoli %>%
   distinct()
 
 # Generate csv file
-writes_csv(sites_quality, "groundwater_quality.csv")
+write_csv(sites_quality, "groundwater_quality.csv")
 write_csv(sites, "groundwater_sites.csv")
 
 write_csv(river_quality, "river_quality.csv")
@@ -239,19 +239,23 @@ overall_gwq <- highchart() %>%
     list(lineWidth = 3, lineColor='blue', title=list(text="E.coli cfu/100ml")),
     list(lineWidth = 3, lineColor="green", title=list(text="Nitrate nitrogen g/m3"))
   ) %>% 
-  hc_add_series(data = m$MeanEcoli, color='blue', name = "E.coli") %>% 
-  hc_add_series(data = m$MeanNitrogen, color='green', name = "Nitrate nitrogen", yAxis = 1) %>%
-  hc_xAxis(categories = m$Year, title = list(text = "Year"))
+  hc_add_series(data = gwq$MeanEcoli, color='blue', name = "E.coli") %>% 
+  hc_add_series(data = gwq$MeanNitrogen, color='green', name = "Nitrate nitrogen", yAxis = 1) %>%
+  hc_xAxis(categories = gwq$Year, title = list(text = "Year")) %>% 
+  hc_title(text = "Average E. coli Count and Nitrate Nitrogen Amount in NZ (2004 - 2019)")
+overall_gwq
 
 overall_rq <- highchart() %>% 
   hc_yAxis_multiples(
     list(lineWidth = 3, lineColor='blue', title=list(text="E.coli cfu/100ml")),
     list(lineWidth = 3, lineColor="green", title=list(text="Nitrogen g/m3"))
   ) %>% 
-  hc_add_series(data = m1$MeanEcoli, color='blue', name = "E.coli") %>% 
-  hc_add_series(data = m1$MeanNitrogen, color='green', name = "Nitrate-nitrite nitrogen", yAxis = 1) %>%
-  hc_add_series(data = m1$MeanAmmoniacal, color='yellow', name = "Ammoniacal nitrogen", yAxis = 1) %>% 
-  hc_xAxis(categories = m1$Year, title = list(text = "Year"))
+  hc_add_series(data = rq$MeanEcoli, color='blue', name = "E.coli") %>% 
+  hc_add_series(data = rq$MeanNitrogen, color='green', name = "Nitrate-nitrite nitrogen", yAxis = 1) %>%
+  hc_add_series(data = rq$MeanAmmoniacal, color='yellow', name = "Ammoniacal nitrogen", yAxis = 1) %>% 
+  hc_xAxis(categories = rq$Year, title = list(text = "Year"))%>% 
+  hc_title(text = "Average E. coli Count, Nitrate-Nitrite and Ammonical Nitrogen Amount in NZ (2002 - 2019)")
+overall_rq
 
 sitepropecoli <- river_quality %>% 
   filter(Indicator == "E.coli cfu/100ml") %>% 
@@ -385,3 +389,4 @@ groundwater_condition_plot
 
 ggsave(groundwater_condition_plot, file = "groundwater_condition.png", width = 7, height = 6)
 ggsave(river_condition_plot, file = "river_condition.png", width = 7, height = 6)
+
