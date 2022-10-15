@@ -294,3 +294,73 @@ river %>%
   geom_bar(position = "stack",stat = "identity") +
   ylim(0, 100)
 
+# Proportion of Nitrate nitrogen in groundwater exceeded over 50
+nitro_threshold <- sites_quality %>% 
+  filter(Indicator == "Nitrate nitrogen g/m3") %>% 
+  group_by(Region, Year) %>% 
+  count(MeanVal >= 50)
+
+groundwater_nitro_prop <- sites_quality %>% 
+  filter(Indicator == "Nitrate nitrogen g/m3") %>% 
+  group_by(Region) %>% 
+  count(MeanVal >= 50) %>% 
+  spread(key = `MeanVal >= 50`,
+         value = n) %>% 
+  mutate(`FALSE` = if_else(is.na(as.double(`FALSE`)), 0, as.double(`FALSE`)),
+         Total = `FALSE` + `TRUE`) %>% 
+  group_by(Region) %>% 
+  summarise(prop = `TRUE`/ Total)
+
+
+# Groundwater condition by E.coli
+groundwater_ecoli_condition <- sites_quality %>% 
+  filter(Indicator == "E.coli cfu/100ml") %>% 
+  group_by(WellName) %>% 
+  summarize(measure = mean(MeanVal)) %>% 
+  mutate(Status = case_when(measure < 1 ~ "No Risk", 
+                            measure >= 1 & measure <= 10 ~ "Low Risk", 
+                            TRUE ~ "High Risk"))
+
+groundwater_ecoli_condition <-df102 %>% group_by(Status) %>% 
+  summarize(Count = n()) %>% 
+  mutate(prop=Count/sum(Count), Indicator="E.coli (cfu/100ml)")
+
+
+ecoli_risk <- df102_1 %>% 
+  ggplot(aes(x =  Status, y = Count, fill=Status))+
+  geom_bar(stat="identity")+
+  geom_text(aes(label = Count), vjust=1.5)
+ecoli_risk
+
+
+# Groundwater condition by Nitrate nitrogen 
+groundwater_nitro_condition <- sites_quality %>% 
+  filter(Indicator == "Nitrate nitrogen g/m3") %>% 
+  group_by(WellName) %>% 
+  summarize(measure = mean(MeanVal)) %>% 
+  mutate(Status = case_when(measure <= 1 ~ "No Risk", 
+                            measure > 1 & measure <= 11.3 ~ "Low Risk", 
+                            TRUE ~ "High Risk"))
+
+groundwater_nitro_condition <- df103 %>% 
+  group_by(Status) %>% 
+  summarize(Count = n()) %>% 
+  mutate(prop=Count/sum(Count), Indicator = "Nitrate nitrogen (g/m3)")
+
+groundwater_nitro_condtion_plot <- df103_1 %>% 
+  ggplot(aes(x =  Status, y = Count, fill=Status))+
+  geom_bar(stat="identity")+
+  geom_text(aes(label = Count), vjust=1.5)
+groundwater_nitro_condtion_plot
+
+
+# Overall condition of groundwater
+ground_water_condition <- df102_1 %>% 
+  full_join(df103_1)
+
+ground_water_condition_plot <- ground_water_condition %>% 
+  ggplot(aes(x = Indicator, y = Count, fill=Status))+
+  geom_bar(position = "stack", stat="identity")
+ground_water_condition_plot
+
+
