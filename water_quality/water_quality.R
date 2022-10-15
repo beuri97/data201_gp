@@ -220,12 +220,12 @@ mean_by_well <- gwq_sites %>%
   group_by(Region, WellName, Indicator) %>% 
   summarise(mean(CensoredValue))
 
-m <- sites_quality_wide %>%
+gwq <- sites_quality_wide %>%
   na.omit() %>% 
   group_by(Year) %>% 
   summarise(MeanEcoli = mean(`E.coli cfu/100ml`), MeanNitrogen = mean(`Nitrate nitrogen g/m3`))
 
-m1 <- river_quality %>% 
+rq <- river_quality %>% 
   spread(key = Indicator,
          value = MeanVal) %>% 
   na.omit() %>% 
@@ -234,7 +234,7 @@ m1 <- river_quality %>%
             MeanNitrogen = mean(`Nitrate-nitrite nitrogen g/m3`),
             MeanAmmoniacal = mean(`Ammoniacal nitrogen g/m3`))
 
-highchart() %>% 
+overall_gwq <- highchart() %>% 
   hc_yAxis_multiples(
     list(lineWidth = 3, lineColor='blue', title=list(text="E.coli cfu/100ml")),
     list(lineWidth = 3, lineColor="green", title=list(text="Nitrate nitrogen g/m3"))
@@ -243,7 +243,7 @@ highchart() %>%
   hc_add_series(data = m$MeanNitrogen, color='green', name = "Nitrate nitrogen", yAxis = 1) %>%
   hc_xAxis(categories = m$Year, title = list(text = "Year"))
 
-highchart() %>% 
+overall_rq <- highchart() %>% 
   hc_yAxis_multiples(
     list(lineWidth = 3, lineColor='blue', title=list(text="E.coli cfu/100ml")),
     list(lineWidth = 3, lineColor="green", title=list(text="Nitrogen g/m3"))
@@ -253,21 +253,16 @@ highchart() %>%
   hc_add_series(data = m1$MeanAmmoniacal, color='yellow', name = "Ammoniacal nitrogen", yAxis = 1) %>% 
   hc_xAxis(categories = m1$Year, title = list(text = "Year"))
 
-sites_quality %>%
+siteprop <- river_quality %>% 
   filter(Indicator == "E.coli cfu/100ml") %>% 
-  group_by(Region) %>% 
-  count()
-  # summarise(SiteExceeded = sum(MeanVal > 50)/n(WellName))
+  group_by(S_ID) %>% 
+  summarise(m = mean(MeanVal)) %>% 
+  mutate(Status = case_when(m < 1 ~ "No Risk", m >= 1 & m <= 10 ~ "Low Risk", TRUE ~ "High Risk")) %>% 
+  group_by(Status) %>% 
+  summarise(counts = n()) %>% 
+  mutate(prop = counts/sum(counts))
 
-df1 <- river_quality %>% 
-  filter(Indicator == "E.coli cfu/100ml") %>% 
-  group_by(Region) %>% 
-  count(MeanVal >= 1) %>% 
-  spread(key = `MeanVal >= 1`,
-         value = n) %>% 
-  mutate(`FALSE` = if_else(is.na(as.double(`FALSE`)), 0, as.double(`FALSE`)),
-         Total = `FALSE` + `TRUE`) %>% 
-  group_by(Region) %>% 
-  summarise(prop = `TRUE`/ Total)
-
-  
+siteprop %>% 
+  ggplot(aes(x = Status, y = prop*100, fill = Status)) +
+  geom_bar(stat = "identity") +
+  ylim(0, 100)
