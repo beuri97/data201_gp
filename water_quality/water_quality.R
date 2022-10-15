@@ -257,31 +257,40 @@ sitepropecoli <- river_quality %>%
   filter(Indicator == "E.coli cfu/100ml") %>% 
   group_by(S_ID) %>% 
   summarise(m = mean(MeanVal)) %>% 
-  mutate(Status = case_when(m < 1 ~ "No Risk", m >= 1 & m <= 10 ~ "Low Risk", TRUE ~ "High Risk")) %>% 
+  mutate(Status = case_when(m <= 130 ~ "Excellent",
+                            m > 130 & m <= 260 ~ "Good",
+                            m > 260 & m <= 540 ~ "Fair",
+                            TRUE ~ "Poor")) %>% 
   group_by(Status) %>% 
   summarise(counts = n()) %>% 
   mutate(prop = counts/sum(counts),
-         Indicator = rep(c("E.coli cfu/100ml"), 3))
+         Indicator = rep(c("E.coli (cfu/100ml)"), 4))
 
 sitepropnitrate <- river_quality %>% 
   filter(Indicator == "Nitrate-nitrite nitrogen g/m3") %>% 
   group_by(S_ID) %>% 
   summarise(m = mean(MeanVal)) %>% 
-  mutate(Status = case_when(m >= 0 & m <= 1 ~ "No Risk", m > 1 & m <= 11.3 ~ "Low Risk", TRUE ~ "High Risk")) %>% 
+  mutate(Status = case_when(m >= 0 & m <= 1 ~ "Excellent", 
+                            m > 1 & m <= 5.65 ~ "Good",
+                            m > 5.65 & m <= 11.3 ~ "Fair",
+                            TRUE ~ "Poor")) %>% 
   group_by(Status) %>% 
   summarise(counts = n()) %>% 
   mutate(prop = counts/sum(counts),
-         Indicator = rep(c("Nitrate-nitrite nitrogen g/m3"), 3))
+         Indicator = rep(c("Nitrate-nitrite nitrogen (g/m3)"), 4))
 
 siteammoniacal <- river_quality %>% 
-  filter(Indicator == "Nitrate-nitrite nitrogen g/m3") %>% 
+  filter(Indicator == "Ammoniacal nitrogen g/m3") %>% 
   group_by(S_ID) %>% 
   summarise(m = mean(MeanVal)) %>% 
-  mutate(Status = case_when(m >= 0 & m <= 1 ~ "No Risk", m > 1 & m <= 11.3 ~ "Low Risk", TRUE ~ "High Risk")) %>% 
+  mutate(Status = case_when(m >= 0 & m <= 1 ~ "Excellent", 
+                            m > 1 & m <= 5.65 ~ "Good",
+                            m > 5.65 & m <= 11.3 ~ "Fair",
+                            TRUE ~ "Poor")) %>% 
   group_by(Status) %>% 
   summarise(counts = n()) %>% 
   mutate(prop = counts/sum(counts),
-         Indicator = rep(c("Ammoniacal nitrogen g/m3"), 3))
+         Indicator = rep(c("Ammoniacal nitrogen (g/m3)"), 1))
 
 sitepropnitrogen <- sitepropnitrate %>% 
   full_join(siteammoniacal)
@@ -289,9 +298,15 @@ sitepropnitrogen <- sitepropnitrate %>%
 river <- sitepropecoli %>% 
   full_join(sitepropnitrogen)
 
-river %>% 
+river$Status <- factor(river$Status, levels = c("Excellent", "Good", "Fair", "Poor"))
+
+river_condition_plot <- river %>%
   ggplot(aes(x = Indicator, y = prop*100, fill = Status)) +
-  geom_bar(position = "stack",stat = "identity") +
+  geom_bar(position = "stack", stat = "identity") +
+  scale_fill_manual(values = c("#00ABFD", "#00B81F",
+                            "#85AD00", "#CF9400")) + 
+  ylab("Percentage of sites") +
+  ggtitle("River Quality (2002 - 2019)") +
   ylim(0, 100)
 
 # Proportion of Nitrate nitrogen in groundwater exceeded over 50
@@ -316,17 +331,16 @@ groundwater_nitro_prop <- sites_quality %>%
 groundwater_ecoli_condition <- sites_quality %>% 
   filter(Indicator == "E.coli cfu/100ml") %>% 
   group_by(WellName) %>% 
-  summarize(measure = mean(MeanVal)) %>% 
-  mutate(Status = case_when(measure < 1 ~ "No Risk", 
-                            measure >= 1 & measure <= 10 ~ "Low Risk", 
-                            TRUE ~ "High Risk"))
-
-groundwater_ecoli_condition <-df102 %>% group_by(Status) %>% 
+  summarise(m = mean(MeanVal)) %>% 
+  mutate(Status = case_when(m <= 130 ~ "Excellent",
+                            m > 130 & m <= 260 ~ "Good",
+                            m > 260 & m <= 540 ~ "Fair",
+                            TRUE ~ "Poor")) %>% 
+  group_by(Status) %>% 
   summarize(Count = n()) %>% 
   mutate(prop=Count/sum(Count), Indicator="E.coli (cfu/100ml)")
 
-
-ecoli_risk <- df102_1 %>% 
+ecoli_risk <- groundwater_ecoli_condition %>% 
   ggplot(aes(x =  Status, y = Count, fill=Status))+
   geom_bar(stat="identity")+
   geom_text(aes(label = Count), vjust=1.5)
@@ -337,12 +351,11 @@ ecoli_risk
 groundwater_nitro_condition <- sites_quality %>% 
   filter(Indicator == "Nitrate nitrogen g/m3") %>% 
   group_by(WellName) %>% 
-  summarize(measure = mean(MeanVal)) %>% 
-  mutate(Status = case_when(measure <= 1 ~ "No Risk", 
-                            measure > 1 & measure <= 11.3 ~ "Low Risk", 
-                            TRUE ~ "High Risk"))
-
-groundwater_nitro_condition <- df103 %>% 
+  summarise(m = mean(MeanVal)) %>% 
+  mutate(Status = case_when(m >= 0 & m <= 1 ~ "Excellent", 
+                            m > 1 & m <= 5.65 ~ "Good",
+                            m > 5.65 & m <= 11.3 ~ "Fair",
+                            TRUE ~ "Poor")) %>% 
   group_by(Status) %>% 
   summarize(Count = n()) %>% 
   mutate(prop=Count/sum(Count), Indicator = "Nitrate nitrogen (g/m3)")
@@ -355,12 +368,20 @@ groundwater_nitro_condtion_plot
 
 
 # Overall condition of groundwater
-ground_water_condition <- df102_1 %>% 
-  full_join(df103_1)
+ground_water_condition <- groundwater_ecoli_condition %>% 
+  full_join(groundwater_nitro_condition)
 
-ground_water_condition_plot <- ground_water_condition %>% 
-  ggplot(aes(x = Indicator, y = Count, fill=Status))+
-  geom_bar(position = "stack", stat="identity")
-ground_water_condition_plot
+ground_water_condition$Status <- factor(ground_water_condition$Status, levels = c("Excellent", "Good", "Fair", "Poor"))
 
+groundwater_condition_plot <- ground_water_condition %>% 
+  ggplot(aes(x = Indicator, y = prop*100, fill = Status)) +
+  geom_bar(position = "stack", stat="identity") +
+  scale_fill_manual(values = c("#00ABFD", "#00B81F",
+                               "#85AD00", "#CF9400")) + 
+  ylab("Percentage of sites") +
+  ggtitle("Groundwater Quality (2004 - 2019)") +
+  ylim(0, 100)
+groundwater_condition_plot
 
+ggsave(groundwater_condition_plot, file = "groundwater_condition.png", width = 7, height = 6)
+ggsave(river_condition_plot, file = "river_condition.png", width = 7, height = 6)
