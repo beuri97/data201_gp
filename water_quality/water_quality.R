@@ -253,16 +253,44 @@ overall_rq <- highchart() %>%
   hc_add_series(data = m1$MeanAmmoniacal, color='yellow', name = "Ammoniacal nitrogen", yAxis = 1) %>% 
   hc_xAxis(categories = m1$Year, title = list(text = "Year"))
 
-siteprop <- river_quality %>% 
+sitepropecoli <- river_quality %>% 
   filter(Indicator == "E.coli cfu/100ml") %>% 
   group_by(S_ID) %>% 
   summarise(m = mean(MeanVal)) %>% 
   mutate(Status = case_when(m < 1 ~ "No Risk", m >= 1 & m <= 10 ~ "Low Risk", TRUE ~ "High Risk")) %>% 
   group_by(Status) %>% 
   summarise(counts = n()) %>% 
-  mutate(prop = counts/sum(counts))
+  mutate(prop = counts/sum(counts),
+         Indicator = rep(c("E.coli cfu/100ml"), 3))
 
-siteprop %>% 
-  ggplot(aes(x = Status, y = prop*100, fill = Status)) +
-  geom_bar(stat = "identity") +
+sitepropnitrate <- river_quality %>% 
+  filter(Indicator == "Nitrate-nitrite nitrogen g/m3") %>% 
+  group_by(S_ID) %>% 
+  summarise(m = mean(MeanVal)) %>% 
+  mutate(Status = case_when(m >= 0 & m <= 1 ~ "No Risk", m > 1 & m <= 11.3 ~ "Low Risk", TRUE ~ "High Risk")) %>% 
+  group_by(Status) %>% 
+  summarise(counts = n()) %>% 
+  mutate(prop = counts/sum(counts),
+         Indicator = rep(c("Nitrate-nitrite nitrogen g/m3"), 3))
+
+siteammoniacal <- river_quality %>% 
+  filter(Indicator == "Nitrate-nitrite nitrogen g/m3") %>% 
+  group_by(S_ID) %>% 
+  summarise(m = mean(MeanVal)) %>% 
+  mutate(Status = case_when(m >= 0 & m <= 1 ~ "No Risk", m > 1 & m <= 11.3 ~ "Low Risk", TRUE ~ "High Risk")) %>% 
+  group_by(Status) %>% 
+  summarise(counts = n()) %>% 
+  mutate(prop = counts/sum(counts),
+         Indicator = rep(c("Ammoniacal nitrogen g/m3"), 3))
+
+sitepropnitrogen <- sitepropnitrate %>% 
+  full_join(siteammoniacal)
+
+river <- sitepropecoli %>% 
+  full_join(sitepropnitrogen)
+
+river %>% 
+  ggplot(aes(x = Indicator, y = prop*100, fill = Status)) +
+  geom_bar(position = "stack",stat = "identity") +
   ylim(0, 100)
+

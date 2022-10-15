@@ -53,7 +53,7 @@ gwq_regional_sites <- gwq_sites %>%
   summarise(TotalSites = n())
 
 mean_by_well <- gwq_sites %>% 
-  group_by(Region, WellName, Latitude, Longitude, Indicator) %>% 
+  group_by(Region, WellName, Latitude, Longitude, Indicator, Year) %>% 
   summarise(m = mean(CensoredValue))
   
 
