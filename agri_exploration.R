@@ -183,6 +183,30 @@ activity_wide2 <- activity_wide2[, c(1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
 
 
 activity_wide2 %>% ggplot(aes(x = Year, y = `Beef Cattle`, colour = Area)) + geom_point() 
+activity_wide2 %>% ggplot(aes(x = Year, y = `Dairy Cattle`, colour = Area)) + geom_point() 
+activity_wide2 %>% ggplot(aes(x = Year, y = `Deer`, colour = Area)) + geom_point() 
+activity_wide2 %>% ggplot(aes(x = Year, y = `Sheep`, colour = Area)) + geom_point() 
+activity_wide2 %>% ggplot(aes(x = Year, y = `Total apples (hectares)`, colour = Area)) + geom_point() 
 
 
 
+
+
+
+
+
+# Getting the Density of Beef Cattle per Hectare
+test2 <-activity_wide2 %>% mutate(pop_density = `Beef Cattle` / Total_Hectares)
+test2
+
+# Plotting Density of Beef Cattle per Hectare
+test2 %>% filter(Area == "Canterbury" | Area == "Auckland") %>%
+  ggplot(aes(x = Year, y = pop_density, colour = Area)) + geom_bar(stat = 'identity') +
+  facet_grid(cols = vars(Area))
+
+
+
+
+
+
+write_csv(activity_long, "agriculture_activity_long.csv") 
