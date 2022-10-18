@@ -390,3 +390,5 @@ groundwater_condition_plot
 ggsave(groundwater_condition_plot, file = "groundwater_condition.png", width = 7, height = 6)
 ggsave(river_condition_plot, file = "river_condition.png", width = 7, height = 6)
 
+write_csv(groundwq, "groundwq.csv")
+new_df <- read_csv("groundwq.csv")
