@@ -392,3 +392,15 @@ ggsave(river_condition_plot, file = "river_condition.png", width = 7, height = 6
 
 write_csv(groundwq, "groundwq.csv")
 new_df <- read_csv("groundwq.csv")
+
+
+# overall_gwq <- highchart() %>% 
+#   hc_yAxis_multiples(
+#     list(lineWidth = 3, lineColor='blue', title=list(text="E.coli cfu/100ml")),
+#     list(lineWidth = 3, lineColor="green", title=list(text="Nitrate nitrogen g/m3"))
+#   ) %>% 
+#   hc_add_series(data = gwq_overall_change$MeanEcoli, color='blue', name = "E.coli") %>% 
+#   hc_add_series(data = gwq_overall_change$MeanNitrogen, color='green', name = "Nitrate nitrogen", yAxis = 1) %>%
+#   hc_xAxis(categories = gwq_overall_change$Year, title = list(text = "Year")) %>% 
+#   hc_title(text = "Average E. coli Count and Nitrate Nitrogen Amount in NZ (2004 - 2019)")
+# overall_gwq

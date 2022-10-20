@@ -9090,10 +9090,10 @@ Canterbury,2019,O33/0061,E.coli cfu/100ml,1
 Canterbury,2019,O33/0061,Nitrate nitrogen g/m3,34.9605
 Canterbury,2019,O33/0078,E.coli cfu/100ml,1
 Canterbury,2019,O33/0078,Nitrate nitrogen g/m3,5.31285
-Gisborne,2004,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1.6666666666666667
-Gisborne,2004,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,202.63204347826087
 Gisborne,2004,Awapuni-McDonald Rd Bore GPC030,E.coli cfu/100ml,1.6666666666666667
 Gisborne,2004,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,149.0035
+Gisborne,2004,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1.6666666666666667
+Gisborne,2004,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,202.63204347826087
 Gisborne,2004,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,896.6728333333333
 Gisborne,2004,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,480.114
 Gisborne,2004,Caesar Rd No1 Bore GPG058,Nitrate nitrogen g/m3,530.0035555555555
@@ -9169,8 +9169,8 @@ Gisborne,2004,Willows Rd Obs Gdc Willows Road GPC028,Nitrate nitrogen g/m3,233.3
 Gisborne,2004,Wilson J GPO028,E.coli cfu/100ml,1
 Gisborne,2004,Wilson J GPO028,Nitrate nitrogen g/m3,147.82133333333334
 Gisborne,2004,Yagar 125 Haisman Road GPB009,Nitrate nitrogen g/m3,923.9344444444445
-Gisborne,2005,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,241.70872727272726
 Gisborne,2005,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,137.62516666666667
+Gisborne,2005,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,241.70872727272726
 Gisborne,2005,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,940.0045555555556
 Gisborne,2005,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,485.55744444444446
 Gisborne,2005,Caesar Rd No1 Bore GPG058,Nitrate nitrogen g/m3,528.8906666666667
@@ -9237,8 +9237,8 @@ Gisborne,2005,Williamson St 11 - Gdc GPA162,Nitrate nitrogen g/m3,0.0025
 Gisborne,2005,Willows Rd Obs Gdc Willows Road GPC028,Nitrate nitrogen g/m3,214.44275
 Gisborne,2005,Wilson J GPO028,Nitrate nitrogen g/m3,144.06491666666668
 Gisborne,2005,Yagar 125 Haisman Road GPB009,Nitrate nitrogen g/m3,919.3251111111111
-Gisborne,2006,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,194.151
 Gisborne,2006,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,148.01791666666668
+Gisborne,2006,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,194.151
 Gisborne,2006,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,939.668
 Gisborne,2006,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,491.0013333333333
 Gisborne,2006,Caesar Rd No1 Bore GPG058,Nitrate nitrogen g/m3,525.8346666666666
@@ -9303,8 +9303,8 @@ Gisborne,2006,Williamson St 11 - Gdc GPA162,Nitrate nitrogen g/m3,0.058
 Gisborne,2006,Willows Rd Obs Gdc Willows Road GPC028,Nitrate nitrogen g/m3,246.89283333333333
 Gisborne,2006,Wilson J GPO028,Nitrate nitrogen g/m3,145.25633333333334
 Gisborne,2006,Yagar 125 Haisman Road GPB009,Nitrate nitrogen g/m3,882.955
-Gisborne,2007,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,224.61176923076923
 Gisborne,2007,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,188.78144444444445
+Gisborne,2007,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,224.61176923076923
 Gisborne,2007,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,938.1144444444444
 Gisborne,2007,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,481.4457777777778
 Gisborne,2007,Caesar Rd No1 Bore GPG058,Nitrate nitrogen g/m3,513.6235555555555
@@ -9370,8 +9370,8 @@ Gisborne,2007,Williamson St 11 - Gdc GPA162,Nitrate nitrogen g/m3,0.333
 Gisborne,2007,Willows Rd Obs Gdc Willows Road GPC028,Nitrate nitrogen g/m3,268.1356666666667
 Gisborne,2007,Wilson J GPO028,Nitrate nitrogen g/m3,145.118875
 Gisborne,2007,Yagar 125 Haisman Road GPB009,Nitrate nitrogen g/m3,894.8777777777777
-Gisborne,2008,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,259.5093217391304
 Gisborne,2008,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,192.0577
+Gisborne,2008,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,259.5093217391304
 Gisborne,2008,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,930.0013333333334
 Gisborne,2008,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,460.334
 Gisborne,2008,Caesar Rd No1 Bore GPG058,Nitrate nitrogen g/m3,527.7791111111111
@@ -9435,8 +9435,8 @@ Gisborne,2008,Williamson St 11 - Gdc GPA162,Nitrate nitrogen g/m3,0.004
 Gisborne,2008,Willows Rd Obs Gdc Willows Road GPC028,Nitrate nitrogen g/m3,255.01986
 Gisborne,2008,Wilson J GPO028,Nitrate nitrogen g/m3,143.00923333333333
 Gisborne,2008,Yagar 125 Haisman Road GPB009,Nitrate nitrogen g/m3,903.9888888888889
-Gisborne,2009,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,230.681
 Gisborne,2009,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,157.07791666666665
+Gisborne,2009,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,230.681
 Gisborne,2009,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,928.336
 Gisborne,2009,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,474.4463777777778
 Gisborne,2009,Caesar Rd No1 Bore GPG058,Nitrate nitrogen g/m3,525.5568888888889
@@ -9498,8 +9498,8 @@ Gisborne,2009,Wanklyn 144 Ngakoroa Road GPG076,Nitrate nitrogen g/m3,0
 Gisborne,2009,Willows Rd Obs Gdc Willows Road GPC028,Nitrate nitrogen g/m3,207.11419166666667
 Gisborne,2009,Wilson J GPO028,Nitrate nitrogen g/m3,147.8155
 Gisborne,2009,Yagar 125 Haisman Road GPB009,Nitrate nitrogen g/m3,1275.85
-Gisborne,2010,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,268.08492
 Gisborne,2010,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,156.45783333333333
+Gisborne,2010,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,268.08492
 Gisborne,2010,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,672.501
 Gisborne,2010,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,469.77922222222224
 Gisborne,2010,Caesar Rd No1 Bore GPG058,Nitrate nitrogen g/m3,523.3392222222222
@@ -9562,10 +9562,10 @@ Gisborne,2010,Wanklyn 144 Ngakoroa Road GPG076,Nitrate nitrogen g/m3,0
 Gisborne,2010,Willows Rd Obs Gdc Willows Road GPC028,Nitrate nitrogen g/m3,213.50525
 Gisborne,2010,Wilson J GPO028,Nitrate nitrogen g/m3,134.44283333333334
 Gisborne,2010,Yagar 125 Haisman Road GPB009,Nitrate nitrogen g/m3,1225.06
-Gisborne,2011,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1
-Gisborne,2011,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,265.50857142857143
 Gisborne,2011,Awapuni-McDonald Rd Bore GPC030,E.coli cfu/100ml,1
 Gisborne,2011,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,151.31475
+Gisborne,2011,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1
+Gisborne,2011,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,265.50857142857143
 Gisborne,2011,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,933.335
 Gisborne,2011,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,432.22422222222224
 Gisborne,2011,Caesar Rd No1 Bore GPG058,Nitrate nitrogen g/m3,520.0013333333334
@@ -9639,10 +9639,10 @@ Gisborne,2011,Willows Rd Obs Gdc Willows Road GPC028,Nitrate nitrogen g/m3,314.2
 Gisborne,2011,Wilson J GPO028,E.coli cfu/100ml,1
 Gisborne,2011,Wilson J GPO028,Nitrate nitrogen g/m3,142.6785
 Gisborne,2011,Yagar 125 Haisman Road GPB009,Nitrate nitrogen g/m3,908.6623333333333
-Gisborne,2012,Awapuni Rd Bore GPC031,E.coli cfu/100ml,76
-Gisborne,2012,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,231.64364
 Gisborne,2012,Awapuni-McDonald Rd Bore GPC030,E.coli cfu/100ml,1
 Gisborne,2012,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,137.87483333333333
+Gisborne,2012,Awapuni Rd Bore GPC031,E.coli cfu/100ml,76
+Gisborne,2012,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,231.64364
 Gisborne,2012,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,931.1147777777778
 Gisborne,2012,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,557.8008
 Gisborne,2012,Caesar Rd No1 Bore GPG058,Nitrate nitrogen g/m3,524.4457777777777
@@ -9715,10 +9715,10 @@ Gisborne,2012,Willows Rd Obs Gdc Willows Road GPC028,Nitrate nitrogen g/m3,260.1
 Gisborne,2012,Wilson J GPO028,E.coli cfu/100ml,7
 Gisborne,2012,Wilson J GPO028,Nitrate nitrogen g/m3,163.07342857142856
 Gisborne,2012,Yagar 125 Haisman Road GPB009,Nitrate nitrogen g/m3,900.7
-Gisborne,2013,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1
-Gisborne,2013,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,248.43876
 Gisborne,2013,Awapuni-McDonald Rd Bore GPC030,E.coli cfu/100ml,1
 Gisborne,2013,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,134.78791666666666
+Gisborne,2013,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1
+Gisborne,2013,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,248.43876
 Gisborne,2013,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,945.0036666666666
 Gisborne,2013,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,466.22355555555555
 Gisborne,2013,Caesar Rd No1 Bore GPG058,Nitrate nitrogen g/m3,526.668
@@ -9791,10 +9791,10 @@ Gisborne,2013,Willows Rd Obs Gdc Willows Road GPC028,Nitrate nitrogen g/m3,241.9
 Gisborne,2013,Wilson J GPO028,E.coli cfu/100ml,1
 Gisborne,2013,Wilson J GPO028,Nitrate nitrogen g/m3,143.785
 Gisborne,2013,Yagar 125 Haisman Road GPB009,Nitrate nitrogen g/m3,817.4
-Gisborne,2014,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1
-Gisborne,2014,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,243.26828
 Gisborne,2014,Awapuni-McDonald Rd Bore GPC030,E.coli cfu/100ml,1
 Gisborne,2014,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,135.13208333333333
+Gisborne,2014,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1
+Gisborne,2014,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,243.26828
 Gisborne,2014,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,941.114
 Gisborne,2014,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,463.4457777777778
 Gisborne,2014,Caesar Rd No1 Bore GPG058,Nitrate nitrogen g/m3,522.2235555555555
@@ -9866,10 +9866,10 @@ Gisborne,2014,Willows Rd Obs Gdc Willows Road GPC028,E.coli cfu/100ml,1
 Gisborne,2014,Willows Rd Obs Gdc Willows Road GPC028,Nitrate nitrogen g/m3,292.01683333333335
 Gisborne,2014,Wilson J GPO028,E.coli cfu/100ml,1
 Gisborne,2014,Wilson J GPO028,Nitrate nitrogen g/m3,142.85183333333333
-Gisborne,2015,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1.6
-Gisborne,2015,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,227.58063636363636
 Gisborne,2015,Awapuni-McDonald Rd Bore GPC030,E.coli cfu/100ml,1.6
 Gisborne,2015,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,132.45125
+Gisborne,2015,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1.6
+Gisborne,2015,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,227.58063636363636
 Gisborne,2015,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,950.4775555555556
 Gisborne,2015,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,432.4578888888889
 Gisborne,2015,Caesar Rd No1 Bore GPG058,Nitrate nitrogen g/m3,524.3355
@@ -9946,10 +9946,10 @@ Gisborne,2015,Willows Rd Obs Gdc Willows Road GPC028,Nitrate nitrogen g/m3,252.3
 Gisborne,2015,Wilson J GPO028,E.coli cfu/100ml,4.4
 Gisborne,2015,Wilson J GPO028,Nitrate nitrogen g/m3,147.7205
 Gisborne,2016,555 Back Ormond Road - Williams - GPB083,Nitrate nitrogen g/m3,411.752225
-Gisborne,2016,Awapuni Rd Bore GPC031,E.coli cfu/100ml,2.45
-Gisborne,2016,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,269.8735882352941
 Gisborne,2016,Awapuni-McDonald Rd Bore GPC030,E.coli cfu/100ml,1.6
 Gisborne,2016,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,125.3805
+Gisborne,2016,Awapuni Rd Bore GPC031,E.coli cfu/100ml,2.45
+Gisborne,2016,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,269.8735882352941
 Gisborne,2016,Bloomfield Rd GPD132,E.coli cfu/100ml,1.6
 Gisborne,2016,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,1174.0086
 Gisborne,2016,Brodie 47 Judd Road GPI026,Nitrate nitrogen g/m3,319.129625
@@ -10042,10 +10042,10 @@ Gisborne,2016,Wilson J GPO028,E.coli cfu/100ml,1.65
 Gisborne,2016,Wilson J GPO028,Nitrate nitrogen g/m3,142.653625
 Gisborne,2017,555 Back Ormond Road - Williams - GPB083,E.coli cfu/100ml,1.6
 Gisborne,2017,555 Back Ormond Road - Williams - GPB083,Nitrate nitrogen g/m3,281.3342
-Gisborne,2017,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1.6
-Gisborne,2017,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,377.36833333333334
 Gisborne,2017,Awapuni-McDonald Rd Bore GPC030,E.coli cfu/100ml,1.6
 Gisborne,2017,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,184.42833333333334
+Gisborne,2017,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1.6
+Gisborne,2017,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,377.36833333333334
 Gisborne,2017,Bloomfield Rd GPD132,E.coli cfu/100ml,1.6
 Gisborne,2017,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,886.6682333333333
 Gisborne,2017,Brodie 47 Judd Road GPI026,E.coli cfu/100ml,1.6
@@ -10165,10 +10165,10 @@ Gisborne,2017,Wilson J GPO028,E.coli cfu/100ml,1.6
 Gisborne,2017,Wilson J GPO028,Nitrate nitrogen g/m3,189.97333333333333
 Gisborne,2018,555 Back Ormond Road - Williams - GPB083,E.coli cfu/100ml,2.45
 Gisborne,2018,555 Back Ormond Road - Williams - GPB083,Nitrate nitrogen g/m3,287.50166666666667
-Gisborne,2018,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1.6
-Gisborne,2018,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,276.155
 Gisborne,2018,Awapuni-McDonald Rd Bore GPC030,E.coli cfu/100ml,1.6
 Gisborne,2018,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,171.04666666666668
+Gisborne,2018,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1.6
+Gisborne,2018,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,276.155
 Gisborne,2018,Bloomfield Rd GPD132,E.coli cfu/100ml,1.6
 Gisborne,2018,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,950.1731666666667
 Gisborne,2018,Brodie 47 Judd Road GPI026,E.coli cfu/100ml,1.6
@@ -10271,10 +10271,10 @@ Gisborne,2018,Wilson J GPO028,E.coli cfu/100ml,1.6
 Gisborne,2018,Wilson J GPO028,Nitrate nitrogen g/m3,191.61666666666667
 Gisborne,2019,555 Back Ormond Road - Williams - GPB083,E.coli cfu/100ml,1.6
 Gisborne,2019,555 Back Ormond Road - Williams - GPB083,Nitrate nitrogen g/m3,269.00076666666666
-Gisborne,2019,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1.6
-Gisborne,2019,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,297.7866666666667
 Gisborne,2019,Awapuni-McDonald Rd Bore GPC030,E.coli cfu/100ml,1.6
 Gisborne,2019,Awapuni-McDonald Rd Bore GPC030,Nitrate nitrogen g/m3,222.83666666666667
+Gisborne,2019,Awapuni Rd Bore GPC031,E.coli cfu/100ml,1.6
+Gisborne,2019,Awapuni Rd Bore GPC031,Nitrate nitrogen g/m3,297.7866666666667
 Gisborne,2019,Bloomfield Rd GPD132,E.coli cfu/100ml,1.6
 Gisborne,2019,Bloomfield Rd GPD132,Nitrate nitrogen g/m3,510.839
 Gisborne,2019,Brodie 47 Judd Road GPI026,E.coli cfu/100ml,1.6
