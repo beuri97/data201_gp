@@ -364,7 +364,7 @@ groundwater_nitro_condition <- sites_quality %>%
   summarize(Count = n()) %>% 
   mutate(prop=Count/sum(Count), Indicator = "Nitrate nitrogen (g/m3)")
 
-groundwater_nitro_condtion_plot <- df103_1 %>% 
+groundwater_nitro_condtion_plot <- groundwater_nitro_condition %>% 
   ggplot(aes(x =  Status, y = Count, fill=Status))+
   geom_bar(stat="identity")+
   geom_text(aes(label = Count), vjust=1.5)
