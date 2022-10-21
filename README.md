@@ -2,6 +2,9 @@
 
 This contains datasets about agricultural activity and water quality (river and groundwater) across New Zealand.
 
+#### Dataset Schema
+![schema](\\wsl.localhost\Ubuntu-22.04\root\data201_project\data201_gp\img)
+
 ### Agricultural Activity
 The agricultural activity dataset contains information on the agricultural activities carried out within the boundaries of regional councils from the year 1994 to 2021. This includes:
 
@@ -14,31 +17,31 @@ This is presented in a wide format. This means that each single row corresponds 
 
 #### Variables
 * **Area [Key]** - The region in which the observation was made.
-* **Year [Key]** - Year from when the observation was made 
-* **Beef Cattle** - The population of beef cattle taken at a given observation
-* **Dairy Cattle** - The population of dairy cattle taken at a given observation
-* **Deer** - The total population of Deer taken at a given observation
-* **Sheep** - The total population of Sheep taken at a given observation
-* **Total apples (hectares)** - The total area dedicated to apple growing for given observation, in hectares
-* **Total avocados (hectares)** - The total area dedicated to avocados growing for a given observation, in hectares
-* **Total kiwifruit (hectares)** - The total area dedicated to kiwifruit growing for a given observation, in hectares
-* **Total olives (hectares)** - The total area dedicated to olives growing for a given observation, in hectares
-* **Total onions (hectares)** - The total area dedicated to onions growing for a given observation, in hectares
-* **Total potatoes (hectares)** - The total area dedicated to potatoes growing for a given observation, in hectares
-* **Total squash (hectares)** - The total area dedicated to squash growing for a given observation, in hectares
-* **Total wine grapes (hectares)** - The total area dedicated to wine grape growing for a given observation, in hectares
-* **Total_Hectares** - The total area dedicated to agriculture for a given observation, in hectares
-* **Dairy area (ha)** - The total area dedicated to dairy farming for a given observation, in hectares
-* **Floriculture area (ha)** - The total area dedicated to floriculture for a given observation, in hectares
-* **Forestry area (ha)** - The total area dedicated to forestry area for a given observation, in hectares
-* **Fruit and berry area (ha)** - The total area dedicated to fruit and berry for a given observation, in hectares
-* **Grain growing area (ha)** - The total area dedicated to grain growing for a given observation, in hectares
-* **Nursery and turf area (ha)** - The total area allocated to plant nurseries for a given observation, in hectares
-* **Other area (ha)** - The total area dedicated to unspecified agricultural activity for a given observation, in hectares
-* **Other Livestock area (ha)** - The total area dedicated to unspecified livestock (e.g: deer) for a given observation, in hectares
-* **Sheep and Beef area (ha)** - The total area dedicated to both sheep and beef livestock for a given observation, in hectares
-* **Vegetable growing area (ha)** - The total area dedicated to vegetable growing for a given observation, in hectares
-* **Note**: combination of Area and Year uniquely identifies each observation.
+* **Year [Key]** - Year from when the observation was made. 
+* **key** - The combination of Area and Year uniquely identifies each observation.
+* **Beef Cattle** - The population of beef cattle taken at a given observation.
+* **Dairy Cattle** - The population of dairy cattle taken at a given observation.
+* **Deer** - The total population of Deer taken at a given observation.
+* **Sheep** - The total population of Sheep taken at a given observation.
+* **Total apples (hectares)** - The total area dedicated to apple growing for given observation, in hectares.
+* **Total avocados (hectares)** - The total area dedicated to avocados growing for a given observation, in hectares.
+* **Total kiwifruit (hectares)** - The total area dedicated to kiwifruit growing for a given observation, in hectares.
+* **Total olives (hectares)** - The total area dedicated to olives growing for a given observation, in hectares.
+* **Total onions (hectares)** - The total area dedicated to onions growing for a given observation, in hectares.
+* **Total potatoes (hectares)** - The total area dedicated to potatoes growing for a given observation, in hectares.
+* **Total squash (hectares)** - The total area dedicated to squash growing for a given observation, in hectares.
+* **Total wine grapes (hectares)** - The total area dedicated to wine grape growing for a given observation, in hectares.
+* **Total_Hectares** - The total area dedicated to agriculture for a given observation, in hectares.
+* **Dairy area (ha)** - The total area dedicated to dairy farming for a given observation, in hectares.
+* **Floriculture area (ha)** - The total area dedicated to floriculture for a given observation, in hectares.
+* **Forestry area (ha)** - The total area dedicated to forestry area for a given observation, in hectares.
+* **Fruit and berry area (ha)** - The total area dedicated to fruit and berry for a given observation, in hectares.
+* **Grain growing area (ha)** - The total area dedicated to grain growing for a given observation, in hectares.
+* **Nursery and turf area (ha)** - The total area allocated to plant nurseries for a given observation, in hectares.
+* **Other area (ha)** - The total area dedicated to unspecified agricultural activity for a given observation, in hectares.
+* **Other Livestock area (ha)** - The total area dedicated to unspecified livestock (e.g: deer) for a given observation, in hectares.
+* **Sheep and Beef area (ha)** - The total area dedicated to both sheep and beef livestock for a given observation, in hectares.
+* **Vegetable growing area (ha)** - The total area dedicated to vegetable growing for a given observation, in hectares.
 
 ### Water Quality
 The water quality dataset is split into four datasets containing information about the monitored well sites (2004 to 2019) and river sites (2002 to 2019) across New Zealand. This includes:
@@ -47,8 +50,6 @@ The water quality dataset is split into four datasets containing information abo
 - the name and coordinates of the monitored sites.
 
 The data are gathered from different government agencies such as Tatauranga Aotearoa (StatsNZ) and the Ministry for the Environment which are wrangled and standardised. 
-#### Water Quality Dataset Schema
-![]()
 
 #### Variables
 
