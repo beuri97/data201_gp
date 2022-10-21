@@ -3,7 +3,7 @@
 This contains datasets about agricultural activity and water quality (river and groundwater) across New Zealand.
 
 #### Dataset Schema
-![schema](\\wsl.localhost\Ubuntu-22.04\root\data201_project\data201_gp\img)
+![schema](img/dataschema.png)
 
 ### Agricultural Activity
 The agricultural activity dataset contains information on the agricultural activities carried out within the boundaries of regional councils from the year 1994 to 2021. This includes:
