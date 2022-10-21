@@ -67,6 +67,7 @@ The data are gathered from different government agencies such as Tatauranga Aote
 ##### River Sites Quality
 * **Region** - The region where the river site is located.
 * **S_ID** - The river site ID.
+* **Year** - The year the measurements are taken/recorded.
 * **MeanVal** - The mean measurement of the water quality attribute for specific year.
 * **Indicator** - The water quality attribute and its unit of measurement.
 ##### River Sites
